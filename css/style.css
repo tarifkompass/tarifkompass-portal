@@ -497,4 +497,41 @@ a {
   .footer {
     gap: 24px;
   }
+}/* FINAL SMALL FIXES */
+
+/* Верхние иконки */
+
+.feature img {
+  width: 36px !important;
+  height: 36px !important;
+  transform: scale(3.2) !important;
+}
+
+/* Footer icons */
+
+.footer img {
+  width: 20px !important;
+  height: 20px !important;
+  transform: scale(3.2) !important;
+}
+
+/* Telegram block thinner */
+
+.telegram-block {
+  min-height: 82px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.telegram-info h2 {
+  font-size: 26px !important;
+  margin-bottom: 2px !important;
+}
+
+.telegram-info p {
+  font-size: 15px !important;
+}
+
+.telegram-btn img {
+  width: 180px !important;
 }
