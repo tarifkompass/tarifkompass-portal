@@ -534,4 +534,33 @@ a {
 
 .telegram-btn img {
   width: 180px !important;
+}/* ICON SIZE FINAL */
+
+/* Верхние иконки */
+
+.feature img {
+  width: 42px !important;
+  height: 42px !important;
+  transform: scale(3.8) !important;
+}
+
+/* Нижние footer иконки */
+
+.footer img {
+  width: 34px !important;
+  height: 34px !important;
+  transform: scale(4.6) !important;
+  margin-right: 10px !important;
+}
+
+/* Telegram чуть ниже */
+
+.telegram-block {
+  min-height: 74px !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}/* TELEGRAM WIDTH FINAL */
+
+.telegram-block {
+  max-width: 1120px !important;
 }
