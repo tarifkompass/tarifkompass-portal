@@ -121,11 +121,11 @@
       </div>
 
       <div class="telegram-buttons">
-        <a class="telegram-btn primary" href="#">
-          <img src="images/telegram-icon.png" alt=""> Telegram RU
+        <a class="telegram-img-btn" href="#">
+          <img src="images/telegram-ru.png" alt="Telegram RU">
         </a>
-        <a class="telegram-btn secondary" href="#">
-          <img src="images/telegram-icon.png" alt=""> Telegram DE
+        <a class="telegram-img-btn" href="#">
+          <img src="images/telegram-de.png" alt="Telegram DE">
         </a>
       </div>
     </div>
@@ -184,7 +184,6 @@ const dict = {
 document.querySelectorAll(".lang-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const lang = btn.dataset.lang;
-
     document.documentElement.lang = lang;
 
     document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
