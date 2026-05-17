@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #07111f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(4, 10, 20, 0.75),
+      rgba(4, 10, 20, 0.88)
+    ),
+    url("images/home-hero.webp");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+
+  padding: 50px;
+
+  border-radius: 28px;
+
+  background: rgba(10, 18, 32, 0.55);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 40px;
+}
+
+.language-switch {
+  display: flex;
+  gap: 12px;
+}
+
+.language-switch img {
+  width: 70px;
+
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.language-switch img:hover {
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-size: 72px;
+
+  font-weight: bold;
+
+  color: #f4c86a;
+
+  margin-bottom: 20px;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 25px rgba(244, 200, 106, 0.25);
+}
+
+.hero-subtitle {
+  font-size: 32px;
+
+  line-height: 1.4;
+
+  margin-bottom: 30px;
+
+  font-weight: 600;
+}
+
+.hero-text {
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  color: rgba(255,255,255,0.88);
+
+  max-width: 720px;
+
+  margin: 0 auto;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+
+  .hero-content {
+    padding: 40px 30px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .hero-subtitle {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .hero {
+    padding: 20px 15px;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+
+  .top-bar {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .language-switch img {
+    width: 58px;
+  }
+
+  h1 {
+    font-size: 42px;
+
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    font-size: 17px;
+
+    line-height: 1.7;
+  }
+}
