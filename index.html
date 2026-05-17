@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TarifKompass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+<main class="page">
+
+  <section class="hero">
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="images/apple-touch-icon.png" alt="TarifKompass">
+        <div>
+          <div class="brand"><span>TARIF</span><b>KOMPASS</b></div>
+          <div class="slogan">VERGLEICHEN. SPAREN. ENTSCHEIDEN.</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-item nav-mobile" href="#"><span>▯</span>MOBILE</a>
+        <a class="nav-item nav-internet" href="#"><span>⌁</span>INTERNET</a>
+        <a class="nav-item nav-strom" href="#"><span>✦</span>STROM</a>
+        <a class="nav-item nav-gas" href="#"><span>♨</span>GAS</a>
+        <a class="nav-item nav-vpn" href="#"><span>⬡</span>VPN & TRAVEL</a>
+      </nav>
+
+      <div class="language">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn active" data-lang="ru">RU</button>
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <h1 data-i18n="heroTitle">Твой компас<br>в мире тарифов Германии</h1>
+
+      <p data-i18n="heroText">
+        Сравнивай. Экономь. Выбирай лучшее.<br>
+        Мобильная связь, интернет, электричество, газ<br>
+        и полезные сервисы — быстро и просто.
+      </p>
+
+      <div class="benefits">
+        <div class="benefit">
+          <img src="images/verified-icon.png" alt="">
+          <span data-i18n="benefit1">Проверенные<br>предложения</span>
+        </div>
+
+        <div class="benefit">
+          <img src="images/actual-icon.png" alt="">
+          <span data-i18n="benefit2">Актуальные<br>данные</span>
+        </div>
+
+        <div class="benefit">
+          <img src="images/simple-icon.png" alt="">
+          <span data-i18n="benefit3">Понятные<br>объяснения</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services-grid">
+      <a class="service-card" href="#"><img src="images/mobile-card.png" alt="Mobile"></a>
+      <a class="service-card" href="#"><img src="images/internet-card.png" alt="Internet"></a>
+      <a class="service-card" href="#"><img src="images/strom-card.png" alt="Strom"></a>
+      <a class="service-card" href="#"><img src="images/gas-card.png" alt="Gas"></a>
+      <a class="service-card" href="#"><img src="images/vpn-card.png" alt="VPN & Travel"></a>
+    </div>
+  </section>
+
+  <section class="audience">
+    <h2 data-i18n="audienceTitle">ДЛЯ КОГО ЭТОТ САЙТ?</h2>
+
+    <div class="audience-grid">
+      <article class="audience-card">
+        <img src="images/migrants-card-bg.png" alt="">
+        <div class="audience-text">
+          <h3 data-i18n="aud1Title">Для мигрантов</h3>
+          <p data-i18n="aud1Text">Вся информация на русском<br>и немецком языках</p>
+        </div>
+      </article>
+
+      <article class="audience-card">
+        <img src="images/newcomers-card-bg.png" alt="">
+        <div class="audience-text">
+          <h3 data-i18n="aud2Title">Для новых жителей Германии</h3>
+          <p data-i18n="aud2Text">Помогаем разобраться<br>с самого начала</p>
+        </div>
+      </article>
+
+      <article class="audience-card">
+        <img src="images/savings-card-bg.png" alt="">
+        <div class="audience-text">
+          <h3 data-i18n="aud3Title">Для тех, кто хочет сэкономить</h3>
+          <p data-i18n="aud3Text">Показываем, где можно<br>не переплачивать</p>
+        </div>
+      </article>
+
+      <article class="audience-card">
+        <img src="images/simple-card-bg.png" alt="">
+        <div class="audience-text">
+          <h3 data-i18n="aud4Title">Для тех, кто ценит своё время</h3>
+          <p data-i18n="aud4Text">Без сложных терминов<br>и лишней информации</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="telegram">
+    <div class="telegram-box">
+      <div class="telegram-left">
+        <img src="images/telegram-icon.png" alt="">
+        <div>
+          <h2 data-i18n="telegramTitle">Присоединяйся к нашему Telegram-сообществу</h2>
+          <p data-i18n="telegramText">Полезные советы, актуальные новости и помощь от других участников.</p>
+        </div>
+      </div>
+
+      <div class="telegram-buttons">
+        <a class="telegram-btn primary" href="#">
+          <img src="images/telegram-icon.png" alt=""> Telegram RU
+        </a>
+        <a class="telegram-btn secondary" href="#">
+          <img src="images/telegram-icon.png" alt=""> Telegram DE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="impressum.html"><img src="images/impressum-icon.png" alt=""> Impressum</a>
+    <span></span>
+    <a href="datenschutz.html"><img src="images/datenschutz-icon.png" alt=""> Datenschutz</a>
+    <span></span>
+    <a href="#"><img src="images/affiliate-icon.png" alt=""> Affiliate-Hinweis</a>
+  </footer>
+
+</main>
+
+<script>
+const dict = {
+  ru: {
+    heroTitle: "Твой компас<br>в мире тарифов Германии",
+    heroText: "Сравнивай. Экономь. Выбирай лучшее.<br>Мобильная связь, интернет, электричество, газ<br>и полезные сервисы — быстро и просто.",
+    benefit1: "Проверенные<br>предложения",
+    benefit2: "Актуальные<br>данные",
+    benefit3: "Понятные<br>объяснения",
+    audienceTitle: "ДЛЯ КОГО ЭТОТ САЙТ?",
+    aud1Title: "Для мигрантов",
+    aud1Text: "Вся информация на русском<br>и немецком языках",
+    aud2Title: "Для новых жителей Германии",
+    aud2Text: "Помогаем разобраться<br>с самого начала",
+    aud3Title: "Для тех, кто хочет сэкономить",
+    aud3Text: "Показываем, где можно<br>не переплачивать",
+    aud4Title: "Для тех, кто ценит своё время",
+    aud4Text: "Без сложных терминов<br>и лишней информации",
+    telegramTitle: "Присоединяйся к нашему Telegram-сообществу",
+    telegramText: "Полезные советы, актуальные новости и помощь от других участников."
+  },
+  de: {
+    heroTitle: "Dein Kompass<br>für Tarife in Deutschland",
+    heroText: "Vergleichen. Sparen. Besser wählen.<br>Mobilfunk, Internet, Strom, Gas<br>und nützliche Services — einfach und schnell.",
+    benefit1: "Geprüfte<br>Angebote",
+    benefit2: "Aktuelle<br>Daten",
+    benefit3: "Einfache<br>Erklärungen",
+    audienceTitle: "FÜR WEN IST DIESE SEITE?",
+    aud1Title: "Für Migranten",
+    aud1Text: "Informationen auf Russisch<br>und Deutsch",
+    aud2Title: "Für neue Einwohner",
+    aud2Text: "Hilfe beim Einstieg<br>in Deutschland",
+    aud3Title: "Für alle, die sparen wollen",
+    aud3Text: "Wir zeigen, wo man<br>nicht zu viel bezahlt",
+    aud4Title: "Für alle, die Zeit schätzen",
+    aud4Text: "Ohne komplizierte Begriffe<br>und unnötige Informationen",
+    telegramTitle: "Tritt unserer Telegram-Community bei",
+    telegramText: "Nützliche Tipps, aktuelle Nachrichten und Hilfe von anderen Teilnehmern."
+  }
+};
+
+document.querySelectorAll(".lang-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const lang = btn.dataset.lang;
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      el.innerHTML = dict[lang][el.dataset.i18n];
+    });
+  });
+});
+</script>
+
+</body>
+</html>
