@@ -1,1 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #0d2f7a;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.9) 35%, rgba(255,255,255,0.25) 65%, rgba(255,255,255,0.05) 100%),
+    url("../images/home-hero.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 30px 60px 120px;
+  min-height: 680px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-title {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  color: #0d2f7a;
+}
+
+.logo-title span {
+  color: #f6a400;
+}
+
+.logo-subtitle {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #0d2f7a;
+}
+
+.top-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn {
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.14);
+  transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+}
+
+.nav-mobile { background: linear-gradient(135deg, #0b7cff, #0048b8); }
+.nav-internet { background: linear-gradient(135deg, #11c78b, #009766); }
+.nav-strom { background: linear-gradient(135deg, #ffc022, #f59a00); }
+.nav-gas { background: linear-gradient(135deg, #ff5239, #e7241f); }
+.nav-vpn { background: linear-gradient(135deg, #8344f5, #5b20bf); }
+
+.lang-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+.lang-btn.passive {
+  background: #fff;
+  color: #0d2f7a;
+}
+
+.lang-btn.active {
+  background: #0b7cff;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.12;
+  font-weight: 900;
+  margin-bottom: 28px;
+  color: #0b2d78;
+}
+
+.hero-text p {
+  font-size: 24px;
+  line-height: 1.55;
+  margin-bottom: 45px;
+  color: #14357e;
+}
+
+.features {
+  display: flex;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.feature img {
+  width: 52px;
+  height: 52px;
+}
+
+.feature span {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.service-cards {
+  max-width: 1580px;
+  margin: -85px auto 35px;
+  padding: 0 45px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  position: relative;
+  z-index: 10;
+}
+
+.service-card img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+  transition: 0.25s ease;
+}
+
+.service-card:hover img {
+  transform: translateY(-5px);
+}
+
+.audience {
+  max-width: 1580px;
+  margin: 0 auto 30px;
+  padding: 0 45px;
+}
+
+.audience h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.audience-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.audience-card img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.audience-card h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 9px;
+  color: #0b2d78;
+}
+
+.audience-card p {
+  font-size: 16px;
+  line-height: 1.45;
+  color: #14357e;
+}
+
+.telegram-block {
+  max-width: 1580px;
+  margin: 0 auto 30px;
+  padding: 24px 45px;
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.telegram-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.telegram-info img {
+  width: 82px;
+  height: 82px;
+}
+
+.telegram-info h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.telegram-info p {
+  font-size: 18px;
+  color: #14357e;
+}
+
+.telegram-buttons {
+  display: flex;
+  gap: 28px;
+}
+
+.telegram-btn img {
+  width: 260px;
+  display: block;
+  border-radius: 12px;
+  transition: 0.25s ease;
+}
+
+.telegram-btn:hover img {
+  transform: translateY(-4px);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  padding: 5px 20px 38px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: #0b2d78;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .telegram-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 25px 20px 95px;
+    min-height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .logo-title {
+    font-size: 30px;
+  }
+
+  .logo img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .top-nav {
+    justify-content: flex-start;
+  }
+
+  .nav-btn {
+    font-size: 13px;
+    padding: 13px 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    margin-top: -65px;
+    padding: 0 20px;
+  }
+
+  .audience {
+    padding: 0 20px;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telegram-block {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 24px;
+  }
+
+  .telegram-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .telegram-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .telegram-btn img {
+    width: 100%;
+  }
+
+  .footer {
+    gap: 24px;
+  }
+}
