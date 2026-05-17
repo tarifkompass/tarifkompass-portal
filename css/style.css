@@ -663,4 +663,14 @@ a {
 
 .footer a {
   gap: 26px !important;
+}/* REMOVE TELEGRAM BUTTON BACKGROUND */
+
+.telegram-buttons {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.telegram-btn {
+  background: transparent !important;
+  box-shadow: none !important;
 }
