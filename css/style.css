@@ -673,4 +673,20 @@ a {
 .telegram-btn {
   background: transparent !important;
   box-shadow: none !important;
+}/* TELEGRAM BUTTON AREA CLEAN */
+
+.telegram-buttons,
+.telegram-btn,
+.telegram-btn a {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.telegram-buttons::before,
+.telegram-buttons::after,
+.telegram-btn::before,
+.telegram-btn::after {
+  display: none !important;
+  content: none !important;
 }
