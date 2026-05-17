@@ -2,200 +2,369 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TarifKompass</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-  <main class="page">
 
-    <section class="hero">
-      <header class="topbar">
+<main class="page">
 
-        <a href="index.html" class="logo">
-          <img src="images/favicon-48.png" alt="TarifKompass">
-          <div>
-            <div class="logo-title">TARIF<span>KOMPASS</span></div>
-            <div class="logo-subtitle">VERGLEICHEN. SPAREN. ENTSCHEIDEN.</div>
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <header class="topbar">
+
+      <a href="#" class="logo">
+
+        <img src="images/favicon-48.png" alt="TarifKompass"/>
+
+        <div>
+          <div class="logo-title">
+            TARIF<span>KOMPASS</span>
           </div>
-        </a>
 
-        <nav class="main-nav">
-          <a class="nav-btn blue" href="#"><span>📱</span> MOBILE</a>
-          <a class="nav-btn green" href="#"><span>📶</span> INTERNET</a>
-          <a class="nav-btn yellow" href="#"><span>💡</span> STROM</a>
-          <a class="nav-btn red" href="#"><span>🔥</span> GAS</a>
-          <a class="nav-btn purple" href="#"><span>🛡</span> VPN & TRAVEL</a>
-        </nav>
-
-        <div class="lang-switch">
-          <a href="#" class="lang lang-de">DE</a>
-          <a href="#" class="lang lang-ru active">RU</a>
+          <div class="logo-subtitle">
+            VERGLEICHEN. SPAREN. ENTSCHEIDEN.
+          </div>
         </div>
 
-      </header>
+      </a>
 
-      <div class="hero-content">
-        <h1>Твой компас<br>в мире тарифов Германии</h1>
+      <nav class="main-nav">
+
+        <a href="#" class="nav-btn blue">
+          <span>📱</span>
+          MOBILE
+        </a>
+
+        <a href="#" class="nav-btn green">
+          <span>📶</span>
+          INTERNET
+        </a>
+
+        <a href="#" class="nav-btn yellow">
+          <span>💡</span>
+          STROM
+        </a>
+
+        <a href="#" class="nav-btn red">
+          <span>🔥</span>
+          GAS
+        </a>
+
+        <a href="#" class="nav-btn purple">
+          <span>🛡</span>
+          VPN & TRAVEL
+        </a>
+
+      </nav>
+
+      <div class="lang-switch">
+
+        <a href="#" class="lang">
+          DE
+        </a>
+
+        <a href="#" class="lang active">
+          RU
+        </a>
+
+      </div>
+
+    </header>
+
+    <div class="hero-content">
+
+      <h1>
+        Твой компас<br>
+        в мире тарифов Германии
+      </h1>
+
+      <p>
+        Сравнивай. Экономь. Выбирай лучшее.<br>
+        Мобильная связь, интернет, электричество, газ<br>
+        и полезные сервисы — быстро и просто.
+      </p>
+
+      <div class="benefits">
+
+        <div class="benefit">
+          <img src="images/verified-icon.png" alt="">
+          <span>
+            Проверенные<br>
+            предложения
+          </span>
+        </div>
+
+        <div class="benefit">
+          <img src="images/actual-icon.png" alt="">
+          <span>
+            Актуальные<br>
+            данные
+          </span>
+        </div>
+
+        <div class="benefit">
+          <img src="images/simple-icon.png" alt="">
+          <span>
+            Понятные<br>
+            объяснения
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICE CARDS -->
+
+  <section class="service-section">
+
+    <div class="service-grid">
+
+      <a href="#" class="service-card service-blue">
+
+        <div class="service-icon">📱</div>
+
+        <div class="service-text">
+
+          <h2>Mobile</h2>
+
+          <p>
+            Тарифы, Allnet-Flat,<br>
+            интернет и SMS
+          </p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+      <a href="#" class="service-card service-green">
+
+        <div class="service-icon">📶</div>
+
+        <div class="service-text">
+
+          <h2>Internet</h2>
+
+          <p>
+            DSL, Kabel, Glasfaser<br>
+            и больше возможностей
+          </p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+      <a href="#" class="service-card service-yellow">
+
+        <div class="service-icon">💡</div>
+
+        <div class="service-text">
+
+          <h2>Strom</h2>
+
+          <p>
+            Сравни тарифы<br>
+            и найди лучшие условия
+          </p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+      <a href="#" class="service-card service-cyan">
+
+        <div class="service-icon">🔥</div>
+
+        <div class="service-text">
+
+          <h2>Gas</h2>
+
+          <p>
+            Выбери выгодный тариф<br>
+            и не переплачивай
+          </p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+      <a href="#" class="service-card service-purple">
+
+        <div class="service-icon">🛡</div>
+
+        <div class="service-text">
+
+          <h2>VPN & Travel</h2>
+
+          <p>
+            eSIM, VPN и сервисы<br>
+            для поездок
+          </p>
+
+        </div>
+
+        <div class="arrow">›</div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- AUDIENCE -->
+
+  <section class="audience">
+
+    <h2>Для кого этот сайт?</h2>
+
+    <div class="audience-grid">
+
+      <article class="audience-card">
+
+        <div class="audience-icon">👥</div>
+
+        <div>
+
+          <h3>Для мигрантов</h3>
+
+          <p>
+            Информация на русском<br>
+            и немецком языках
+          </p>
+
+        </div>
+
+      </article>
+
+      <article class="audience-card">
+
+        <div class="audience-icon">🧳</div>
+
+        <div>
+
+          <h3>Для новых жителей Германии</h3>
+
+          <p>
+            Помогаем разобраться<br>
+            с тарифами с самого начала
+          </p>
+
+        </div>
+
+      </article>
+
+      <article class="audience-card warm">
+
+        <div class="audience-icon">🧮</div>
+
+        <div>
+
+          <h3>Для тех, кто хочет экономить</h3>
+
+          <p>
+            Без лишних расходов<br>
+            и неприятных сюрпризов
+          </p>
+
+        </div>
+
+      </article>
+
+      <article class="audience-card green-soft">
+
+        <div class="audience-icon">💻</div>
+
+        <div>
+
+          <h3>Для тех, кто ценит своё время</h3>
+
+          <p>
+            Без сложных терминов<br>
+            и лишней информации
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- TELEGRAM -->
+
+  <section class="telegram-box">
+
+    <div class="telegram-left">
+
+      <img src="images/telegram-icon.png" alt="Telegram">
+
+      <div>
+
+        <h2>
+          Присоединяйся к Telegram-сообществу
+        </h2>
 
         <p>
-          Сравнивай. Экономь. Выбирай лучшее.<br>
-          Мобильная связь, интернет, электричество, газ<br>
-          и полезные сервисы — быстро и просто.
+          Полезные советы, актуальные новости и помощь от других участников.
         </p>
 
-        <div class="benefits">
-          <div class="benefit">
-            <img src="images/verified-icon.png" alt="">
-            <span>Проверенные<br>предложения</span>
-          </div>
-
-          <div class="benefit">
-            <img src="images/actual-icon.png" alt="">
-            <span>Актуальные<br>данные</span>
-          </div>
-
-          <div class="benefit">
-            <img src="images/simple-icon.png" alt="">
-            <span>Понятные<br>объяснения</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="service-section">
-      <div class="service-grid">
-
-        <a href="#" class="service-card service-blue">
-          <div class="service-icon">📱</div>
-          <div>
-            <h2>Mobile</h2>
-            <p>Тарифы, Allnet-Flat,<br>интернет и SMS</p>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a href="#" class="service-card service-green">
-          <div class="service-icon">📶</div>
-          <div>
-            <h2>Internet</h2>
-            <p>DSL, Kabel, Glasfaser<br>и больше возможностей</p>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a href="#" class="service-card service-yellow">
-          <div class="service-icon">💡</div>
-          <div>
-            <h2>Strom</h2>
-            <p>Сравни тарифы<br>и найди лучшие условия</p>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a href="#" class="service-card service-cyan">
-          <div class="service-icon">🔥</div>
-          <div>
-            <h2>Gas</h2>
-            <p>Выбери выгодный тариф<br>и не переплачивай</p>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-        <a href="#" class="service-card service-purple">
-          <div class="service-icon">🛡</div>
-          <div>
-            <h2>VPN & Travel</h2>
-            <p>eSIM, VPN и сервисы<br>для поездок</p>
-          </div>
-          <span class="arrow">›</span>
-        </a>
-
-      </div>
-    </section>
-
-    <section class="audience">
-      <h2>Для кого этот сайт?</h2>
-
-      <div class="audience-grid">
-
-        <article class="audience-card">
-          <div class="audience-icon">👥</div>
-          <div>
-            <h3>Для мигрантов</h3>
-            <p>Информация на русском<br>и немецком языках</p>
-          </div>
-        </article>
-
-        <article class="audience-card">
-          <div class="audience-icon">🧳</div>
-          <div>
-            <h3>Для новых жителей Германии</h3>
-            <p>Помогаем разобраться<br>с тарифами с самого начала</p>
-          </div>
-        </article>
-
-        <article class="audience-card warm">
-          <div class="audience-icon">🧮</div>
-          <div>
-            <h3>Для тех, кто хочет экономить</h3>
-            <p>Без лишних расходов<br>и неприятных сюрпризов</p>
-          </div>
-        </article>
-
-        <article class="audience-card green-soft">
-          <div class="audience-icon">💻</div>
-          <div>
-            <h3>Для тех, кто ценит своё время</h3>
-            <p>Без сложных терминов<br>и лишней информации</p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="telegram-box">
-
-      <div class="telegram-text">
-        <img src="images/telegram-icon.png" alt="">
-        <div>
-          <h2>Присоединяйся к Telegram-сообществу</h2>
-          <p>Полезные советы, актуальные новости и помощь от других участников.</p>
-        </div>
       </div>
 
-      <div class="telegram-buttons">
-        <a href="#" class="telegram-btn">
-          <span>✈</span> Telegram RU
-        </a>
+    </div>
 
-        <a href="#" class="telegram-btn light">
-          <span>✈</span> Telegram DE
-        </a>
-      </div>
+    <div class="telegram-buttons">
 
-    </section>
-
-    <footer class="footer">
-
-      <a href="impressum.html">
-        <span class="footer-icon">▤</span>
-        <span>Impressum</span>
+      <a href="#" class="telegram-btn">
+        ✈ Telegram RU
       </a>
 
-      <a href="datenschutz.html">
-        <span class="footer-icon">🛡</span>
-        <span>Datenschutz</span>
+      <a href="#" class="telegram-btn light">
+        ✈ Telegram DE
       </a>
 
-      <a href="#">
-        <span class="footer-icon">ⓘ</span>
-        <span>Affiliate-Hinweis</span>
-      </a>
+    </div>
 
-    </footer>
+  </section>
 
-  </main>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <a href="#">
+      <div class="footer-icon">▤</div>
+      Impressum
+    </a>
+
+    <a href="#">
+      <div class="footer-icon">🛡</div>
+      Datenschutz
+    </a>
+
+    <a href="#">
+      <div class="footer-icon">ⓘ</div>
+      Affiliate-Hinweis
+    </a>
+
+  </footer>
+
+</main>
+
 </body>
 </html>
