@@ -6,12 +6,16 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #062763;
-  background: #f4f9ff;
+  background: #f6fbff;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
 }
 
 .page {
@@ -24,47 +28,50 @@ a {
 
 .hero {
   position: relative;
-  height: 535px;
+  min-height: 605px;
   background:
     linear-gradient(
       90deg,
       rgba(255,255,255,0.96) 0%,
-      rgba(255,255,255,0.88) 31%,
-      rgba(255,255,255,0.30) 58%,
-      rgba(255,255,255,0.02) 100%
+      rgba(255,255,255,0.90) 27%,
+      rgba(255,255,255,0.45) 48%,
+      rgba(255,255,255,0.03) 78%
     ),
     url("images/home-hero.webp");
   background-size: cover;
   background-position: center top;
-  border-bottom-left-radius: 48px;
-  border-bottom-right-radius: 48px;
+  border-bottom-left-radius: 56px;
+  border-bottom-right-radius: 56px;
 }
 
 .topbar {
-  height: 105px;
-  padding: 26px 70px 0 70px;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 30px 52px 0;
   display: grid;
-  grid-template-columns: 380px 1fr 120px;
+  grid-template-columns: 370px 1fr 120px;
   align-items: start;
-  gap: 30px;
+  gap: 28px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .logo img {
-  width: 82px;
-  height: 82px;
+  width: 74px;
+  height: 74px;
   object-fit: contain;
 }
 
 .brand {
-  font-size: 31px;
+  font-size: 34px;
   font-weight: 900;
   line-height: 1;
+  letter-spacing: 0.2px;
 }
 
 .brand span {
@@ -72,12 +79,12 @@ a {
 }
 
 .brand strong {
-  color: #f2a400;
+  color: #f5a400;
 }
 
 .tagline {
-  margin-top: 9px;
-  font-size: 12px;
+  margin-top: 8px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 3px;
 }
@@ -89,93 +96,95 @@ a {
 }
 
 .nav-btn {
-  height: 45px;
-  padding: 0 20px;
-  border-radius: 6px;
-  display: flex;
+  height: 51px;
+  padding: 0 22px;
+  border-radius: 7px;
+  display: inline-flex;
   align-items: center;
-  gap: 11px;
-  color: #fff;
-  font-size: 28px;
+  justify-content: center;
+  gap: 9px;
+  color: white;
+  font-size: 15px;
   font-weight: 900;
-  box-shadow: 0 7px 14px rgba(0,0,0,0.20);
+  box-shadow: 0 6px 14px rgba(4, 30, 80, 0.18);
 }
 
-.nav-btn span {
-  font-size: 14px;
+.nav-ico {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .blue {
-  background: linear-gradient(135deg, #155fc2, #0b3c93);
+  background: linear-gradient(135deg, #1768c9, #0c3b91);
 }
 
 .green {
-  background: linear-gradient(135deg, #37c878, #099352);
+  background: linear-gradient(135deg, #43c57c, #139455);
 }
 
 .yellow {
-  background: linear-gradient(135deg, #ffb82c, #f39a00);
+  background: linear-gradient(135deg, #ffc02c, #f39d00);
 }
 
 .red {
-  background: linear-gradient(135deg, #ff634b, #e53a26);
+  background: linear-gradient(135deg, #ff654c, #e43c26);
 }
 
 .purple {
-  background: linear-gradient(135deg, #8f66d8, #6d3eb5);
+  background: linear-gradient(135deg, #9668d9, #7040b8);
 }
 
-.lang {
+.lang-switch {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
 }
 
 .lang-btn {
-  width: 43px;
-  height: 43px;
-  border-radius: 6px;
-  display: grid;
-  place-items: center;
-  font-size: 14px;
-  font-weight: 900;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.14);
-}
-
-.lang-btn.passive {
-  background: #fff;
+  width: 51px;
+  height: 51px;
+  border: 0;
+  border-radius: 7px;
+  background: white;
   color: #1f73e0;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 5px 13px rgba(4, 30, 80, 0.12);
 }
 
 .lang-btn.active {
   background: #1f73e0;
-  color: #fff;
+  color: white;
 }
 
 .hero-content {
-  margin-left: 70px;
-  margin-top: 55px;
-  max-width: 620px;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 92px 52px 0 96px;
 }
 
 .hero-content h1 {
+  max-width: 700px;
   margin: 0;
-  font-size: 52px;
-  line-height: 1.08;
+  font-size: 55px;
+  line-height: 1.13;
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
 }
 
 .hero-content p {
-  margin: 26px 0 0;
-  font-size: 20px;
-  line-height: 1.45;
+  margin: 24px 0 0;
+  font-size: 21px;
+  line-height: 1.43;
+  font-weight: 500;
 }
 
 .trust-row {
-  margin-top: 34px;
+  margin-top: 32px;
   display: flex;
-  gap: 48px;
+  gap: 52px;
   align-items: center;
 }
 
@@ -183,178 +192,191 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-size: 14px;
-  line-height: 1.22;
-  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 800;
 }
 
 .trust-item img {
-  width: 58px;
-  height: 58px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
 }
 
-/* SERVICE CARDS */
+/* SERVICE */
 
 .service-section {
-  max-width: 1180px;
-  margin: -72px auto 0;
-  padding: 0 24px;
+  width: 100%;
+  max-width: 1420px;
+  margin: -102px auto 0;
+  padding: 0 28px;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 
 .service-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 18px;
-  align-items: stretch;
 }
 
 .service-card {
-  height: 150px;
-  border-radius: 16px;
+  height: 168px;
+  border-radius: 18px;
   overflow: hidden;
-  background: #fff;
-  border: 7px solid rgba(255,255,255,0.96);
-  box-shadow: 0 14px 25px rgba(6,38,90,0.18);
-  display: block;
+  border: 8px solid rgba(255, 255, 255, 0.96);
+  background: white;
+  box-shadow: 0 13px 26px rgba(4, 30, 80, 0.18);
 }
 
 .service-card img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 /* AUDIENCE */
 
 .audience-section {
-  max-width: 1180px;
-  margin: 24px auto 0;
-  padding: 0 24px;
+  width: 100%;
+  max-width: 1420px;
+  margin: 28px auto 0;
+  padding: 0 28px;
 }
 
 .audience-section h2 {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   text-align: center;
-  font-size: 22px;
+  font-size: 23px;
+  line-height: 1;
   font-weight: 900;
 }
 
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 18px;
 }
 
 .audience-card {
   position: relative;
-  height: 118px;
-  border-radius: 10px;
+  min-height: 106px;
+  border-radius: 12px;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid rgba(6,38,90,0.10);
-  box-shadow: 0 8px 18px rgba(6,38,90,0.07);
+  border: 1px solid rgba(6, 39, 99, 0.10);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 7px 18px rgba(4, 30, 80, 0.07);
 }
 
-.audience-card > img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.bg-migrants {
+  background-image: url("images/migrants-card-bg.png");
 }
 
-.audience-card div {
+.bg-newcomers {
+  background-image: url("images/newcomers-card-bg.png");
+}
+
+.bg-savings {
+  background-image: url("images/savings-card-bg.png");
+}
+
+.bg-simple {
+  background-image: url("images/simple-card-bg.png");
+}
+
+.audience-text {
   position: relative;
   z-index: 2;
-  height: 100%;
-  padding: 25px 12px 16px 104px;
+  padding: 23px 14px 18px 118px;
 }
 
 .audience-card h3 {
   margin: 0 0 8px;
-  font-size: 15px;
-  line-height: 1.15;
+  font-size: 16px;
+  line-height: 1.17;
   font-weight: 900;
 }
 
 .audience-card p {
   margin: 0;
-  font-size: 12px;
-  line-height: 1.35;
-  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  font-weight: 500;
 }
 
 /* TELEGRAM */
 
 .telegram-section {
-  max-width: 1180px;
-  margin: 16px auto 0;
-  padding: 0 24px;
+  width: 100%;
+  max-width: 1420px;
+  margin: 18px auto 0;
+  padding: 0 28px;
 }
 
 .telegram-box {
-  min-height: 92px;
-  padding: 14px 32px;
+  min-height: 90px;
+  padding: 14px 44px 14px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(6, 39, 99, 0.10);
+  background: rgba(255,255,255,0.76);
+  box-shadow: 0 7px 18px rgba(4, 30, 80, 0.07);
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 28px;
-  border-radius: 10px;
-  background: rgba(255,255,255,0.78);
-  border: 1px solid rgba(6,38,90,0.10);
-  box-shadow: 0 8px 18px rgba(6,38,90,0.07);
+  gap: 30px;
 }
 
 .telegram-info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 .telegram-info > img {
-  width: 78px;
-  height: 78px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
 }
 
 .telegram-info h2 {
   margin: 0 0 6px;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 900;
 }
 
 .telegram-info p {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.35;
 }
 
 .telegram-buttons {
   display: flex;
-  gap: 24px;
+  gap: 30px;
 }
 
 .telegram-btn {
-  height: 48px;
-  min-width: 170px;
-  padding: 0 24px;
-  border-radius: 6px;
-  display: flex;
+  min-width: 195px;
+  height: 53px;
+  padding: 0 25px;
+  border-radius: 7px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 11px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 900;
-  box-shadow: 0 5px 13px rgba(0,0,0,0.10);
+  box-shadow: 0 6px 16px rgba(4, 30, 80, 0.10);
 }
 
 .telegram-btn img {
-  width: 38px;
-  height: 38px;
+  width: 27px;
+  height: 27px;
   object-fit: contain;
 }
 
@@ -366,82 +388,75 @@ a {
 .telegram-btn.secondary {
   background: white;
   color: #1f73e0;
-  border: 1px solid rgba(6,38,90,0.10);
+  border: 1px solid rgba(6, 39, 99, 0.10);
 }
 
 /* FOOTER */
 
 .footer {
-  max-width: 680px;
-  margin: 24px auto 18px;
+  max-width: 760px;
+  margin: 26px auto 18px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 38px;
+  gap: 42px;
 }
 
 .footer a {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .footer img {
-  width: 34px;
-  height: 34px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .footer span {
   width: 1px;
-  height: 24px;
-  background: rgba(6,38,90,0.24);
+  height: 25px;
+  background: rgba(6, 39, 99, 0.22);
 }
 
-/* RESPONSIVE */
+/* TABLET */
 
-@media (max-width: 1250px) {
-  .topbar {
-    padding-left: 40px;
-    padding-right: 40px;
-    grid-template-columns: 330px 1fr 100px;
-  }
-
-  .nav-btn {
-    padding: 0 14px;
-  }
-
-  .hero-content {
-    margin-left: 50px;
-  }
-
-  .service-section,
-  .audience-section,
-  .telegram-section {
-    max-width: 1080px;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .hero {
-    height: auto;
-    padding-bottom: 120px;
+    min-height: 680px;
+    background-position: 60% top;
   }
 
   .topbar {
     grid-template-columns: 1fr auto;
-    height: auto;
+    padding: 24px 28px 0;
   }
 
   .top-nav {
     grid-column: 1 / -1;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  .hero-content {
+    padding: 68px 28px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
   }
 
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    height: 180px;
   }
 
   .audience-grid {
@@ -451,20 +466,72 @@ a {
   .telegram-box {
     grid-template-columns: 1fr;
   }
+
+  .telegram-buttons {
+    justify-content: flex-start;
+  }
 }
 
-@media (max-width: 650px) {
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 760px;
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    background-position: 62% top;
+  }
+
   .topbar {
-    padding: 20px;
     grid-template-columns: 1fr;
+    padding: 18px 16px 0;
+    gap: 18px;
+  }
+
+  .logo img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand {
+    font-size: 25px;
+  }
+
+  .tagline {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .top-nav {
+    gap: 8px;
+  }
+
+  .nav-btn {
+    height: 44px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .nav-ico {
+    font-size: 19px;
+  }
+
+  .lang-switch {
+    justify-content: flex-start;
+  }
+
+  .lang-btn {
+    width: 48px;
+    height: 48px;
   }
 
   .hero-content {
-    margin: 45px 20px 0;
+    padding: 42px 18px 0;
   }
 
   .hero-content h1 {
-    font-size: 38px;
+    font-size: 36px;
+    line-height: 1.15;
   }
 
   .hero-content p {
@@ -474,21 +541,60 @@ a {
   .trust-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
   }
 
-  .service-grid,
+  .service-section {
+    margin-top: -70px;
+    padding: 0 16px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    height: 158px;
+  }
+
+  .audience-section,
+  .telegram-section {
+    padding: 0 16px;
+  }
+
   .audience-grid {
     grid-template-columns: 1fr;
   }
 
+  .audience-text {
+    padding-left: 118px;
+  }
+
+  .telegram-box {
+    padding: 18px;
+  }
+
+  .telegram-info {
+    align-items: flex-start;
+  }
+
+  .telegram-info > img {
+    width: 58px;
+    height: 58px;
+  }
+
   .telegram-buttons {
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .telegram-btn {
+    width: 100%;
   }
 
   .footer {
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
   }
 
   .footer span {
