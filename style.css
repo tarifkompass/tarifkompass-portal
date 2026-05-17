@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #062763;
-  background: #f6fbff;
+  background: #f5fbff;
 }
 
 a {
@@ -19,7 +19,11 @@ a {
 }
 
 button {
+  padding: 0;
+  border: 0;
+  background: none;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .page {
@@ -28,35 +32,39 @@ button {
   overflow-x: hidden;
 }
 
+.container {
+  width: min(1420px, calc(100% - 96px));
+  margin: 0 auto;
+}
+
 /* HERO */
 
 .hero {
-  min-height: 610px;
+  min-height: 600px;
   background:
     linear-gradient(
       90deg,
       rgba(255,255,255,0.98) 0%,
-      rgba(255,255,255,0.92) 30%,
-      rgba(255,255,255,0.48) 52%,
+      rgba(255,255,255,0.92) 25%,
+      rgba(255,255,255,0.54) 47%,
       rgba(255,255,255,0.08) 76%,
-      rgba(255,255,255,0.00) 100%
+      rgba(255,255,255,0) 100%
     ),
     url("images/home-hero.webp");
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 58px;
   border-bottom-right-radius: 58px;
 }
 
 .header {
-  width: 100%;
-  max-width: 1536px;
-  margin: 0 auto;
-  padding: 30px 54px 0;
+  height: 112px;
   display: grid;
-  grid-template-columns: 370px 1fr 118px;
-  gap: 28px;
+  grid-template-columns: 360px 1fr 116px;
   align-items: start;
+  gap: 28px;
+  padding-top: 28px;
 }
 
 .logo {
@@ -100,9 +108,10 @@ button {
   gap: 12px;
 }
 
-.nav-item {
+.nav-btn {
   height: 52px;
-  padding: 0 20px;
+  min-width: 126px;
+  padding: 0 18px;
   border-radius: 7px;
   display: inline-flex;
   align-items: center;
@@ -111,36 +120,40 @@ button {
   color: white;
   font-size: 14px;
   font-weight: 900;
-  box-shadow: 0 6px 14px rgba(4,30,80,0.18);
   white-space: nowrap;
+  box-shadow: 0 7px 14px rgba(4, 30, 80, 0.18);
 }
 
-.nav-item span {
-  font-size: 28px;
-  line-height: 1;
+.nav-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 4px;
 }
 
-.nav-mobile {
+.nav-blue {
   background: linear-gradient(135deg, #1768c9, #0c3b91);
 }
 
-.nav-internet {
+.nav-green {
   background: linear-gradient(135deg, #43c57c, #139455);
 }
 
-.nav-strom {
+.nav-yellow {
   background: linear-gradient(135deg, #ffc12d, #f39d00);
 }
 
-.nav-gas {
+.nav-red {
   background: linear-gradient(135deg, #ff674d, #e43c26);
 }
 
-.nav-vpn {
+.nav-purple {
   background: linear-gradient(135deg, #9668d9, #7040b8);
+  min-width: 166px;
 }
 
-.language {
+.lang-switch {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
@@ -149,30 +162,26 @@ button {
 .lang-btn {
   width: 52px;
   height: 52px;
-  border: 0;
   border-radius: 7px;
-  background: white;
-  color: #1f73e0;
-  font-size: 16px;
-  font-weight: 900;
-  cursor: pointer;
-  box-shadow: 0 5px 13px rgba(4,30,80,0.13);
+  overflow: hidden;
+  box-shadow: 0 5px 13px rgba(4, 30, 80, 0.13);
 }
 
-.lang-btn.active {
-  background: #1f73e0;
-  color: white;
-}
-
-.hero-content {
+.lang-btn img {
   width: 100%;
-  max-width: 1536px;
-  margin: 0 auto;
-  padding: 92px 54px 0 96px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero-content h1 {
-  max-width: 720px;
+.hero-body {
+  padding-top: 54px;
+}
+
+.hero-text {
+  max-width: 690px;
+}
+
+.hero h1 {
   margin: 0;
   font-size: 56px;
   line-height: 1.13;
@@ -180,7 +189,7 @@ button {
   letter-spacing: -1.2px;
 }
 
-.hero-content p {
+.hero p {
   margin: 24px 0 0;
   font-size: 22px;
   line-height: 1.42;
@@ -190,34 +199,31 @@ button {
 .benefits {
   margin-top: 32px;
   display: flex;
-  gap: 54px;
   align-items: center;
+  gap: 54px;
 }
 
 .benefit {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
   font-size: 15px;
   line-height: 1.24;
   font-weight: 800;
 }
 
 .benefit img {
-  width: 58px;
-  height: 58px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
 }
 
 /* SERVICE CARDS */
 
 .services {
-  width: 100%;
-  max-width: 1420px;
-  margin: -78px auto 0;
-  padding: 0 28px;
   position: relative;
   z-index: 5;
+  margin-top: -96px;
 }
 
 .services-grid {
@@ -227,32 +233,26 @@ button {
 }
 
 .service-card {
-  height: 158px;
-  border: 8px solid rgba(255,255,255,0.96);
+  height: 168px;
+  border: 8px solid rgba(255, 255, 255, 0.96);
   border-radius: 18px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 13px 26px rgba(4,30,80,0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 13px 26px rgba(4, 30, 80, 0.18);
 }
 
 .service-card img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
 /* AUDIENCE */
 
 .audience {
-  width: 100%;
-  max-width: 1420px;
-  margin: 26px auto 0;
-  padding: 0 28px;
+  margin-top: 28px;
 }
 
 .audience h2 {
@@ -275,8 +275,8 @@ button {
   border-radius: 12px;
   overflow: hidden;
   background: white;
-  border: 1px solid rgba(6,39,99,0.10);
-  box-shadow: 0 7px 18px rgba(4,30,80,0.07);
+  border: 1px solid rgba(6, 39, 99, 0.10);
+  box-shadow: 0 7px 18px rgba(4, 30, 80, 0.07);
 }
 
 .audience-card > img {
@@ -287,10 +287,10 @@ button {
   object-fit: cover;
 }
 
-.audience-text {
+.audience-copy {
   position: relative;
   z-index: 2;
-  padding: 24px 14px 16px 118px;
+  padding: 24px 12px 16px 120px;
 }
 
 .audience-card h3 {
@@ -310,23 +310,20 @@ button {
 /* TELEGRAM */
 
 .telegram {
-  width: 100%;
-  max-width: 1420px;
-  margin: 18px auto 0;
-  padding: 0 28px;
+  margin-top: 18px;
 }
 
 .telegram-box {
   min-height: 92px;
-  padding: 14px 44px 14px 20px;
+  padding: 14px 42px 14px 22px;
   border-radius: 12px;
-  border: 1px solid rgba(6,39,99,0.10);
-  background: rgba(255,255,255,0.78);
-  box-shadow: 0 7px 18px rgba(4,30,80,0.07);
+  border: 1px solid rgba(6, 39, 99, 0.10);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 7px 18px rgba(4, 30, 80, 0.07);
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 30px;
+  gap: 36px;
 }
 
 .telegram-left {
@@ -336,8 +333,8 @@ button {
 }
 
 .telegram-left > img {
-  width: 82px;
-  height: 82px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
@@ -356,26 +353,27 @@ button {
 
 .telegram-buttons {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
-.telegram-img-btn {
+.telegram-buttons a {
   display: block;
   width: 205px;
   height: 55px;
 }
 
-.telegram-img-btn img {
+.telegram-buttons img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
   display: block;
+  object-fit: contain;
 }
 
 /* FOOTER */
 
 .footer {
-  max-width: 760px;
+  width: min(760px, calc(100% - 48px));
   margin: 26px auto 18px;
   padding-bottom: 10px;
   display: flex;
@@ -387,34 +385,39 @@ button {
 .footer a {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .footer img {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .footer span {
   width: 1px;
   height: 25px;
-  background: rgba(6,39,99,0.22);
+  background: rgba(6, 39, 99, 0.22);
 }
 
 /* TABLET */
 
 @media (max-width: 1180px) {
+  .container {
+    width: min(100% - 56px, 960px);
+  }
+
   .hero {
     min-height: 720px;
     background-position: 60% top;
   }
 
   .header {
+    height: auto;
     grid-template-columns: 1fr auto;
-    padding: 24px 28px 0;
+    gap: 20px;
   }
 
   .nav {
@@ -424,16 +427,20 @@ button {
     order: 3;
   }
 
-  .hero-content {
-    padding: 68px 28px 0;
+  .hero-body {
+    padding-top: 64px;
   }
 
-  .hero-content h1 {
+  .hero h1 {
     font-size: 46px;
   }
 
+  .hero p {
+    font-size: 19px;
+  }
+
   .services {
-    margin-top: -70px;
+    margin-top: -74px;
   }
 
   .services-grid {
@@ -441,7 +448,7 @@ button {
   }
 
   .service-card {
-    height: 170px;
+    height: 180px;
   }
 
   .audience-grid {
@@ -460,17 +467,20 @@ button {
 /* MOBILE */
 
 @media (max-width: 640px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
   .hero {
     min-height: 790px;
     border-bottom-left-radius: 34px;
     border-bottom-right-radius: 34px;
-    background-position: 62% top;
+    background-position: 64% top;
   }
 
   .header {
     grid-template-columns: 1fr;
-    padding: 18px 16px 0;
-    gap: 18px;
+    padding-top: 18px;
   }
 
   .logo img {
@@ -491,17 +501,23 @@ button {
     gap: 8px;
   }
 
-  .nav-item {
+  .nav-btn {
     height: 44px;
+    min-width: auto;
     padding: 0 12px;
     font-size: 12px;
   }
 
-  .nav-item span {
-    font-size: 21px;
+  .nav-btn img {
+    width: 20px;
+    height: 20px;
   }
 
-  .language {
+  .nav-purple {
+    min-width: auto;
+  }
+
+  .lang-switch {
     justify-content: flex-start;
   }
 
@@ -510,16 +526,16 @@ button {
     height: 48px;
   }
 
-  .hero-content {
-    padding: 42px 18px 0;
+  .hero-body {
+    padding-top: 42px;
   }
 
-  .hero-content h1 {
+  .hero h1 {
     font-size: 36px;
     line-height: 1.15;
   }
 
-  .hero-content p {
+  .hero p {
     font-size: 17px;
   }
 
@@ -530,13 +546,12 @@ button {
   }
 
   .benefit img {
-    width: 54px;
-    height: 54px;
+    width: 44px;
+    height: 44px;
   }
 
   .services {
     margin-top: -58px;
-    padding: 0 16px;
   }
 
   .services-grid {
@@ -547,16 +562,11 @@ button {
     height: 158px;
   }
 
-  .audience,
-  .telegram {
-    padding: 0 16px;
-  }
-
   .audience-grid {
     grid-template-columns: 1fr;
   }
 
-  .audience-text {
+  .audience-copy {
     padding-left: 118px;
   }
 
@@ -569,16 +579,17 @@ button {
   }
 
   .telegram-left > img {
-    width: 68px;
-    height: 68px;
+    width: 58px;
+    height: 58px;
   }
 
   .telegram-buttons {
     flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
   }
 
-  .telegram-img-btn {
+  .telegram-buttons a {
     width: 205px;
     height: 55px;
   }
