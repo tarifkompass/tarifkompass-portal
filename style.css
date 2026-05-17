@@ -24,9 +24,8 @@ a {
 /* HERO */
 
 .hero {
-  min-height: 690px;
-  position: relative;
-  padding: 34px 6vw 130px;
+  min-height: 670px;
+  padding: 34px 6vw 170px;
   border-bottom-left-radius: 58px;
   border-bottom-right-radius: 58px;
   background:
@@ -34,8 +33,8 @@ a {
       90deg,
       rgba(255,255,255,0.98) 0%,
       rgba(255,255,255,0.92) 30%,
-      rgba(255,255,255,0.42) 62%,
-      rgba(255,255,255,0.10) 100%
+      rgba(255,255,255,0.42) 60%,
+      rgba(255,255,255,0.08) 100%
     ),
     url("images/home-hero.webp") center right / cover no-repeat;
 }
@@ -43,9 +42,11 @@ a {
 /* TOP */
 
 .topbar {
-  display: flex;
+  max-width: 1580px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 330px 1fr 130px;
   align-items: center;
-  justify-content: space-between;
   gap: 28px;
   position: relative;
   z-index: 5;
@@ -55,7 +56,6 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  min-width: 300px;
 }
 
 .logo img {
@@ -88,14 +88,13 @@ a {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 14px;
 }
 
 .nav-btn {
-  min-width: 145px;
+  width: 150px;
   height: 54px;
-  padding: 0 20px;
   border-radius: 9px;
   display: flex;
   align-items: center;
@@ -107,61 +106,51 @@ a {
   box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 }
 
-.nav-btn.blue {
-  background: linear-gradient(135deg, #145fc3, #2c8df2);
-}
-
-.nav-btn.green {
-  background: linear-gradient(135deg, #13a461, #47c984);
-}
-
-.nav-btn.yellow {
-  background: linear-gradient(135deg, #f4a300, #ffc447);
-}
-
-.nav-btn.red {
-  background: linear-gradient(135deg, #ec493a, #ff7258);
-}
-
-.nav-btn.purple {
-  background: linear-gradient(135deg, #6c35bf, #9a61e8);
-}
+.blue { background: linear-gradient(135deg, #145fc3, #2c8df2); }
+.green { background: linear-gradient(135deg, #13a461, #47c984); }
+.yellow { background: linear-gradient(135deg, #f4a300, #ffc447); }
+.red { background: linear-gradient(135deg, #ec493a, #ff7258); }
+.purple { background: linear-gradient(135deg, #6c35bf, #9a61e8); }
 
 /* LANG */
 
 .lang-switch {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
 }
 
 .lang {
-  width: 58px;
-  height: 58px;
+  width: 52px;
+  height: 52px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.96);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+  color: #1668d9;
+  font-size: 15px;
+  font-weight: 900;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-.lang img {
-  width: 34px;
-  height: auto;
-  display: block;
+.lang.active {
+  background: linear-gradient(135deg, #2b8df5, #116adb);
+  color: #fff;
 }
 
-/* HERO CONTENT */
+/* HERO TEXT */
 
 .hero-content {
   max-width: 760px;
-  margin-top: 112px;
+  margin: 105px auto 0;
+  transform: translateX(-430px);
   position: relative;
   z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: clamp(46px, 4.6vw, 76px);
+  font-size: clamp(54px, 4.7vw, 78px);
   line-height: 1.12;
   font-weight: 900;
   letter-spacing: -1.5px;
@@ -179,106 +168,68 @@ a {
 .benefits {
   display: flex;
   align-items: center;
-  gap: 52px;
+  gap: 58px;
+  margin-bottom: 20px;
 }
 
 .benefit {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   font-size: 17px;
   font-weight: 900;
   line-height: 1.15;
-  color: #062b67;
 }
 
 .benefit img {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 /* SERVICE CARDS */
 
 .service-section {
-  margin-top: -112px;
+  margin-top: -82px;
   padding: 0 5vw;
   position: relative;
   z-index: 10;
 }
 
 .service-grid {
-  max-width: 1680px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, minmax(220px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 26px;
 }
 
 .service-card {
-  height: 205px;
+  height: 178px;
   border-radius: 22px;
-  position: relative;
-  overflow: hidden;
-  box-shadow:
-    0 18px 32px rgba(0,0,0,0.16),
-    inset 0 0 0 1px rgba(255,255,255,0.35);
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    0 18px 32px rgba(0,0,0,0.18),
+    inset 0 0 0 1px rgba(255,255,255,0.35);
+  transition: transform 0.2s ease;
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow:
-    0 24px 40px rgba(0,0,0,0.20),
-    inset 0 0 0 1px rgba(255,255,255,0.4);
 }
 
-.mobile-card {
-  background-image: url("images/mobile-card.png");
-}
-
-.internet-card {
-  background-image: url("images/internet-card.png");
-}
-
-.strom-card {
-  background-image: url("images/strom-card.png");
-}
-
-.gas-card {
-  background-image: url("images/gas-card.png");
-}
-
-.vpn-card {
-  background-image: url("images/vpn-card.png");
-}
-
-.card-arrow {
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
-  z-index: 3;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff;
-  color: #1777dc;
-  font-size: 44px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.22);
-  font-weight: 700;
-}
+.mobile-card { background-image: url("images/mobile-card.png"); }
+.internet-card { background-image: url("images/internet-card.png"); }
+.strom-card { background-image: url("images/strom-card.png"); }
+.gas-card { background-image: url("images/gas-card.png"); }
+.vpn-card { background-image: url("images/vpn-card.png"); }
 
 /* AUDIENCE */
 
 .audience {
-  padding: 38px 5vw 0;
+  padding: 34px 5vw 0;
 }
 
 .audience h2 {
@@ -287,11 +238,11 @@ a {
   font-size: 25px;
   font-weight: 900;
   color: #062b67;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .audience-grid {
-  max-width: 1680px;
+  max-width: 1380px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -299,55 +250,27 @@ a {
 }
 
 .audience-card {
-  min-height: 105px;
+  height: 115px;
   border-radius: 15px;
-  padding: 22px 26px 22px 118px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0 8px 22px rgba(23,68,122,0.10);
   border: 1px solid rgba(6,43,103,0.08);
-  box-shadow: 0 8px 22px rgba(23,68,122,0.08);
 }
 
-.migrants-card {
-  background-image: url("images/migrants-card-bg.png");
-}
-
-.newcomers-card {
-  background-image: url("images/newcomers-card-bg.png");
-}
-
-.savings-card {
-  background-image: url("images/savings-card-bg.png");
-}
-
-.simple-card {
-  background-image: url("images/simple-card-bg.png");
-}
-
-.audience-card h3 {
-  font-size: 18px;
-  font-weight: 900;
-  margin-bottom: 8px;
-  color: #062b67;
-}
-
-.audience-card p {
-  font-size: 15px;
-  line-height: 1.35;
-  color: #062b67;
-  max-width: 280px;
-}
+.migrants-card { background-image: url("images/migrants-card-bg.png"); }
+.newcomers-card { background-image: url("images/newcomers-card-bg.png"); }
+.savings-card { background-image: url("images/savings-card-bg.png"); }
+.simple-card { background-image: url("images/simple-card-bg.png"); }
 
 /* TELEGRAM */
 
 .telegram-box {
-  max-width: 1680px;
-  margin: 26px auto 0;
-  padding: 24px 36px;
-  background: rgba(255,255,255,0.92);
+  max-width: 1380px;
+  margin: 28px auto 0;
+  padding: 24px 34px;
+  background: rgba(255,255,255,0.94);
   border: 1px solid rgba(6,43,103,0.08);
   border-radius: 15px;
   box-shadow: 0 8px 22px rgba(23,68,122,0.08);
@@ -364,8 +287,8 @@ a {
 }
 
 .telegram-text img {
-  width: 74px;
-  height: 74px;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
 }
 
@@ -388,99 +311,113 @@ a {
 }
 
 .telegram-btn {
-  min-width: 220px;
-  height: 58px;
-  border-radius: 9px;
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #2291ff, #126bdc);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
   box-shadow: 0 10px 22px rgba(18,107,220,0.25);
 }
 
 .telegram-btn.light {
   background: #fff;
+  color: #126bdc;
   border: 1px solid rgba(18,107,220,0.18);
 }
 
 .telegram-btn img {
-  height: 30px;
-  width: auto;
-  display: block;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 /* FOOTER */
 
 .footer {
-  max-width: 880px;
+  max-width: 900px;
   margin: 30px auto 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 68px;
+  gap: 74px;
 }
 
 .footer a {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: #062b67;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 900;
+  color: #062b67;
 }
 
 .footer img {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
   .topbar {
+    grid-template-columns: 300px 1fr 120px;
+  }
+
+  .nav-btn {
+    width: 130px;
+    font-size: 13px;
+  }
+
+  .hero-content {
+    transform: translateX(-310px);
+  }
+
+  .service-grid,
+  .audience-grid,
+  .telegram-box {
+    max-width: 1180px;
+  }
+
+  .service-card {
+    height: 165px;
+  }
+
+  .audience-card {
+    height: 105px;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero {
+    min-height: auto;
+    padding: 24px 22px 120px;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .main-nav {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .service-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .audience-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 920px) {
-  .hero {
-    padding: 24px 22px 120px;
-    min-height: auto;
-  }
-
-  .topbar {
-    flex-direction: column;
-  }
-
-  .logo {
-    min-width: auto;
-  }
-
-  .main-nav {
-    width: 100%;
     justify-content: flex-start;
-  }
-
-  .nav-btn {
-    min-width: 135px;
   }
 
   .hero-content {
     margin-top: 60px;
+    transform: none;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
   }
 
   .hero-content p {
@@ -498,11 +435,15 @@ a {
   }
 
   .service-card {
-    height: 215px;
+    height: 220px;
   }
 
   .audience-grid {
     grid-template-columns: 1fr;
+  }
+
+  .audience-card {
+    height: 130px;
   }
 
   .telegram-box {
