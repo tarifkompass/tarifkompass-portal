@@ -563,4 +563,50 @@ a {
 
 .telegram-block {
   max-width: 1120px !important;
+}/* FINAL TELEGRAM + FOOTER ONLY */
+
+.telegram-block {
+  max-width: 1580px !important;
+  min-height: 78px !important;
+  padding: 10px 44px !important;
+  margin: 0 auto 30px !important;
+  border-radius: 16px !important;
+}
+
+.telegram-info {
+  gap: 20px !important;
+}
+
+.telegram-info img {
+  width: 30px !important;
+  height: 30px !important;
+  transform: scale(2.2) !important;
+}
+
+.telegram-info h2 {
+  font-size: 26px !important;
+  line-height: 1.05 !important;
+  margin-bottom: 2px !important;
+}
+
+.telegram-info p {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+.telegram-btn img {
+  width: 170px !important;
+}
+
+/* footer icons bigger */
+
+.footer img {
+  width: 28px !important;
+  height: 28px !important;
+  transform: scale(3.8) !important;
+  object-fit: contain !important;
+}
+
+.footer a {
+  gap: 24px !important;
 }
