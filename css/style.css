@@ -129,13 +129,17 @@ a {
 }
 
 .lang-btn {
-  width: 62px;
-  height: 62px;
+  width: 54px;
+  height: 54px;
+
   border: none;
   border-radius: 12px;
-  font-size: 19px;
+
+  font-size: 17px;
   font-weight: 900;
+
   cursor: pointer;
+
   box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
@@ -318,6 +322,7 @@ a {
 .telegram-info img {
   width: 26px;
   height: 26px;
+
   object-fit: contain;
 
   transform: scale(2.5);
@@ -367,12 +372,12 @@ a {
 }
 
 .telegram-btn img {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
 
   object-fit: contain;
 
-  transform: scale(1.15);
+  transform: scale(1.28);
 }
 
 .telegram-btn-ru {
@@ -421,7 +426,9 @@ a {
 .footer img {
   width: 38px;
   height: 38px;
+
   object-fit: contain;
+
   transform: scale(4.8);
   transform-origin: center;
 }
