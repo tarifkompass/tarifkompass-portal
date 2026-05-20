@@ -206,11 +206,9 @@ a {
   max-width: 1580px;
   margin: -85px auto 40px;
   padding: 0 40px;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 22px;
-
   position: relative;
   z-index: 10;
 }
@@ -270,23 +268,23 @@ a {
 .audience-card > div {
   position: absolute;
   top: 50%;
-  left: 44%;
+  left: 49%;
   transform: translateY(-50%);
-  width: 50%;
+  width: 46%;
   z-index: 2;
 }
 
 .audience-card h3 {
-  font-size: 21px;
-  line-height: 1.18;
+  font-size: 20px;
+  line-height: 1.15;
   font-weight: 900;
   color: #0b2d78;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .audience-card p {
-  font-size: 16px;
-  line-height: 1.48;
+  font-size: 15px;
+  line-height: 1.42;
   color: #173d8f;
 }
 
@@ -297,15 +295,12 @@ a {
   min-height: 58px;
   margin: 0 auto 30px;
   padding: 6px 34px;
-
   background: white;
   border-radius: 18px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-
   box-shadow: 0 8px 22px rgba(0,0,0,0.07);
 }
 
@@ -340,28 +335,45 @@ a {
 .telegram-buttons {
   display: flex;
   align-items: center;
-  gap: 14px;
-  background: transparent;
-  box-shadow: none;
-  border: none;
+  gap: 16px;
 }
 
 .telegram-btn {
-  display: block;
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-
-.telegram-btn img {
-  width: 165px;
-  display: block;
-  border-radius: 12px;
+  min-width: 160px;
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 800;
   transition: 0.25s ease;
 }
 
-.telegram-btn:hover img {
-  transform: translateY(-4px);
+.telegram-btn img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.telegram-btn-ru {
+  background: white;
+  color: #0b7cff;
+  border: 2px solid #0b7cff;
+  box-shadow: 0 6px 14px rgba(11,124,255,0.16);
+}
+
+.telegram-btn-de {
+  background: linear-gradient(135deg, #16a8ff, #0067e8);
+  color: white;
+  border: 2px solid transparent;
+  box-shadow: 0 8px 18px rgba(0,103,232,0.25);
+}
+
+.telegram-btn:hover {
+  transform: translateY(-3px);
 }
 
 /* FOOTER */
@@ -475,7 +487,7 @@ a {
   }
 
   .audience-card > div {
-    left: 42%;
+    left: 44%;
     width: 52%;
   }
 
@@ -498,7 +510,7 @@ a {
     flex-direction: column;
   }
 
-  .telegram-btn img {
+  .telegram-btn {
     width: 100%;
   }
 
