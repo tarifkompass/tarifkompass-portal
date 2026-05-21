@@ -27,13 +27,10 @@ a {
       rgba(255,255,255,0.06) 100%
     ),
     url("../images/home-hero.webp");
-
   background-size: cover;
   background-position: center;
-
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;
-
   padding: 28px 60px 120px;
   min-height: 720px;
 }
@@ -214,41 +211,28 @@ a {
   max-width: 1580px;
   margin: -85px auto 40px;
   padding: 0 40px;
-
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
   gap: 22px;
-
   position: relative;
   z-index: 10;
 }
 
 .service-card {
   display: block;
-
   border-radius: 24px;
-
   overflow: hidden;
-
   box-shadow: 0 8px 18px rgba(0,0,0,0.10);
-
   transition: transform 0.25s ease;
 }
 
 .service-card img {
   width: calc(100% + 4px);
-
   max-width: none;
-
   display: block;
-
   margin: -2px;
-
   border-radius: 24px;
-
   box-shadow: none;
-
   transition: 0.25s ease;
 }
 
@@ -484,8 +468,8 @@ a {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 50px;
+    gap: 10px;
+    margin-bottom: 88px;
   }
 
   .logo {
@@ -517,18 +501,19 @@ a {
   }
 
   .lang-switch {
-    position: static;
+    position: absolute;
+    left: 68px;
+    top: 72px;
     display: flex;
-    gap: 8px;
-    margin-top: 0;
-    margin-left: 70px;
+    gap: 10px;
+    margin: 0;
   }
 
   .lang-btn {
-    width: 43px;
-    height: 43px;
-    font-size: 14px;
-    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+    border-radius: 13px;
   }
 
   .hero-content {
