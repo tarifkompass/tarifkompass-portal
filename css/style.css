@@ -468,8 +468,8 @@ a {
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 88px;
+    gap: 12px;
+    margin-bottom: 42px;
   }
 
   .logo {
@@ -501,12 +501,10 @@ a {
   }
 
   .lang-switch {
-    position: absolute;
-    left: 68px;
-    top: 72px;
+    position: static;
     display: flex;
     gap: 10px;
-    margin: 0;
+    margin: 0 0 0 68px;
   }
 
   .lang-btn {
