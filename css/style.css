@@ -229,34 +229,34 @@ a {
 
 .service-card {
   display: block;
-  overflow: hidden;
   border-radius: 24px;
 
-  background: transparent;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.service-card img {
+  width: 100%;
+  display: block;
+
+  border-radius: 24px;
+
   box-shadow:
-    0 8px 20px rgba(0,0,0,0.10);
+    0 8px 18px rgba(0,0,0,0.10);
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.service-card img {
-  width: calc(100% + 30px);
-  max-width: none;
-  display: block;
-
-  margin: -15px;
-
-  border-radius: 24px;
-
-  transition: 0.25s ease;
-}
-
 .service-card:hover {
   transform: translateY(-4px);
+}
+
+.service-card:hover img {
   box-shadow:
-    0 14px 30px rgba(0,0,0,0.15);
+    0 14px 28px rgba(0,0,0,0.14);
 }
 
 /* AUDIENCE */
@@ -562,65 +562,103 @@ a {
 
 @media (max-width: 760px) {
   .hero {
-    padding: 24px 20px 95px;
+    padding: 22px 20px 70px;
     min-height: auto;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
   }
 
-  .logo-title {
-    font-size: 32px;
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 70px;
+  }
+
+  .logo {
+    gap: 12px;
+    max-width: calc(100% - 105px);
   }
 
   .logo img {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .logo-title {
+    font-size: 31px;
+    line-height: 0.95;
+    white-space: nowrap;
+  }
+
+  .logo-subtitle {
+    margin-top: 7px;
+    font-size: 11px;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
   }
 
   .top-nav {
-    justify-content: flex-start;
+    display: none;
   }
 
-  .nav-btn {
-    font-size: 13px;
-    padding: 13px 16px;
-  }
-
-  .nav-vpn {
-    font-size: 13px;
-    padding-left: 16px;
-    padding-right: 16px;
+  .lang-switch {
+    flex-shrink: 0;
+    gap: 7px;
+    margin-top: 4px;
   }
 
   .lang-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 13px;
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-text h1 {
-    font-size: 42px;
+    font-size: 43px;
+    line-height: 1.12;
+    margin-bottom: 24px;
   }
 
   .hero-text p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.55;
+    margin-bottom: 38px;
   }
 
   .features {
     flex-direction: column;
-    gap: 24px;
     align-items: flex-start;
+    gap: 34px;
+    margin-bottom: 34px;
+  }
+
+  .feature {
+    gap: 28px;
   }
 
   .feature img {
-    transform: scale(2.4);
+    width: 34px;
+    height: 34px;
+    transform: scale(3.1);
+  }
+
+  .feature span {
+    font-size: 23px;
+    line-height: 1.18;
   }
 
   .service-cards {
     grid-template-columns: 1fr;
-    margin-top: -65px;
+    margin-top: -44px;
     padding: 0 20px;
-    gap: 18px;
+    gap: 28px;
   }
 
   .service-card {
@@ -628,53 +666,106 @@ a {
   }
 
   .service-card img {
-    width: calc(100% + 26px);
-    margin: -13px;
     border-radius: 24px;
   }
 
   .audience {
     padding: 0 20px;
+    margin-top: 34px;
+  }
+
+  .audience h2 {
+    font-size: 36px;
+    line-height: 1.12;
+    margin-bottom: 28px;
   }
 
   .audience-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .audience-card {
-    min-height: 180px;
+    min-height: 170px;
+    border-radius: 22px;
   }
 
   .audience-card > div {
-    left: 45%;
-    width: 52%;
+    left: 46%;
+    width: 50%;
+  }
+
+  .audience-card h3 {
+    font-size: 24px;
+    line-height: 1.12;
+  }
+
+  .audience-card p {
+    font-size: 18px;
+    line-height: 1.35;
   }
 
   .telegram-block {
     max-width: calc(100% - 40px);
     min-height: auto;
-    padding: 14px 22px;
+    margin-top: 34px;
+    padding: 28px 26px;
     flex-direction: column;
     align-items: flex-start;
+    border-radius: 24px;
   }
 
   .telegram-info {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 18px;
+  }
+
+  .telegram-info img {
+    width: 24px;
+    height: 24px;
+    transform: scale(2.2);
+  }
+
+  .telegram-info h2 {
+    font-size: 29px;
+    line-height: 1.05;
+  }
+
+  .telegram-info p {
+    font-size: 18px;
+    line-height: 1.25;
   }
 
   .telegram-buttons {
     width: 100%;
     flex-direction: column;
+    gap: 16px;
   }
 
   .telegram-btn {
     width: 100%;
+    height: 58px;
+    font-size: 20px;
+    border-radius: 16px;
   }
 
   .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    padding: 28px 20px 46px;
+  }
+
+  .footer a {
+    font-size: 24px;
     gap: 28px;
+  }
+
+  .footer img {
+    width: 34px;
+    height: 34px;
+    transform: scale(3.9);
   }
 
   .simple-logo-title {
@@ -698,5 +789,51 @@ a {
   .simple-content p {
     font-size: 17px;
     line-height: 1.65;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .logo-title {
+    font-size: 28px;
+  }
+
+  .logo-subtitle {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .lang-btn {
+    width: 41px;
+    height: 41px;
+    font-size: 13px;
+  }
+
+  .hero-text h1 {
+    font-size: 39px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .feature span {
+    font-size: 21px;
+  }
+
+  .service-cards {
+    padding: 0 18px;
+  }
+
+  .audience h2 {
+    font-size: 33px;
+  }
+
+  .telegram-info h2 {
+    font-size: 27px;
   }
 }
