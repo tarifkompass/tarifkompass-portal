@@ -229,34 +229,34 @@ a {
 
 .service-card {
   display: block;
+  overflow: hidden;
   border-radius: 24px;
 
-  transition:
-    transform 0.25s ease,
-    filter 0.25s ease;
-}
-
-.service-card img {
-  width: 100%;
-  display: block;
-
-  border-radius: 24px;
-
+  background: transparent;
   box-shadow:
-    0 8px 18px rgba(0,0,0,0.10);
+    0 8px 20px rgba(0,0,0,0.10);
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-4px);
+.service-card img {
+  width: calc(100% + 30px);
+  max-width: none;
+  display: block;
+
+  margin: -15px;
+
+  border-radius: 24px;
+
+  transition: 0.25s ease;
 }
 
-.service-card:hover img {
+.service-card:hover {
+  transform: translateY(-4px);
   box-shadow:
-    0 14px 28px rgba(0,0,0,0.14);
+    0 14px 30px rgba(0,0,0,0.15);
 }
 
 /* AUDIENCE */
@@ -624,11 +624,13 @@ a {
   }
 
   .service-card {
-    border-radius: 22px;
+    border-radius: 24px;
   }
 
   .service-card img {
-    border-radius: 22px;
+    width: calc(100% + 26px);
+    margin: -13px;
+    border-radius: 24px;
   }
 
   .audience {
