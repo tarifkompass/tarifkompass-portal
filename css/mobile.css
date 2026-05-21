@@ -252,7 +252,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
   font-weight: 900;
   flex-shrink: 0;
   box-shadow: inset 0 0 0 1px rgba(11,124,255,0.08);
@@ -261,7 +260,6 @@ a {
 .feature-card:nth-child(1)::before {
   content: "5G";
   font-size: 17px;
-  letter-spacing: -1px;
 }
 
 .feature-card:nth-child(2)::before {
@@ -270,14 +268,13 @@ a {
 }
 
 .feature-card:nth-child(3)::before {
-  content: "SIM";
-  font-size: 15px;
-  letter-spacing: -1px;
+  content: "eSIM";
+  font-size: 13px;
 }
 
 .feature-card:nth-child(4)::before {
   content: "★";
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .feature-card h3 {
@@ -405,18 +402,18 @@ a {
 
 .offer-badge {
   position: absolute;
-  top: 18px;
-  left: 22px;
+  top: 16px;
+  left: 18px;
 }
 
 .offer-badge img {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
 }
 
 .offer-card:has(.offer-badge) .offer-content {
-  padding-left: 62px;
+  padding-left: 56px;
 }
 
 .offer-content {
@@ -749,12 +746,7 @@ a {
 
   .offer-card:has(.offer-badge) .offer-content {
     padding-left: 0;
-    padding-top: 56px;
-  }
-
-  .offer-badge {
-    top: 18px;
-    left: 22px;
+    padding-top: 52px;
   }
 
   .offer-title {
