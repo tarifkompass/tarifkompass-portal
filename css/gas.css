@@ -1,0 +1,270 @@
+@import url("internet.css");
+
+/* GAS THEME */
+
+body {
+  background: #f2f8f7;
+  color: #0a4f4a;
+}
+
+/* HEADER / NAV */
+
+.logo-title {
+  color: #0a4f4a;
+}
+
+.logo-title span {
+  color: #15a99a;
+}
+
+.logo-subtitle {
+  color: #0a4f4a;
+}
+
+.nav-link {
+  color: #0a4f4a;
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #15a99a, #08766e);
+  color: white;
+}
+
+.lang-btn.passive {
+  color: #0a4f4a;
+}
+
+.lang-btn.active {
+  background: #15a99a;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.97) 0%,
+      rgba(255,255,255,0.92) 31%,
+      rgba(232,250,247,0.52) 60%,
+      rgba(232,250,247,0.18) 100%
+    ),
+    url("../images/gas-hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: rgba(10,79,74,0.70);
+}
+
+.hero-category {
+  background: rgba(21,169,154,0.13);
+  color: #0d8f84;
+}
+
+.hero-text h1 {
+  color: #0a4f4a;
+}
+
+.hero-text p {
+  color: #17645e;
+}
+
+.check-circle {
+  background: linear-gradient(135deg, #15a99a, #08766e);
+}
+
+.hero-list-item span {
+  color: #0a4f4a;
+}
+
+/* FEATURES */
+
+.feature-card h3 {
+  color: #0a4f4a;
+}
+
+.feature-card p {
+  color: #17645e;
+}
+
+/* SECTIONS */
+
+.section-heading h2,
+.comparison-intro h2,
+.mini-guide-header h2 {
+  color: #0a4f4a;
+}
+
+.section-heading p,
+.comparison-intro p,
+.mini-guide-header p {
+  color: #17645e;
+}
+
+/* OFFERS */
+
+.offer-card::before {
+  background: #15a99a;
+}
+
+.offer-title {
+  color: #0d8f84;
+}
+
+.offer-tags span {
+  color: #0a4f4a;
+}
+
+.offer-tags span::before {
+  background: #e8faf7;
+  color: #0d8f84;
+}
+
+.offer-price {
+  color: #0a4f4a;
+}
+
+.offer-btn {
+  background: linear-gradient(135deg, #15a99a, #08766e);
+  box-shadow: 0 8px 18px rgba(21,169,154,0.22);
+}
+
+/* GAS PROVIDERS */
+
+.provider-gas {
+  color: #0d8f84;
+}
+
+.provider-verivox {
+  color: #f28c00;
+}
+
+.provider-check24 {
+  color: #0b2d78;
+}
+
+.provider-eon {
+  color: #e6007e;
+}
+
+.provider-vattenfall {
+  color: #005eb8;
+}
+
+/* INFO STRIP */
+
+.info-strip {
+  background: linear-gradient(135deg, #e8faf7, #ffffff);
+}
+
+.info-item {
+  color: #0a4f4a;
+}
+
+/* COMPARISON */
+
+.verivox-card {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.98), rgba(255,255,255,0.76)),
+    linear-gradient(135deg, #fff7ed, #ffffff);
+}
+
+.check24-card {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.98), rgba(255,255,255,0.76)),
+    linear-gradient(135deg, #e8faf7, #ffffff);
+}
+
+.comparison-card p {
+  color: #17645e;
+}
+
+.comparison-link {
+  background: linear-gradient(135deg, #15a99a, #08766e);
+  box-shadow: 0 8px 18px rgba(21,169,154,0.22);
+}
+
+/* MINI GUIDE */
+
+.guide-card h3 {
+  color: #0d8f84;
+}
+
+.guide-card p {
+  color: #17645e;
+}
+
+/* TELEGRAM */
+
+.telegram-info h2 {
+  color: #0a4f4a;
+}
+
+.telegram-info p {
+  color: #17645e;
+}
+
+.telegram-btn-ru {
+  color: #0d8f84;
+  border: 2px solid #15a99a;
+  box-shadow: 0 4px 12px rgba(21,169,154,0.12);
+}
+
+.telegram-btn-de {
+  background: linear-gradient(135deg, #15a99a, #08766e);
+  color: white;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 15px rgba(21,169,154,0.20);
+}
+
+/* FOOTER */
+
+.footer a {
+  color: #0a4f4a;
+}
+
+.footer img {
+  filter: drop-shadow(0 2px 6px rgba(21,169,154,0.18));
+}
+
+.footer::after {
+  color: rgba(10,79,74,0.55);
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  body {
+    background: #f2f8f7;
+  }
+
+  .header {
+    background: #f2f8f7;
+  }
+
+  .hero {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,0.96) 0%,
+        rgba(255,255,255,0.90) 45%,
+        rgba(232,250,247,0.58) 100%
+      ),
+      url("../images/gas-hero-bg.webp");
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .telegram-btn-ru {
+    color: #0d8f84;
+    border-color: #15a99a;
+  }
+
+  .telegram-btn-de {
+    background: linear-gradient(135deg, #15a99a, #08766e);
+  }
+}
