@@ -1123,4 +1123,10 @@ a {
     margin-top: 10px;
     font-size: 14px;
   }
+}.telegram-buttons .telegram-btn img {
+  width: 28px !important;
+  height: 28px !important;
+  transform: scale(1.35) !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
 }
