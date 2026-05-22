@@ -1,114 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("internet.css");
+
+/* MOBILE THEME */
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f3f5f9;
-  color: #0b2d78;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* HEADER */
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 22px 44px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  z-index: 100;
-}
-
-.logo-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-link img {
-  width: 58px;
-  height: 58px;
-}
-
-.logo-title {
-  font-size: 34px;
-  line-height: 1;
-  font-weight: 900;
+  background: #eef4ff;
   color: #0b2d78;
 }
 
-.logo-title span {
-  color: #f4a400;
-}
-
-.logo-subtitle {
-  margin-top: 7px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #0b2d78;
-}
-
-/* NAVIGATION */
-
-.top-nav {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.nav-link {
-  padding: 12px 18px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.94);
-  color: #0b2d78;
-  font-size: 13px;
-  font-weight: 900;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.07);
-  transition: 0.22s ease;
-}
-
-.nav-link:hover {
-  transform: translateY(-3px);
-}
+/* ACTIVE NAV */
 
 .nav-link.active {
   background: linear-gradient(135deg, #0b7cff, #0047ba);
   color: white;
-}
-
-/* LANGUAGE */
-
-.lang-switch {
-  display: flex;
-  gap: 8px;
-}
-
-.lang-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 900;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.10);
-}
-
-.lang-btn.passive {
-  background: white;
-  color: #0b2d78;
 }
 
 .lang-btn.active {
@@ -119,832 +22,241 @@ a {
 /* HERO */
 
 .hero {
-  position: relative;
-  min-height: 640px;
-  padding: 126px 44px 92px;
   background:
     linear-gradient(
       90deg,
-      rgba(255,255,255,0.96) 0%,
-      rgba(255,255,255,0.91) 30%,
-      rgba(255,255,255,0.42) 58%,
+      rgba(255,255,255,0.98) 0%,
+      rgba(255,255,255,0.94) 30%,
+      rgba(255,255,255,0.48) 58%,
       rgba(255,255,255,0.10) 100%
     ),
     url("../images/mobile-hero-bg.webp");
   background-size: cover;
   background-position: center;
-  border-bottom-left-radius: 42px;
-  border-bottom-right-radius: 42px;
 }
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 30px;
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(11,45,120,0.70);
-}
-
+.breadcrumbs,
 .breadcrumbs a {
-  color: rgba(11,45,120,0.70);
-}
-
-.hero-content {
-  max-width: 640px;
+  color: rgba(11,45,120,0.72);
 }
 
 .hero-category {
-  display: inline-flex;
-  padding: 8px 15px;
-  margin-bottom: 22px;
-  border-radius: 999px;
-  background: rgba(11,124,255,0.12);
+  background: rgba(11,124,255,0.14);
   color: #0b7cff;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 1px;
 }
 
 .hero-text h1 {
-  font-size: 56px;
-  line-height: 1.06;
-  font-weight: 900;
   color: #0b2d78;
-  margin-bottom: 24px;
 }
 
 .hero-text p {
-  max-width: 610px;
-  font-size: 20px;
-  line-height: 1.5;
   color: #173d8f;
-  margin-bottom: 36px;
-}
-
-.hero-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.hero-list-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
 }
 
 .check-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
   background: linear-gradient(135deg, #0b7cff, #0047ba);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 15px;
-  font-weight: 900;
-  flex-shrink: 0;
 }
 
 .hero-list-item span {
-  font-size: 17px;
-  line-height: 1.3;
-  font-weight: 800;
   color: #0b2d78;
 }
 
 /* FEATURES */
 
-.features-section {
-  max-width: 1360px;
-  margin: -52px auto 32px;
-  padding: 0 34px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  position: relative;
-  z-index: 20;
-}
-
-.feature-card {
-  background: white;
-  border-radius: 22px;
-  padding: 26px 24px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
-}
-
-.feature-card img {
-  display: none;
-}
-
-.feature-card::before {
-  width: 58px;
-  height: 58px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #eef4ff, #f7fbff);
-  color: #0b7cff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  flex-shrink: 0;
-  box-shadow: inset 0 0 0 1px rgba(11,124,255,0.08);
-}
-
-.feature-card:nth-child(1)::before {
-  content: "5G";
-  font-size: 17px;
-}
-
-.feature-card:nth-child(2)::before {
-  content: "€";
-  font-size: 30px;
-}
-
-.feature-card:nth-child(3)::before {
-  content: "eSIM";
-  font-size: 13px;
-}
-
-.feature-card:nth-child(4)::before {
-  content: "★";
-  font-size: 28px;
-}
-
 .feature-card h3 {
-  font-size: 18px;
-  line-height: 1.18;
-  font-weight: 900;
   color: #0b2d78;
-  margin-bottom: 7px;
 }
 
 .feature-card p {
-  font-size: 13px;
-  line-height: 1.35;
   color: #173d8f;
 }
 
-/* COMPARISON */
-
-.comparison-block {
-  max-width: 1360px;
-  margin: 0 auto 34px;
-  padding: 34px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #0b7cff 0%, #0056d6 100%);
-  display: flex;
-  justify-content: space-between;
-  gap: 38px;
-  color: white;
+.feature-card img {
+  filter:
+    hue-rotate(0deg)
+    saturate(1.15)
+    brightness(1.04);
 }
 
-.comparison-left {
-  max-width: 680px;
+/* SECTION TITLES */
+
+.section-heading h2,
+.comparison-intro h2,
+.mini-guide-header h2 {
+  color: #0b2d78;
 }
 
-.comparison-left h2 {
-  font-size: 34px;
-  line-height: 1.08;
-  font-weight: 900;
-  margin-bottom: 16px;
+.section-heading p,
+.comparison-intro p,
+.mini-guide-header p {
+  color: #173d8f;
 }
 
-.comparison-left p {
-  font-size: 17px;
-  line-height: 1.45;
-  margin-bottom: 24px;
-  opacity: 0.95;
+/* INFO STRIP */
+
+.info-strip {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(237,245,255,0.96),
+      rgba(255,255,255,0.96)
+    );
+  border: 1px solid rgba(11,124,255,0.08);
+  box-shadow: 0 6px 16px rgba(11,124,255,0.05);
 }
 
-.comparison-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 250px;
-  height: 50px;
-  padding: 0 28px;
-  border-radius: 14px;
-  background: white;
-  color: #0b7cff;
-  font-size: 16px;
-  font-weight: 900;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-  transition: 0.22s ease;
+.info-item {
+  color: #0b2d78;
 }
 
-.comparison-btn:hover {
-  transform: translateY(-3px);
-}
-
-.comparison-right {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.comparison-logo {
-  font-size: 44px;
-  font-weight: 900;
-  margin-bottom: 14px;
-}
-
-.comparison-right p {
-  font-size: 15px;
-  line-height: 1.45;
-  opacity: 0.92;
+.info-item img {
+  filter: none;
 }
 
 /* OFFERS */
 
-.offers-section {
-  max-width: 1360px;
-  margin: 0 auto 34px;
-  padding: 0 34px;
-}
-
-.section-heading {
-  margin-bottom: 24px;
-}
-
-.section-heading h2 {
-  font-size: 36px;
-  line-height: 1.08;
-  font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 8px;
-}
-
-.section-heading p {
-  font-size: 16px;
-  line-height: 1.35;
-  color: #173d8f;
-}
-
-.offer-card {
-  position: relative;
-  background: white;
-  border-radius: 24px;
-  padding: 28px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 22px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
-}
-
-.offer-badge {
-  position: absolute;
-  top: 16px;
-  left: 18px;
-}
-
-.offer-badge img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-}
-
-.offer-card:has(.offer-badge) .offer-content {
-  padding-left: 56px;
-}
-
-.offer-content {
-  max-width: 760px;
+.offer-card::before {
+  background: #0b7cff;
 }
 
 .offer-title {
-  font-size: 24px;
-  line-height: 1.15;
-  font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 12px;
-}
-
-.offer-description {
-  font-size: 16px;
-  line-height: 1.45;
-  color: #173d8f;
-  margin-bottom: 18px;
-}
-
-.offer-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  color: #0b7cff;
 }
 
 .offer-tags span {
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: #eef4ff;
-  color: #0b7cff;
-  font-size: 13px;
-  font-weight: 800;
+  color: #0b2d78;
 }
 
-.offer-action {
-  min-width: 190px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+.offer-tags span::before {
+  background: #eef4ff;
+  color: #0b7cff;
 }
 
 .offer-price {
-  font-size: 28px;
-  font-weight: 900;
   color: #0b2d78;
-  margin-bottom: 16px;
 }
 
 .offer-btn {
-  width: 160px;
-  height: 48px;
-  border-radius: 14px;
   background: linear-gradient(135deg, #0b7cff, #0047ba);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 15px;
-  font-weight: 900;
-  box-shadow: 0 8px 18px rgba(11,124,255,0.20);
-  transition: 0.22s ease;
+  box-shadow: 0 8px 18px rgba(11,124,255,0.24);
 }
 
-.offer-btn:hover {
-  transform: translateY(-3px);
+/* PROVIDERS */
+
+.provider-telekom {
+  color: #e20074;
 }
 
-/* TELEGRAM */
-
-.telegram-block {
-  max-width: 1120px;
-  min-height: 56px;
-  margin: 0 auto 34px;
-  padding: 10px 30px;
-  background: white;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 22px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+.provider-vodafone {
+  color: #e60000;
 }
 
-.telegram-info {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.provider-o2 {
+  color: #0046ad;
 }
 
-.telegram-info img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  transform: scale(2.3);
+.provider-congstar {
+  color: #111111;
 }
 
-.telegram-info h2 {
-  font-size: 20px;
-  line-height: 1;
-  font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 2px;
+.provider-freenet {
+  color: #45b800;
 }
 
-.telegram-info p {
-  font-size: 12px;
-  line-height: 1.2;
+.provider-blau {
+  color: #2aa8ff;
+}
+
+.provider-simon {
+  color: #111111;
+}
+
+/* COMPARISON */
+
+.verivox-card {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.98),
+      rgba(255,255,255,0.76)
+    ),
+    linear-gradient(
+      135deg,
+      #fff7ed,
+      #ffffff
+    );
+}
+
+.check24-card {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.98),
+      rgba(255,255,255,0.76)
+    ),
+    linear-gradient(
+      135deg,
+      #eef6ff,
+      #ffffff
+    );
+}
+
+.comparison-card p {
   color: #173d8f;
 }
 
-.telegram-buttons {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+.comparison-link {
+  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  box-shadow: 0 8px 18px rgba(11,124,255,0.24);
 }
 
-.telegram-btn {
-  min-width: 150px;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  font-size: 14px;
-  font-weight: 800;
-  transition: 0.25s ease;
-}
+/* MINI GUIDE */
 
-.telegram-btn img {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
-  transform: scale(1.22);
-}
-
-.telegram-btn-ru {
-  background: white;
+.guide-card h3 {
   color: #0b7cff;
-  border: 2px solid #0b7cff;
-  box-shadow: 0 5px 12px rgba(11,124,255,0.14);
 }
 
-.telegram-btn-de {
-  background: linear-gradient(135deg, #16a8ff, #0067e8);
-  color: white;
-  border: 2px solid transparent;
-  box-shadow: 0 6px 15px rgba(0,103,232,0.22);
-}
-
-.telegram-btn:hover {
-  transform: translateY(-3px);
+.guide-card p {
+  color: #173d8f;
 }
 
 /* FOOTER */
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 52px;
-  padding: 18px 20px 42px;
-  flex-wrap: wrap;
-}
-
 .footer a {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-size: 17px;
-  font-weight: 700;
   color: #0b2d78;
-  transition: 0.2s ease;
-}
-
-.footer a:hover {
-  opacity: 0.78;
 }
 
 .footer img {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
-  transform: scale(4.2);
+  filter: drop-shadow(0 2px 6px rgba(11,124,255,0.18));
 }
 
 .footer::after {
-  content: "© TarifKompass 2026";
-  flex-basis: 100%;
-  text-align: center;
-  margin-top: 8px;
-  font-size: 13px;
-  font-weight: 600;
   color: rgba(11,45,120,0.55);
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 1320px) {
-
-  .header {
-    flex-direction: column;
-    gap: 22px;
-  }
-
-  .features-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .comparison-block {
-    flex-direction: column;
-  }
-
-  .offer-card {
-    flex-direction: column;
-  }
-
-  .offer-action {
-    align-items: flex-start;
-  }
-}
+/* MOBILE */
 
 @media (max-width: 760px) {
 
   body {
-    background: #f3f5f9;
+    background: #eef4ff;
   }
 
   .header {
-    position: relative;
-    padding: 22px 20px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    background: #f3f5f9;
-    margin-bottom: 42px;
-  }
-
-  .logo-link {
-    gap: 10px;
-  }
-
-  .logo-link img {
-    width: 84px;
-    height: 84px;
-  }
-
-  .logo-title {
-    font-size: 30px;
-    line-height: 0.95;
-  }
-
-  .logo-subtitle {
-    margin-top: 7px;
-    font-size: 11px;
-    letter-spacing: 0.8px;
-  }
-
-  .top-nav {
-    display: none;
-  }
-
-  .lang-switch {
-    position: static;
-    display: flex;
-    gap: 10px;
-    margin: 0 0 0 104px;
-  }
-
-  .lang-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 13px;
-    font-size: 15px;
+    background: #eef4ff;
   }
 
   .hero {
-    min-height: auto;
-    padding: 28px 20px 52px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,0.96) 0%,
+        rgba(255,255,255,0.90) 45%,
+        rgba(237,245,255,0.52) 100%
+      ),
+      url("../images/mobile-hero-bg.webp");
+    background-size: cover;
     background-position: center top;
   }
 
-  .breadcrumbs {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-
-  .hero-category {
-    margin-bottom: 18px;
-    font-size: 12px;
-  }
-
-  .hero-text h1 {
-    font-size: 38px;
-    line-height: 1.08;
-    margin-bottom: 20px;
-  }
-
-  .hero-text p {
-    font-size: 18px;
-    line-height: 1.45;
-    margin-bottom: 28px;
-  }
-
-  .hero-list {
-    gap: 14px;
-  }
-
-  .check-circle {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-  }
-
-  .hero-list-item span {
-    font-size: 18px;
-    line-height: 1.28;
-  }
-
-  .features-section {
-    grid-template-columns: 1fr;
-    margin-top: -28px;
-    padding: 0 20px;
-    gap: 16px;
-  }
-
-  .feature-card {
-    border-radius: 22px;
-    padding: 20px 22px;
-    min-height: 108px;
-    gap: 16px;
-  }
-
-  .feature-card h3 {
-    font-size: 20px;
-    line-height: 1.12;
-    margin-bottom: 6px;
-  }
-
-  .feature-card p {
-    font-size: 15px;
-    line-height: 1.32;
-  }
-
-  .comparison-block {
-    margin: 22px 20px 28px;
-    padding: 26px 22px;
-    border-radius: 26px;
-    gap: 22px;
-  }
-
-  .comparison-left h2 {
-    font-size: 30px;
-    line-height: 1.08;
-    margin-bottom: 14px;
-  }
-
-  .comparison-left p {
-    font-size: 17px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-  }
-
-  .comparison-btn {
-    width: 100%;
-    min-width: 0;
-    height: 54px;
-    font-size: 18px;
-    border-radius: 16px;
-  }
-
-  .comparison-logo {
-    font-size: 40px;
-    margin-bottom: 12px;
-  }
-
-  .comparison-right p {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  .offers-section {
-    padding: 0 20px;
-    margin-bottom: 28px;
-  }
-
-  .section-heading h2 {
-    font-size: 32px;
-    line-height: 1.08;
-    margin-bottom: 10px;
-  }
-
-  .section-heading p {
-    font-size: 17px;
-  }
-
-  .offer-card {
-    padding: 24px;
-    border-radius: 26px;
-    gap: 22px;
-    margin-bottom: 22px;
-  }
-
-  .offer-card:has(.offer-badge) .offer-content {
-    padding-left: 0;
-    padding-top: 34px;
-  }
-
-  .offer-badge {
-    top: 16px;
-    left: 22px;
-  }
-
-  .offer-badge img {
-    width: 26px;
-    height: 26px;
-  }
-
-  .offer-title {
-    font-size: 22px;
-    line-height: 1.14;
-    margin-bottom: 14px;
-  }
-
-  .offer-description {
-    font-size: 17px;
-    line-height: 1.42;
-    margin-bottom: 18px;
-  }
-
-  .offer-tags {
-    gap: 10px;
-  }
-
-  .offer-tags span {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  .offer-action {
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .offer-price {
-    font-size: 28px;
-    margin-bottom: 16px;
-  }
-
-  .offer-btn {
-    width: 100%;
-    height: 54px;
-    border-radius: 16px;
-    font-size: 17px;
-  }
-
-  .telegram-block {
-    max-width: calc(100% - 40px);
-    padding: 24px 22px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 24px;
-    margin-bottom: 30px;
-  }
-
-  .telegram-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .telegram-info img {
-    width: 22px;
-    height: 22px;
-    transform: scale(1.8);
-  }
-
-  .telegram-info h2 {
-    font-size: 28px;
-    line-height: 1.05;
-  }
-
-  .telegram-info p {
-    font-size: 17px;
-    line-height: 1.3;
-  }
-
-  .telegram-buttons {
-    width: 100%;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .telegram-btn {
-    width: 100%;
-    height: 54px;
-    font-size: 18px;
-    border-radius: 16px;
-  }
-
-  .telegram-btn img {
-    width: 28px;
-    height: 28px;
-    transform: scale(1.08);
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 26px;
-    padding: 22px 20px 42px;
-  }
-
-  .footer a {
-    font-size: 22px;
-    gap: 18px;
-  }
-
-  .footer img {
-    width: 22px;
-    height: 22px;
-    transform: scale(2.3);
-  }
-
-  .footer::after {
-    margin-top: 6px;
-    font-size: 15px;
-  }
 }
