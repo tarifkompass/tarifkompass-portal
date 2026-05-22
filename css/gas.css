@@ -153,19 +153,13 @@ body {
   color: #0b2d78;
 }
 
-/* RESET FILTERS */
+/* IMPORTANT:
+   НЕ КРАСИМ VERIFIED ICON.
+   ИНАЧЕ ОПЯТЬ ПОЛУЧИТСЯ РОЗОВЫЙ ЩИТ ИЗ АДА.
+*/
 
 .info-item img {
   filter: none;
-}
-
-/* GREEN SHIELD ONLY */
-
-.info-item:first-child img {
-  filter:
-    hue-rotate(95deg)
-    saturate(1.25)
-    brightness(0.92);
 }
 
 /* COMPARISON */
