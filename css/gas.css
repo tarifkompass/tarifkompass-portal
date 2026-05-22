@@ -7,8 +7,6 @@ body {
   color: #0b2d78;
 }
 
-/* ЛОГО НЕ ТРОГАЕМ */
-
 /* ACTIVE NAV */
 
 .nav-link.active {
@@ -155,13 +153,19 @@ body {
   color: #0b2d78;
 }
 
-/* GREEN SHIELDS */
+/* RESET FILTERS */
 
 .info-item img {
+  filter: none;
+}
+
+/* GREEN SHIELD ONLY */
+
+.info-item:first-child img {
   filter:
     hue-rotate(95deg)
-    saturate(1.35)
-    brightness(0.95);
+    saturate(1.25)
+    brightness(0.92);
 }
 
 /* COMPARISON */
@@ -196,8 +200,6 @@ body {
 .guide-card p {
   color: #1a4f7c;
 }
-
-/* TELEGRAM НЕ ТРОГАЕМ */
 
 /* FOOTER */
 
