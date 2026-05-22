@@ -1,0 +1,139 @@
+/* strom.css */
+
+@import url("internet.css");
+
+/* HERO BACKGROUND */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.96) 0%,
+      rgba(255,255,255,0.91) 30%,
+      rgba(255,255,255,0.42) 58%,
+      rgba(255,255,255,0.10) 100%
+    ),
+    url("../images/strom-hero-bg.webp");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* HERO CATEGORY */
+
+.hero-category {
+  background: rgba(255,193,7,0.14);
+  color: #d18b00;
+}
+
+/* HERO TITLE */
+
+.hero-text h1 {
+  max-width: 760px;
+}
+
+/* OFFER COLORS */
+
+.provider-eon {
+  color: #e30613;
+}
+
+/* OFFER STRIP */
+
+.offer-card::before {
+  background: linear-gradient(
+    180deg,
+    #ffb400,
+    #ff8400
+  );
+}
+
+/* BUTTONS */
+
+.offer-btn,
+.comparison-link {
+  background: linear-gradient(
+    135deg,
+    #ffb400,
+    #ff8400
+  );
+
+  box-shadow:
+    0 8px 18px rgba(255,140,0,0.22);
+}
+
+.offer-btn:hover,
+.comparison-link:hover {
+  transform: translateY(-3px);
+}
+
+/* CHECK CIRCLES */
+
+.check-circle {
+  background: linear-gradient(
+    135deg,
+    #ffb400,
+    #ff8400
+  );
+}
+
+/* COMPARISON CARDS */
+
+.verivox-card {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.98),
+      rgba(255,255,255,0.74)
+    ),
+    linear-gradient(
+      135deg,
+      #fff6e5,
+      #ffffff
+    );
+}
+
+.check24-card {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.98),
+      rgba(255,255,255,0.74)
+    ),
+    linear-gradient(
+      135deg,
+      #fff3dc,
+      #ffffff
+    );
+}
+
+/* GUIDE CARDS */
+
+.guide-card h3 {
+  color: #ff9d00;
+}
+
+/* INFO STRIP */
+
+.info-strip {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8eb,
+      #ffffff
+    );
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .hero {
+    background-position: center top;
+  }
+
+  .hero-text h1 {
+    max-width: 100%;
+  }
+
+}
