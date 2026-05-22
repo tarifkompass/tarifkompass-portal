@@ -73,7 +73,7 @@ body {
   color: #1a4f7c;
 }
 
-/* BLUE ICONS */
+/* BLUE FEATURE ICONS */
 
 .feature-card img {
   filter:
@@ -155,8 +155,13 @@ body {
   color: #0b2d78;
 }
 
+/* GREEN SHIELDS */
+
 .info-item img {
-  filter: none;
+  filter:
+    hue-rotate(95deg)
+    saturate(1.35)
+    brightness(0.95);
 }
 
 /* COMPARISON */
