@@ -3,77 +3,76 @@
 /* GAS THEME */
 
 body {
-  background: #eef8fa;
-  color: #064f5f;
+  background: #eef7fc;
+  color: #0b2d78;
 }
 
-/* IMPORTANT:
-   ЛОГО НЕ ТРОГАЕМ.
-   ОСТАЮТСЯ ОРИГИНАЛЬНЫЕ ЦВЕТА TARIFKOMPASS.
-*/
+/* ЛОГО НЕ ТРОГАЕМ */
 
-/* NAV ACTIVE */
+/* ACTIVE NAV */
 
 .nav-link.active {
-  background: linear-gradient(135deg, #18b8d8, #087fa3);
+  background: linear-gradient(135deg, #2aa8ff, #0b7cff);
   color: white;
 }
 
 .lang-btn.active {
-  background: #18b8d8;
+  background: #2aa8ff;
   color: white;
 }
 
 /* HERO */
 
 .hero {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,0.94) 0%,
-      rgba(255,255,255,0.84) 28%,
-      rgba(235,248,255,0.36) 56%,
-      rgba(235,248,255,0.06) 100%
-    ),
-    url("../images/gas-hero-bg.webp");
+  background: url("../images/gas-hero-bg.webp");
   background-size: cover;
   background-position: center;
 }
 
 .breadcrumbs,
 .breadcrumbs a {
-  color: rgba(6,79,95,0.72);
+  color: rgba(11,45,120,0.72);
 }
 
 .hero-category {
-  background: rgba(24,184,216,0.14);
-  color: #087fa3;
+  background: rgba(42,168,255,0.14);
+  color: #0b7cff;
 }
 
 .hero-text h1 {
-  color: #064f5f;
+  color: #0b4f8a;
 }
 
 .hero-text p {
-  color: #176879;
+  color: #1a4f7c;
 }
 
 .check-circle {
-  background: linear-gradient(135deg, #18b8d8, #087fa3);
+  background: linear-gradient(135deg, #2aa8ff, #0b7cff);
 }
 
 .hero-list-item span {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 /* FEATURES */
 
 .feature-card h3 {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 .feature-card p {
-  color: #176879;
+  color: #1a4f7c;
+}
+
+/* BLUE ICONS */
+
+.feature-card img,
+.info-item img {
+  filter:
+    hue-rotate(-5deg)
+    saturate(1.3)
+    brightness(1.04);
 }
 
 /* SECTION TITLES */
@@ -81,47 +80,47 @@ body {
 .section-heading h2,
 .comparison-intro h2,
 .mini-guide-header h2 {
-  color: #064f5f;
+  color: #0b4f8a;
 }
 
 .section-heading p,
 .comparison-intro p,
 .mini-guide-header p {
-  color: #176879;
+  color: #1a4f7c;
 }
 
 /* OFFERS */
 
 .offer-card::before {
-  background: #18b8d8;
+  background: #2aa8ff;
 }
 
 .offer-title {
-  color: #087fa3;
+  color: #0b7cff;
 }
 
 .offer-tags span {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 .offer-tags span::before {
-  background: #eefaff;
-  color: #18b8d8;
+  background: #eef7ff;
+  color: #2aa8ff;
 }
 
 .offer-price {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 .offer-btn {
-  background: linear-gradient(135deg, #18b8d8, #087fa3);
-  box-shadow: 0 8px 18px rgba(24,184,216,0.22);
+  background: linear-gradient(135deg, #2aa8ff, #0b7cff);
+  box-shadow: 0 8px 18px rgba(42,168,255,0.24);
 }
 
 /* PROVIDERS */
 
 .provider-gas {
-  color: #0c9fbe;
+  color: #2aa8ff;
 }
 
 .provider-verivox {
@@ -143,11 +142,11 @@ body {
 /* INFO STRIP */
 
 .info-strip {
-  background: linear-gradient(135deg, #eefcff, #ffffff);
+  background: linear-gradient(135deg, #f2fbff, #ffffff);
 }
 
 .info-item {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 /* COMPARISON */
@@ -161,45 +160,42 @@ body {
 .check24-card {
   background:
     linear-gradient(90deg, rgba(255,255,255,0.98), rgba(255,255,255,0.76)),
-    linear-gradient(135deg, #eefcff, #ffffff);
+    linear-gradient(135deg, #eef7ff, #ffffff);
 }
 
 .comparison-card p {
-  color: #176879;
+  color: #1a4f7c;
 }
 
 .comparison-link {
-  background: linear-gradient(135deg, #18b8d8, #087fa3);
-  box-shadow: 0 8px 18px rgba(24,184,216,0.22);
+  background: linear-gradient(135deg, #2aa8ff, #0b7cff);
+  box-shadow: 0 8px 18px rgba(42,168,255,0.24);
 }
 
 /* MINI GUIDE */
 
 .guide-card h3 {
-  color: #087fa3;
+  color: #0b7cff;
 }
 
 .guide-card p {
-  color: #176879;
+  color: #1a4f7c;
 }
 
-/* TELEGRAM
-   НЕ ПЕРЕКРАШИВАЕМ.
-   ОСТАВЛЯЕМ INTERNET BLUE STYLE.
-*/
+/* TELEGRAM НЕ ТРОГАЕМ */
 
 /* FOOTER */
 
 .footer a {
-  color: #064f5f;
+  color: #0b2d78;
 }
 
 .footer img {
-  filter: drop-shadow(0 2px 6px rgba(24,184,216,0.18));
+  filter: drop-shadow(0 2px 6px rgba(42,168,255,0.18));
 }
 
 .footer::after {
-  color: rgba(6,79,95,0.55);
+  color: rgba(11,45,120,0.55);
 }
 
 /* MOBILE */
@@ -207,22 +203,15 @@ body {
 @media (max-width: 760px) {
 
   body {
-    background: #eef8fa;
+    background: #eef7fc;
   }
 
   .header {
-    background: #eef8fa;
+    background: #eef7fc;
   }
 
   .hero {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.88) 42%,
-        rgba(235,248,255,0.42) 100%
-      ),
-      url("../images/gas-hero-bg.webp");
+    background: url("../images/gas-hero-bg.webp");
     background-size: cover;
     background-position: center top;
   }
