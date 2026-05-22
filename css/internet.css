@@ -437,10 +437,10 @@ a {
 }
 
 .info-item img {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
-  transform: scale(1.15);
+  transform: scale(1.45);
   flex-shrink: 0;
 }
 
