@@ -27,8 +27,8 @@ body {
       90deg,
       rgba(255,255,255,0.98) 0%,
       rgba(255,255,255,0.94) 30%,
-      rgba(255,255,255,0.48) 58%,
-      rgba(255,255,255,0.10) 100%
+      rgba(255,255,255,0.50) 58%,
+      rgba(255,255,255,0.12) 100%
     ),
     url("../images/mobile-hero-bg.webp");
   background-size: cover;
@@ -78,20 +78,6 @@ body {
     brightness(1.04);
 }
 
-/* SECTION TITLES */
-
-.section-heading h2,
-.comparison-intro h2,
-.mini-guide-header h2 {
-  color: #0b2d78;
-}
-
-.section-heading p,
-.comparison-intro p,
-.mini-guide-header p {
-  color: #173d8f;
-}
-
 /* INFO STRIP */
 
 .info-strip {
@@ -111,6 +97,20 @@ body {
 
 .info-item img {
   filter: none;
+}
+
+/* SECTION TITLES */
+
+.section-heading h2,
+.comparison-intro h2,
+.mini-guide-header h2 {
+  color: #0b2d78;
+}
+
+.section-heading p,
+.comparison-intro p,
+.mini-guide-header p {
+  color: #173d8f;
 }
 
 /* OFFERS */
@@ -218,6 +218,12 @@ body {
 
 .guide-card p {
   color: #173d8f;
+}
+
+/* TELEGRAM */
+
+.telegram-btn-de {
+  background: linear-gradient(135deg, #16a8ff, #0067e8);
 }
 
 /* FOOTER */
