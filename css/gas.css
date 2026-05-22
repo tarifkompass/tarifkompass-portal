@@ -3,39 +3,24 @@
 /* GAS THEME */
 
 body {
-  background: #f2f8f7;
-  color: #0a4f4a;
+  background: #eef8fa;
+  color: #064f5f;
 }
 
-/* HEADER / NAV */
+/* IMPORTANT:
+   ЛОГО НЕ ТРОГАЕМ.
+   ОСТАЮТСЯ ОРИГИНАЛЬНЫЕ ЦВЕТА TARIFKOMPASS.
+*/
 
-.logo-title {
-  color: #0a4f4a;
-}
-
-.logo-title span {
-  color: #15a99a;
-}
-
-.logo-subtitle {
-  color: #0a4f4a;
-}
-
-.nav-link {
-  color: #0a4f4a;
-}
+/* NAV ACTIVE */
 
 .nav-link.active {
-  background: linear-gradient(135deg, #15a99a, #08766e);
+  background: linear-gradient(135deg, #18b8d8, #087fa3);
   color: white;
 }
 
-.lang-btn.passive {
-  color: #0a4f4a;
-}
-
 .lang-btn.active {
-  background: #15a99a;
+  background: #18b8d8;
   color: white;
 }
 
@@ -45,10 +30,10 @@ body {
   background:
     linear-gradient(
       90deg,
-      rgba(255,255,255,0.97) 0%,
-      rgba(255,255,255,0.92) 31%,
-      rgba(232,250,247,0.52) 60%,
-      rgba(232,250,247,0.18) 100%
+      rgba(255,255,255,0.94) 0%,
+      rgba(255,255,255,0.84) 28%,
+      rgba(235,248,255,0.36) 56%,
+      rgba(235,248,255,0.06) 100%
     ),
     url("../images/gas-hero-bg.webp");
   background-size: cover;
@@ -57,86 +42,86 @@ body {
 
 .breadcrumbs,
 .breadcrumbs a {
-  color: rgba(10,79,74,0.70);
+  color: rgba(6,79,95,0.72);
 }
 
 .hero-category {
-  background: rgba(21,169,154,0.13);
-  color: #0d8f84;
+  background: rgba(24,184,216,0.14);
+  color: #087fa3;
 }
 
 .hero-text h1 {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .hero-text p {
-  color: #17645e;
+  color: #176879;
 }
 
 .check-circle {
-  background: linear-gradient(135deg, #15a99a, #08766e);
+  background: linear-gradient(135deg, #18b8d8, #087fa3);
 }
 
 .hero-list-item span {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 /* FEATURES */
 
 .feature-card h3 {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .feature-card p {
-  color: #17645e;
+  color: #176879;
 }
 
-/* SECTIONS */
+/* SECTION TITLES */
 
 .section-heading h2,
 .comparison-intro h2,
 .mini-guide-header h2 {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .section-heading p,
 .comparison-intro p,
 .mini-guide-header p {
-  color: #17645e;
+  color: #176879;
 }
 
 /* OFFERS */
 
 .offer-card::before {
-  background: #15a99a;
+  background: #18b8d8;
 }
 
 .offer-title {
-  color: #0d8f84;
+  color: #087fa3;
 }
 
 .offer-tags span {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .offer-tags span::before {
-  background: #e8faf7;
-  color: #0d8f84;
+  background: #eefaff;
+  color: #18b8d8;
 }
 
 .offer-price {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .offer-btn {
-  background: linear-gradient(135deg, #15a99a, #08766e);
-  box-shadow: 0 8px 18px rgba(21,169,154,0.22);
+  background: linear-gradient(135deg, #18b8d8, #087fa3);
+  box-shadow: 0 8px 18px rgba(24,184,216,0.22);
 }
 
-/* GAS PROVIDERS */
+/* PROVIDERS */
 
 .provider-gas {
-  color: #0d8f84;
+  color: #0c9fbe;
 }
 
 .provider-verivox {
@@ -158,11 +143,11 @@ body {
 /* INFO STRIP */
 
 .info-strip {
-  background: linear-gradient(135deg, #e8faf7, #ffffff);
+  background: linear-gradient(135deg, #eefcff, #ffffff);
 }
 
 .info-item {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 /* COMPARISON */
@@ -176,95 +161,70 @@ body {
 .check24-card {
   background:
     linear-gradient(90deg, rgba(255,255,255,0.98), rgba(255,255,255,0.76)),
-    linear-gradient(135deg, #e8faf7, #ffffff);
+    linear-gradient(135deg, #eefcff, #ffffff);
 }
 
 .comparison-card p {
-  color: #17645e;
+  color: #176879;
 }
 
 .comparison-link {
-  background: linear-gradient(135deg, #15a99a, #08766e);
-  box-shadow: 0 8px 18px rgba(21,169,154,0.22);
+  background: linear-gradient(135deg, #18b8d8, #087fa3);
+  box-shadow: 0 8px 18px rgba(24,184,216,0.22);
 }
 
 /* MINI GUIDE */
 
 .guide-card h3 {
-  color: #0d8f84;
+  color: #087fa3;
 }
 
 .guide-card p {
-  color: #17645e;
+  color: #176879;
 }
 
-/* TELEGRAM */
-
-.telegram-info h2 {
-  color: #0a4f4a;
-}
-
-.telegram-info p {
-  color: #17645e;
-}
-
-.telegram-btn-ru {
-  color: #0d8f84;
-  border: 2px solid #15a99a;
-  box-shadow: 0 4px 12px rgba(21,169,154,0.12);
-}
-
-.telegram-btn-de {
-  background: linear-gradient(135deg, #15a99a, #08766e);
-  color: white;
-  border: 2px solid transparent;
-  box-shadow: 0 6px 15px rgba(21,169,154,0.20);
-}
+/* TELEGRAM
+   НЕ ПЕРЕКРАШИВАЕМ.
+   ОСТАВЛЯЕМ INTERNET BLUE STYLE.
+*/
 
 /* FOOTER */
 
 .footer a {
-  color: #0a4f4a;
+  color: #064f5f;
 }
 
 .footer img {
-  filter: drop-shadow(0 2px 6px rgba(21,169,154,0.18));
+  filter: drop-shadow(0 2px 6px rgba(24,184,216,0.18));
 }
 
 .footer::after {
-  color: rgba(10,79,74,0.55);
+  color: rgba(6,79,95,0.55);
 }
 
 /* MOBILE */
 
 @media (max-width: 760px) {
+
   body {
-    background: #f2f8f7;
+    background: #eef8fa;
   }
 
   .header {
-    background: #f2f8f7;
+    background: #eef8fa;
   }
 
   .hero {
     background:
       linear-gradient(
         180deg,
-        rgba(255,255,255,0.96) 0%,
-        rgba(255,255,255,0.90) 45%,
-        rgba(232,250,247,0.58) 100%
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.88) 42%,
+        rgba(235,248,255,0.42) 100%
       ),
       url("../images/gas-hero-bg.webp");
     background-size: cover;
     background-position: center top;
   }
 
-  .telegram-btn-ru {
-    color: #0d8f84;
-    border-color: #15a99a;
-  }
-
-  .telegram-btn-de {
-    background: linear-gradient(135deg, #15a99a, #08766e);
-  }
 }
