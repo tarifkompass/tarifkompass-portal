@@ -31,20 +31,12 @@
 /* ACTIVE NAV */
 
 .nav-link.active {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
 }
 
 .lang-btn.active {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
 }
 
@@ -64,11 +56,7 @@
 /* CHECK CIRCLES */
 
 .check-circle {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
 }
 
 /* FEATURE ICONS */
@@ -80,12 +68,7 @@
 /* INFO STRIP */
 
 .info-strip {
-  background:
-    linear-gradient(
-      135deg,
-      #fff8eb,
-      #ffffff
-    );
+  background: linear-gradient(135deg, #fff8eb, #ffffff);
 }
 
 .info-item img {
@@ -101,11 +84,7 @@
 /* OFFER */
 
 .offer-card::before {
-  background: linear-gradient(
-    180deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
 }
 
 .offer-title {
@@ -122,11 +101,7 @@
 }
 
 .offer-btn {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   box-shadow: var(--shadow-button);
 }
 
@@ -137,11 +112,7 @@
 /* COMPARISON */
 
 .comparison-link {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   box-shadow: var(--shadow-button);
 }
 
