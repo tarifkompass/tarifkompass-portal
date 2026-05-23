@@ -2,7 +2,16 @@
 
 @import url("internet.css");
 
-/* HERO BACKGROUND */
+/* STROM COLORS */
+
+:root {
+  --accent: #ffb400;
+  --accent-dark: #ff8400;
+  --accent-light: #fff6e5;
+  --shadow-button: 0 8px 18px rgba(255,140,0,0.22);
+}
+
+/* HERO */
 
 .hero {
   background:
@@ -19,17 +28,31 @@
   background-position: center;
 }
 
+/* ACTIVE NAV */
+
+.nav-link.active {
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+  color: white;
+}
+
+.lang-btn.active {
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+  color: white;
+}
+
 /* HERO CATEGORY */
 
 .hero-category {
   background: rgba(255,193,7,0.14);
   color: #d18b00;
-}
-
-/* FEATURE ICONS */
-
-.feature-card img {
-  filter: none;
 }
 
 /* HERO TITLE */
@@ -38,76 +61,93 @@
   max-width: 760px;
 }
 
-/* ACTIVE NAV */
-
-.nav-link.active {
-  background: linear-gradient(
-    135deg,
-    #ffb400,
-    #ff8400
-  );
-
-  color: white;
-}
-
-/* ACTIVE LANGUAGE */
-
-.lang-btn.active {
-  background: linear-gradient(
-    135deg,
-    #ffb400,
-    #ff8400
-  );
-
-  color: white;
-}
-
-/* OFFER COLORS */
-
-.provider-eon {
-  color: #e30613;
-}
-
-/* OFFER STRIP */
-
-.offer-card::before {
-  background: linear-gradient(
-    180deg,
-    #ffb400,
-    #ff8400
-  );
-}
-
-/* BUTTONS */
-
-.offer-btn,
-.comparison-link {
-  background: linear-gradient(
-    135deg,
-    #ffb400,
-    #ff8400
-  );
-
-  box-shadow:
-    0 8px 18px rgba(255,140,0,0.22);
-}
-
-.offer-btn:hover,
-.comparison-link:hover {
-  transform: translateY(-3px);
-}
-
 /* CHECK CIRCLES */
 
 .check-circle {
   background: linear-gradient(
     135deg,
-    #ffb400,
-    #ff8400
+    var(--accent),
+    var(--accent-dark)
   );
 }
 
-/* COMPARISON CARDS */
+/* FEATURE ICONS */
+
+.feature-card img {
+  filter: none !important;
+}
+
+/* INFO STRIP */
+
+.info-strip {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8eb,
+      #ffffff
+    );
+}
+
+.info-item img {
+  filter: none !important;
+}
+
+/* PROVIDERS */
+
+.provider-eon {
+  color: #e30613;
+}
+
+/* OFFER */
+
+.offer-card::before {
+  background: linear-gradient(
+    180deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+}
+
+.offer-title {
+  color: var(--accent-dark) !important;
+}
+
+.offer-tags span::before {
+  background: var(--accent-light) !important;
+  color: var(--accent-dark) !important;
+}
+
+.offer-price {
+  color: var(--text-main);
+}
+
+.offer-btn {
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+  box-shadow: var(--shadow-button);
+}
+
+.offer-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* COMPARISON */
+
+.comparison-link {
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+  box-shadow: var(--shadow-button);
+}
+
+.comparison-link:hover {
+  transform: translateY(-3px);
+}
 
 .verivox-card {
   background:
@@ -137,27 +177,24 @@
     );
 }
 
-/* GUIDE CARDS */
+/* MINI GUIDE */
 
 .guide-card h3 {
-  color: #ff9d00;
+  color: var(--accent-dark);
 }
 
-/* INFO STRIP */
+/* TELEGRAM */
 
-.info-strip {
-  background:
-    linear-gradient(
-      135deg,
-      #fff8eb,
-      #ffffff
-    );
+.telegram-btn-ru {
+  background: white;
+  color: var(--telegram-blue);
+  border: 2px solid var(--telegram-blue);
 }
 
-/* INFO STRIP ICONS */
-
-.info-item img {
-  filter: none;
+.telegram-btn-de {
+  background: linear-gradient(135deg, #16a8ff, #0067e8);
+  color: white;
+  border: none;
 }
 
 /* MOBILE */
