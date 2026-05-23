@@ -2,16 +2,7 @@
 
 @import url("internet.css");
 
-/* STROM COLORS */
-
-:root {
-  --accent: #ffb400;
-  --accent-dark: #ff8400;
-  --accent-light: #fff6e5;
-  --shadow-button: 0 8px 18px rgba(255,140,0,0.22);
-}
-
-/* HERO */
+/* HERO BACKGROUND */
 
 .hero {
   background:
@@ -28,27 +19,17 @@
   background-position: center;
 }
 
-/* ACTIVE NAV */
-
-.nav-link.active {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-dark)
-  );
-  color: white;
-}
-
-.lang-btn.active {
-  background: var(--accent);
-  color: white;
-}
-
 /* HERO CATEGORY */
 
 .hero-category {
   background: rgba(255,193,7,0.14);
   color: #d18b00;
+}
+
+/* FEATURE ICONS */
+
+.feature-card img {
+  filter: none;
 }
 
 /* HERO TITLE */
@@ -57,50 +38,58 @@
   max-width: 760px;
 }
 
-/* CHECK CIRCLES */
+/* ACTIVE NAV */
 
-.check-circle {
+.nav-link.active {
   background: linear-gradient(
     135deg,
-    var(--accent),
-    var(--accent-dark)
+    #ffb400,
+    #ff8400
   );
+
+  color: white;
 }
 
-/* PROVIDERS */
+/* ACTIVE LANGUAGE */
+
+.lang-btn.active {
+  background: linear-gradient(
+    135deg,
+    #ffb400,
+    #ff8400
+  );
+
+  color: white;
+}
+
+/* OFFER COLORS */
 
 .provider-eon {
   color: #e30613;
 }
 
-/* OFFER COLORS */
+/* OFFER STRIP */
 
 .offer-card::before {
   background: linear-gradient(
     180deg,
-    var(--accent),
-    var(--accent-dark)
+    #ffb400,
+    #ff8400
   );
 }
 
-.offer-title {
-  color: var(--accent-dark);
-}
-
-.offer-tags span::before {
-  background: var(--accent-light);
-  color: var(--accent-dark);
-}
+/* BUTTONS */
 
 .offer-btn,
 .comparison-link {
   background: linear-gradient(
     135deg,
-    var(--accent),
-    var(--accent-dark)
+    #ffb400,
+    #ff8400
   );
 
-  box-shadow: var(--shadow-button);
+  box-shadow:
+    0 8px 18px rgba(255,140,0,0.22);
 }
 
 .offer-btn:hover,
@@ -108,15 +97,14 @@
   transform: translateY(-3px);
 }
 
-/* INFO STRIP */
+/* CHECK CIRCLES */
 
-.info-strip {
-  background:
-    linear-gradient(
-      135deg,
-      #fff8eb,
-      #ffffff
-    );
+.check-circle {
+  background: linear-gradient(
+    135deg,
+    #ffb400,
+    #ff8400
+  );
 }
 
 /* COMPARISON CARDS */
@@ -149,24 +137,27 @@
     );
 }
 
-/* MINI GUIDE */
+/* GUIDE CARDS */
 
 .guide-card h3 {
-  color: var(--accent-dark);
+  color: #ff9d00;
 }
 
-/* TELEGRAM */
+/* INFO STRIP */
 
-.telegram-btn-ru {
-  background: white;
-  color: var(--telegram-blue);
-  border: 2px solid var(--telegram-blue);
+.info-strip {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8eb,
+      #ffffff
+    );
 }
 
-.telegram-btn-de {
-  background: linear-gradient(135deg, #16a8ff, #0067e8);
-  color: white;
-  border: none;
+/* INFO STRIP ICONS */
+
+.info-item img {
+  filter: none;
 }
 
 /* MOBILE */
