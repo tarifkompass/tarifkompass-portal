@@ -8,6 +8,7 @@
   --accent: #ffb400;
   --accent-dark: #ff8400;
   --accent-light: #fff6e5;
+  --shadow-button: 0 8px 18px rgba(255,140,0,0.22);
 }
 
 /* HERO */
@@ -27,28 +28,27 @@
   background-position: center;
 }
 
-/* HERO CATEGORY */
-
-.hero-category {
-  background: rgba(255,193,7,0.14);
-  color: #d18b00;
-}
-
 /* ACTIVE NAV */
 
 .nav-link.active {
   background: linear-gradient(
     135deg,
-    #ffb400,
-    #ff8400
+    var(--accent),
+    var(--accent-dark)
   );
-
   color: white;
 }
 
 .lang-btn.active {
-  background: #ffb400;
+  background: var(--accent);
   color: white;
+}
+
+/* HERO CATEGORY */
+
+.hero-category {
+  background: rgba(255,193,7,0.14);
+  color: #d18b00;
 }
 
 /* HERO TITLE */
@@ -57,34 +57,50 @@
   max-width: 760px;
 }
 
-/* OFFER COLORS */
+/* CHECK CIRCLES */
+
+.check-circle {
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-dark)
+  );
+}
+
+/* PROVIDERS */
 
 .provider-eon {
   color: #e30613;
 }
 
-/* OFFER STRIP */
+/* OFFER COLORS */
 
 .offer-card::before {
   background: linear-gradient(
     180deg,
-    #ffb400,
-    #ff8400
+    var(--accent),
+    var(--accent-dark)
   );
 }
 
-/* BUTTONS */
+.offer-title {
+  color: var(--accent-dark);
+}
+
+.offer-tags span::before {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
 
 .offer-btn,
 .comparison-link {
   background: linear-gradient(
     135deg,
-    #ffb400,
-    #ff8400
+    var(--accent),
+    var(--accent-dark)
   );
 
-  box-shadow:
-    0 8px 18px rgba(255,140,0,0.22);
+  box-shadow: var(--shadow-button);
 }
 
 .offer-btn:hover,
@@ -92,14 +108,15 @@
   transform: translateY(-3px);
 }
 
-/* CHECK CIRCLES */
+/* INFO STRIP */
 
-.check-circle {
-  background: linear-gradient(
-    135deg,
-    #ffb400,
-    #ff8400
-  );
+.info-strip {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8eb,
+      #ffffff
+    );
 }
 
 /* COMPARISON CARDS */
@@ -132,21 +149,24 @@
     );
 }
 
-/* GUIDE */
+/* MINI GUIDE */
 
 .guide-card h3 {
-  color: #ff9d00;
+  color: var(--accent-dark);
 }
 
-/* INFO STRIP */
+/* TELEGRAM */
 
-.info-strip {
-  background:
-    linear-gradient(
-      135deg,
-      #fff8eb,
-      #ffffff
-    );
+.telegram-btn-ru {
+  background: white;
+  color: var(--telegram-blue);
+  border: 2px solid var(--telegram-blue);
+}
+
+.telegram-btn-de {
+  background: linear-gradient(135deg, #16a8ff, #0067e8);
+  color: white;
+  border: none;
 }
 
 /* MOBILE */
