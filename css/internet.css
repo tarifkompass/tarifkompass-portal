@@ -288,6 +288,10 @@ a {
   height: 42px;
   object-fit: contain;
   flex-shrink: 0;
+  filter:
+    hue-rotate(82deg)
+    saturate(1.25)
+    brightness(0.95);
 }
 
 .feature-card h3 {
