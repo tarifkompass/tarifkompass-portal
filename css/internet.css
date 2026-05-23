@@ -4,10 +4,46 @@
   box-sizing: border-box;
 }
 
+:root {
+  --page-bg: #f3f5f9;
+
+  --text-main: #0b2d78;
+  --text-soft: #173d8f;
+
+  --accent: #0b7cff;
+  --accent-dark: #0047ba;
+  --accent-light: #eef4ff;
+
+  --white: #ffffff;
+
+  --container-wide: 1360px;
+  --container-main: 1280px;
+  --container-text: 1040px;
+  --container-telegram: 1120px;
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 22px;
+  --radius-xl: 26px;
+  --radius-hero: 42px;
+
+  --shadow-soft: 0 6px 15px rgba(0,0,0,0.05);
+  --shadow-card: 0 8px 18px rgba(0,0,0,0.06);
+  --shadow-button: 0 8px 18px rgba(11,124,255,0.20);
+
+  --side-padding: 34px;
+  --mobile-padding: 20px;
+
+  --btn-height: 42px;
+  --btn-height-mobile: 54px;
+
+  --transition: 0.22s ease;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background: #f3f5f9;
-  color: #0b2d78;
+  background: var(--page-bg);
+  color: var(--text-main);
   overflow-x: hidden;
 }
 
@@ -45,7 +81,7 @@ a {
   font-size: 34px;
   line-height: 1;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
 }
 
 .logo-title span {
@@ -57,7 +93,7 @@ a {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #0b2d78;
+  color: var(--text-main);
 }
 
 /* NAVIGATION */
@@ -70,13 +106,13 @@ a {
 
 .nav-link {
   padding: 12px 18px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   background: rgba(255,255,255,0.94);
-  color: #0b2d78;
+  color: var(--text-main);
   font-size: 13px;
   font-weight: 900;
   box-shadow: 0 5px 12px rgba(0,0,0,0.07);
-  transition: 0.22s ease;
+  transition: var(--transition);
 }
 
 .nav-link:hover {
@@ -84,7 +120,7 @@ a {
 }
 
 .nav-link.active {
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
 }
 
@@ -109,11 +145,11 @@ a {
 
 .lang-btn.passive {
   background: white;
-  color: #0b2d78;
+  color: var(--text-main);
 }
 
 .lang-btn.active {
-  background: #0b7cff;
+  background: var(--accent);
   color: white;
 }
 
@@ -134,8 +170,8 @@ a {
     url("../images/internet-hero-bg.webp");
   background-size: cover;
   background-position: center;
-  border-bottom-left-radius: 42px;
-  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: var(--radius-hero);
+  border-bottom-right-radius: var(--radius-hero);
 }
 
 .breadcrumbs {
@@ -162,7 +198,7 @@ a {
   margin-bottom: 22px;
   border-radius: 999px;
   background: rgba(11,124,255,0.12);
-  color: #0b7cff;
+  color: var(--accent);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -172,7 +208,7 @@ a {
   font-size: 56px;
   line-height: 1.06;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 24px;
 }
 
@@ -180,7 +216,7 @@ a {
   max-width: 620px;
   font-size: 20px;
   line-height: 1.5;
-  color: #173d8f;
+  color: var(--text-soft);
   margin-bottom: 36px;
 }
 
@@ -200,7 +236,7 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,15 +250,15 @@ a {
   font-size: 17px;
   line-height: 1.3;
   font-weight: 800;
-  color: #0b2d78;
+  color: var(--text-main);
 }
 
 /* FEATURES */
 
 .features-section {
-  max-width: 1360px;
-  margin: -42px auto 28px;
-  padding: 0 34px;
+  max-width: var(--container-wide);
+  margin: -42px auto 30px;
+  padding: 0 var(--side-padding);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
@@ -232,13 +268,13 @@ a {
 
 .feature-card {
   background: white;
-  border-radius: 18px;
-  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
-  min-height: 74px;
+  gap: 13px;
+  box-shadow: var(--shadow-soft);
+  min-height: 78px;
 }
 
 .feature-card img {
@@ -250,24 +286,24 @@ a {
 
 .feature-card h3 {
   font-size: 15px;
-  line-height: 1.05;
+  line-height: 1.08;
   font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 3px;
+  color: var(--text-main);
+  margin-bottom: 4px;
 }
 
 .feature-card p {
   font-size: 13px;
-  line-height: 1.25;
-  color: #173d8f;
+  line-height: 1.28;
+  color: var(--text-soft);
 }
 
 /* OFFERS */
 
 .offers-section {
-  max-width: 1360px;
-  margin: 0 auto 24px;
-  padding: 0 34px;
+  max-width: var(--container-wide);
+  margin: 0 auto 26px;
+  padding: 0 var(--side-padding);
 }
 
 .section-heading {
@@ -279,27 +315,27 @@ a {
   font-size: 36px;
   line-height: 1.08;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 8px;
 }
 
 .section-heading p {
   font-size: 16px;
   line-height: 1.35;
-  color: #173d8f;
+  color: var(--text-soft);
 }
 
 .offer-card {
   position: relative;
   background: white;
-  border-radius: 22px;
-  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
   display: grid;
   grid-template-columns: 170px 1fr 180px;
   align-items: center;
   gap: 24px;
   margin-bottom: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
@@ -310,7 +346,7 @@ a {
   top: 0;
   width: 10px;
   height: 100%;
-  background: #0b7cff;
+  background: var(--accent);
 }
 
 .offer-provider {
@@ -338,10 +374,10 @@ a {
 }
 
 .offer-title {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.18;
   font-weight: 900;
-  color: #0b7cff;
+  color: var(--accent);
   margin-bottom: 16px;
 }
 
@@ -354,10 +390,10 @@ a {
 .offer-tags span {
   position: relative;
   padding-left: 24px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.25;
   font-weight: 800;
-  color: #0b2d78;
+  color: var(--text-main);
 }
 
 .offer-tags span::before {
@@ -368,8 +404,8 @@ a {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  background: #eef4ff;
-  color: #0b7cff;
+  background: var(--accent-light);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,23 +425,23 @@ a {
   font-size: 26px;
   line-height: 1;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 12px;
 }
 
 .offer-btn {
   width: 150px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  height: var(--btn-height);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 14px;
   font-weight: 900;
-  box-shadow: 0 8px 18px rgba(11,124,255,0.20);
-  transition: 0.22s ease;
+  box-shadow: var(--shadow-button);
+  transition: var(--transition);
 }
 
 .offer-btn:hover {
@@ -415,23 +451,23 @@ a {
 /* INFO STRIP */
 
 .info-strip {
-  max-width: 1280px;
-  margin: 0 auto 22px;
-  padding: 15px 24px;
+  max-width: var(--container-main);
+  margin: 0 auto 24px;
+  padding: 16px 24px;
   border-radius: 20px;
   background: linear-gradient(135deg, #edf5ff, #ffffff);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+  box-shadow: var(--shadow-soft);
 }
 
 .info-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  color: #0b2d78;
+  color: var(--text-main);
   font-size: 14px;
   line-height: 1.3;
   font-weight: 800;
@@ -441,16 +477,16 @@ a {
   width: 52px;
   height: 52px;
   object-fit: contain;
-  transform: scale(1.75);
+  transform: scale(1.55);
   flex-shrink: 0;
 }
 
 /* COMPARISON INTRO */
 
 .comparison-intro {
-  max-width: 1040px;
-  margin: 0 auto 18px;
-  padding: 0 34px;
+  max-width: var(--container-text);
+  margin: 0 auto 20px;
+  padding: 0 var(--side-padding);
   text-align: center;
 }
 
@@ -458,22 +494,22 @@ a {
   font-size: 32px;
   line-height: 1.08;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 12px;
 }
 
 .comparison-intro p {
   font-size: 16px;
   line-height: 1.55;
-  color: #173d8f;
+  color: var(--text-soft);
 }
 
 /* COMPARISON */
 
 .comparison-grid {
-  max-width: 1280px;
-  margin: 0 auto 26px;
-  padding: 0 34px;
+  max-width: var(--container-main);
+  margin: 0 auto 28px;
+  padding: 0 var(--side-padding);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -481,10 +517,10 @@ a {
 
 .comparison-card {
   min-height: 150px;
-  border-radius: 22px;
+  border-radius: var(--radius-lg);
   padding: 24px;
   background: white;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  box-shadow: var(--shadow-card);
   display: flex;
   align-items: center;
 }
@@ -513,7 +549,7 @@ a {
 }
 
 .check24-logo {
-  color: #0b2d78;
+  color: var(--text-main);
   font-style: italic;
 }
 
@@ -521,7 +557,7 @@ a {
   max-width: 520px;
   font-size: 15px;
   line-height: 1.45;
-  color: #173d8f;
+  color: var(--text-soft);
   margin-bottom: 16px;
 }
 
@@ -530,15 +566,15 @@ a {
   min-width: 190px;
   height: 40px;
   padding: 0 20px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
   font-size: 14px;
   font-weight: 900;
   box-shadow: 0 8px 18px rgba(11,124,255,0.22);
-  transition: 0.22s ease;
+  transition: var(--transition);
 }
 
 .comparison-link:hover {
@@ -548,9 +584,9 @@ a {
 /* MINI GUIDE */
 
 .mini-guide {
-  max-width: 1280px;
-  margin: 0 auto 28px;
-  padding: 0 34px;
+  max-width: var(--container-main);
+  margin: 0 auto 30px;
+  padding: 0 var(--side-padding);
 }
 
 .mini-guide-header {
@@ -562,7 +598,7 @@ a {
   font-size: 32px;
   line-height: 1.08;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 10px;
 }
 
@@ -571,7 +607,7 @@ a {
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.5;
-  color: #173d8f;
+  color: var(--text-soft);
 }
 
 .mini-guide-grid {
@@ -583,7 +619,7 @@ a {
 .guide-card {
   background: white;
   border-radius: 20px;
-  padding: 20px 22px;
+  padding: 21px 22px;
   box-shadow: 0 7px 16px rgba(0,0,0,0.05);
 }
 
@@ -591,30 +627,30 @@ a {
   font-size: 18px;
   line-height: 1.1;
   font-weight: 900;
-  color: #0b7cff;
+  color: var(--accent);
   margin-bottom: 8px;
 }
 
 .guide-card p {
-  font-size: 13px;
-  line-height: 1.45;
-  color: #173d8f;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--text-soft);
 }
 
 /* TELEGRAM */
 
 .telegram-block {
-  max-width: 1120px;
-  min-height: 54px;
+  max-width: var(--container-telegram);
+  min-height: 56px;
   margin: 0 auto 34px;
   padding: 10px 28px;
   background: white;
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-soft);
 }
 
 .telegram-info {
@@ -624,24 +660,24 @@ a {
 }
 
 .telegram-info img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 .telegram-info h2 {
   font-size: 18px;
-  line-height: 1.02;
+  line-height: 1.05;
   font-weight: 900;
-  color: #0b2d78;
+  color: var(--text-main);
   margin-bottom: 2px;
 }
 
 .telegram-info p {
   font-size: 12px;
-  line-height: 1.2;
-  color: #173d8f;
+  line-height: 1.25;
+  color: var(--text-soft);
 }
 
 .telegram-buttons {
@@ -652,7 +688,7 @@ a {
 
 .telegram-btn {
   min-width: 176px;
-  height: 42px;
+  height: var(--btn-height);
   padding: 0 18px;
   border-radius: 14px;
   display: inline-flex;
@@ -661,20 +697,20 @@ a {
   gap: 10px;
   font-size: 14px;
   font-weight: 800;
-  transition: 0.22s ease;
+  transition: var(--transition);
 }
 
 .telegram-btn img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 .telegram-btn-ru {
   background: white;
-  color: #0b7cff;
-  border: 2px solid #0b7cff;
+  color: var(--accent);
+  border: 2px solid var(--accent);
   box-shadow: 0 4px 12px rgba(11,124,255,0.10);
 }
 
@@ -706,7 +742,7 @@ a {
   gap: 14px;
   font-size: 17px;
   font-weight: 700;
-  color: #0b2d78;
+  color: var(--text-main);
   transition: 0.2s ease;
 }
 
@@ -768,7 +804,7 @@ a {
 
 @media (max-width: 760px) {
   body {
-    background: #f3f5f9;
+    background: var(--page-bg);
   }
 
   .header {
@@ -777,8 +813,8 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-    background: #f3f5f9;
-    margin-bottom: 42px;
+    background: var(--page-bg);
+    margin-bottom: 38px;
   }
 
   .logo-link {
@@ -786,8 +822,8 @@ a {
   }
 
   .logo-link img {
-    width: 84px;
-    height: 84px;
+    width: 82px;
+    height: 82px;
   }
 
   .logo-title {
@@ -809,7 +845,7 @@ a {
     position: static;
     display: flex;
     gap: 10px;
-    margin: 0 0 0 104px;
+    margin: 0 0 0 102px;
   }
 
   .lang-btn {
@@ -844,7 +880,7 @@ a {
   }
 
   .hero-text p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.45;
     margin-bottom: 28px;
   }
@@ -860,7 +896,7 @@ a {
   }
 
   .hero-list-item span {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.28;
   }
 
@@ -960,7 +996,7 @@ a {
 
   .offer-btn {
     width: 100%;
-    height: 54px;
+    height: var(--btn-height-mobile);
     border-radius: 16px;
     font-size: 17px;
   }
@@ -981,7 +1017,7 @@ a {
   .info-item img {
     width: 52px;
     height: 52px;
-    transform: scale(1.55);
+    transform: scale(1.45);
   }
 
   .comparison-intro {
@@ -1022,7 +1058,7 @@ a {
 
   .comparison-link {
     width: 100%;
-    height: 54px;
+    height: var(--btn-height-mobile);
     border-radius: 16px;
     font-size: 17px;
   }
@@ -1047,17 +1083,17 @@ a {
   }
 
   .guide-card h3 {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .guide-card p {
     font-size: 15px;
-    line-height: 1.32;
+    line-height: 1.34;
   }
 
   .telegram-block {
     max-width: calc(100% - 40px);
-    padding: 24px 22px;
+    padding: 22px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 24px;
@@ -1067,7 +1103,7 @@ a {
   .telegram-info {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
   }
 
   .telegram-info img {
@@ -1076,13 +1112,13 @@ a {
   }
 
   .telegram-info h2 {
-    font-size: 28px;
-    line-height: 1.05;
+    font-size: 25px;
+    line-height: 1.08;
   }
 
   .telegram-info p {
-    font-size: 17px;
-    line-height: 1.3;
+    font-size: 16px;
+    line-height: 1.32;
   }
 
   .telegram-buttons {
@@ -1093,24 +1129,24 @@ a {
 
   .telegram-btn {
     width: 100%;
-    height: 54px;
+    height: var(--btn-height-mobile);
     font-size: 18px;
     border-radius: 16px;
   }
 
   .telegram-btn img {
     width: 30px;
-    height: 30px; 
+    height: 30px;
   }
 
   .footer {
     flex-direction: column;
-    gap: 24px;
+    gap: 22px;
     padding: 24px 20px 42px;
   }
 
   .footer a {
-    font-size: 20px;
+    font-size: 18px;
     gap: 14px;
   }
 
@@ -1123,10 +1159,4 @@ a {
     margin-top: 10px;
     font-size: 14px;
   }
-}.telegram-buttons .telegram-btn img {
-  width: 28px !important;
-  height: 28px !important;
-  transform: scale(1.35) !important;
-  object-fit: contain !important;
-  flex-shrink: 0 !important;
 }
