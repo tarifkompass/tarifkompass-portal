@@ -1,3 +1,5 @@
+/* gas.css */
+
 @import url("internet.css");
 
 /* GAS THEME */
@@ -31,6 +33,7 @@ body {
       rgba(255,255,255,0.12) 100%
     ),
     url("../images/gas-hero-bg.webp");
+
   background-size: cover;
   background-position: center;
 }
@@ -47,10 +50,12 @@ body {
 
 .hero-text h1 {
   color: #0b4f8a;
+  max-width: 760px;
 }
 
 .hero-text p {
   color: #1a4f7c;
+  max-width: 640px;
 }
 
 .check-circle {
@@ -70,8 +75,6 @@ body {
 .feature-card p {
   color: #1a4f7c;
 }
-
-/* BLUE FEATURE ICONS */
 
 .feature-card img {
   filter:
@@ -103,8 +106,11 @@ body {
       rgba(240,248,255,0.95),
       rgba(255,255,255,0.96)
     );
+
   border: 1px solid rgba(42,168,255,0.08);
-  box-shadow: 0 6px 16px rgba(42,168,255,0.05);
+
+  box-shadow:
+    0 6px 16px rgba(42,168,255,0.05);
 }
 
 .info-item {
@@ -140,7 +146,9 @@ body {
 
 .offer-btn {
   background: linear-gradient(135deg, #2aa8ff, #0b7cff);
-  box-shadow: 0 8px 18px rgba(42,168,255,0.24);
+
+  box-shadow:
+    0 8px 18px rgba(42,168,255,0.24);
 }
 
 /* PROVIDERS */
@@ -193,7 +201,9 @@ body {
 
 .comparison-link {
   background: linear-gradient(135deg, #2aa8ff, #0b7cff);
-  box-shadow: 0 8px 18px rgba(42,168,255,0.24);
+
+  box-shadow:
+    0 8px 18px rgba(42,168,255,0.24);
 }
 
 /* MINI GUIDE */
@@ -213,7 +223,8 @@ body {
 }
 
 .footer img {
-  filter: drop-shadow(0 2px 6px rgba(42,168,255,0.18));
+  filter:
+    drop-shadow(0 2px 6px rgba(42,168,255,0.18));
 }
 
 .footer::after {
@@ -241,6 +252,7 @@ body {
         rgba(235,248,255,0.50) 100%
       ),
       url("../images/gas-hero-bg.webp");
+
     background-size: cover;
     background-position: center top;
   }
