@@ -30,11 +30,11 @@ a {
     ),
     url("../images/home-hero.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center 58%;
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;
-  padding: 28px 60px 120px;
-  min-height: 720px;
+  padding: 28px 60px 150px;
+  min-height: 740px;
 }
 
 .hero::after {
@@ -42,14 +42,14 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 390px;
-  height: 220px;
+  width: 420px;
+  height: 230px;
   background:
     linear-gradient(
       90deg,
       rgba(243,245,249,0) 0%,
-      rgba(243,245,249,0.75) 45%,
-      rgba(243,245,249,0.98) 100%
+      rgba(243,245,249,0.65) 45%,
+      rgba(243,245,249,0.96) 100%
     );
   z-index: 1;
   pointer-events: none;
@@ -225,8 +225,8 @@ a {
 /* SERVICE CARDS */
 
 .service-cards {
-  max-width: 1240px;
-  margin: -85px auto 40px;
+  max-width: 1260px;
+  margin: -118px auto 34px;
   padding: 0 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -255,6 +255,41 @@ a {
 
 .service-card:hover {
   transform: translateY(-4px);
+}
+
+/* CATEGORY NOTE */
+
+.category-note {
+  max-width: 1260px;
+  margin: 0 auto 34px;
+  padding: 0 40px;
+}
+
+.category-note-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.category-note-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.055);
+}
+
+.category-note-card h3 {
+  font-size: 18px;
+  line-height: 1.08;
+  font-weight: 900;
+  color: #0b2d78;
+  margin-bottom: 7px;
+}
+
+.category-note-card p {
+  font-size: 14px;
+  line-height: 1.38;
+  color: #173d8f;
 }
 
 /* AUDIENCE */
@@ -322,10 +357,10 @@ a {
 /* TELEGRAM */
 
 .telegram-block {
-  max-width: 1200px;
+  max-width: 1320px;
   min-height: 58px;
   margin: 0 auto 30px;
-  padding: 6px 34px;
+  padding: 8px 34px;
   background: white;
   border-radius: 18px;
   display: flex;
@@ -350,16 +385,16 @@ a {
 }
 
 .telegram-info h2 {
-  font-size: 22px;
-  line-height: 1;
+  font-size: 19px;
+  line-height: 1.05;
   font-weight: 900;
   color: #0b2d78;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 
 .telegram-info p {
-  font-size: 13px;
-  line-height: 1.1;
+  font-size: 12px;
+  line-height: 1.2;
   color: #173d8f;
 }
 
@@ -370,7 +405,7 @@ a {
 }
 
 .telegram-btn {
-  min-width: 160px;
+  min-width: 170px;
   height: 42px;
   padding: 0 18px;
   border-radius: 14px;
@@ -464,6 +499,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .category-note-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .audience-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -480,6 +519,7 @@ a {
     min-height: auto;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+    background-position: center top;
   }
 
   .hero::after {
@@ -590,6 +630,29 @@ a {
     max-width: none;
     margin: -2px;
     border-radius: 24px;
+  }
+
+  .category-note {
+    padding: 0 20px;
+  }
+
+  .category-note-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .category-note-card {
+    border-radius: 22px;
+    padding: 20px 22px;
+  }
+
+  .category-note-card h3 {
+    font-size: 22px;
+  }
+
+  .category-note-card p {
+    font-size: 16px;
+    line-height: 1.38;
   }
 
   .audience {
