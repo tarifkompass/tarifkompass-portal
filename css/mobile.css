@@ -2,20 +2,30 @@
 
 /* MOBILE THEME */
 
-body {
-  background: #eef4ff;
-  color: #0b2d78;
+:root {
+  --page-bg: #eef4ff;
+
+  --accent: #0b7cff;
+  --accent-dark: #0047ba;
+  --accent-light: #eef4ff;
+
+  --shadow-button: 0 8px 18px rgba(11,124,255,0.24);
 }
 
-/* ACTIVE NAV */
+body {
+  background: var(--page-bg);
+  color: var(--text-main);
+}
+
+/* NAV / LANGUAGE */
 
 .nav-link.active {
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: white;
 }
 
 .lang-btn.active {
-  background: #0b7cff;
+  background: var(--accent);
   color: white;
 }
 
@@ -35,41 +45,16 @@ body {
   background-position: center;
 }
 
-.breadcrumbs,
-.breadcrumbs a {
-  color: rgba(11,45,120,0.72);
-}
-
 .hero-category {
   background: rgba(11,124,255,0.14);
-  color: #0b7cff;
-}
-
-.hero-text h1 {
-  color: #0b2d78;
-}
-
-.hero-text p {
-  color: #173d8f;
+  color: var(--accent);
 }
 
 .check-circle {
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
-}
-
-.hero-list-item span {
-  color: #0b2d78;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
 }
 
 /* FEATURES */
-
-.feature-card h3 {
-  color: #0b2d78;
-}
-
-.feature-card p {
-  color: #173d8f;
-}
 
 .feature-card img {
   filter:
@@ -91,54 +76,24 @@ body {
   box-shadow: 0 6px 16px rgba(11,124,255,0.05);
 }
 
-.info-item {
-  color: #0b2d78;
-}
-
-.info-item img {
-  filter: none;
-}
-
-/* SECTION TITLES */
-
-.section-heading h2,
-.comparison-intro h2,
-.mini-guide-header h2 {
-  color: #0b2d78;
-}
-
-.section-heading p,
-.comparison-intro p,
-.mini-guide-header p {
-  color: #173d8f;
-}
-
 /* OFFERS */
 
 .offer-card::before {
-  background: #0b7cff;
+  background: var(--accent);
 }
 
 .offer-title {
-  color: #0b7cff;
-}
-
-.offer-tags span {
-  color: #0b2d78;
+  color: var(--accent);
 }
 
 .offer-tags span::before {
-  background: #eef4ff;
-  color: #0b7cff;
-}
-
-.offer-price {
-  color: #0b2d78;
+  background: var(--accent-light);
+  color: var(--accent);
 }
 
 .offer-btn {
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
-  box-shadow: 0 8px 18px rgba(11,124,255,0.24);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  box-shadow: var(--shadow-button);
 }
 
 /* PROVIDERS */
@@ -201,43 +156,35 @@ body {
     );
 }
 
-.comparison-card p {
-  color: #173d8f;
-}
-
 .comparison-link {
-  background: linear-gradient(135deg, #0b7cff, #0047ba);
-  box-shadow: 0 8px 18px rgba(11,124,255,0.24);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  box-shadow: var(--shadow-button);
 }
 
 /* MINI GUIDE */
 
 .guide-card h3 {
-  color: #0b7cff;
-}
-
-.guide-card p {
-  color: #173d8f;
+  color: var(--accent);
 }
 
 /* TELEGRAM */
 
+.telegram-btn-ru {
+  background: white;
+  color: var(--telegram-blue);
+  border: 2px solid var(--telegram-blue);
+}
+
 .telegram-btn-de {
   background: linear-gradient(135deg, #16a8ff, #0067e8);
+  color: white;
+  border: none;
 }
 
 /* FOOTER */
 
-.footer a {
-  color: #0b2d78;
-}
-
 .footer img {
   filter: drop-shadow(0 2px 6px rgba(11,124,255,0.18));
-}
-
-.footer::after {
-  color: rgba(11,45,120,0.55);
 }
 
 /* MOBILE */
@@ -245,11 +192,11 @@ body {
 @media (max-width: 760px) {
 
   body {
-    background: #eef4ff;
+    background: var(--page-bg);
   }
 
   .header {
-    background: #eef4ff;
+    background: var(--page-bg);
   }
 
   .hero {
