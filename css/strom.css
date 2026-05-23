@@ -2,7 +2,15 @@
 
 @import url("internet.css");
 
-/* HERO BACKGROUND */
+/* STROM COLORS */
+
+:root {
+  --accent: #ffb400;
+  --accent-dark: #ff8400;
+  --accent-light: #fff6e5;
+}
+
+/* HERO */
 
 .hero {
   background:
@@ -24,6 +32,23 @@
 .hero-category {
   background: rgba(255,193,7,0.14);
   color: #d18b00;
+}
+
+/* ACTIVE NAV */
+
+.nav-link.active {
+  background: linear-gradient(
+    135deg,
+    #ffb400,
+    #ff8400
+  );
+
+  color: white;
+}
+
+.lang-btn.active {
+  background: #ffb400;
+  color: white;
 }
 
 /* HERO TITLE */
@@ -107,7 +132,7 @@
     );
 }
 
-/* GUIDE CARDS */
+/* GUIDE */
 
 .guide-card h3 {
   color: #ff9d00;
