@@ -283,15 +283,15 @@ a{
   box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* юбка почти исчезает */
+/* юбка почти в ноль */
 
 .audience-card > img{
   position:absolute;
 
   top:4px;
-  left:1px;
+  left:0;
 
-  width:calc(100% - 2px);
+  width:100%;
   height:calc(100% - 8px);
 
   object-fit:cover;
