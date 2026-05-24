@@ -274,7 +274,6 @@ a{
   object-fit:cover;
 }
 
-/* 2-я и 3-я картинки: режем бока, не верх/низ */
 .audience-card:nth-child(2) > img,
 .audience-card:nth-child(3) > img{
   top:0;
@@ -329,45 +328,43 @@ a{
 /* TELEGRAM */
 
 .telegram-block{
-  max-width:1200px;
-  min-height:84px;
-  margin:0 auto 26px;
-  padding:12px 32px;
-  background:white;
-  border-radius:18px;
+  max-width:1120px;
+  min-height:92px;
+  margin:0 auto 34px;
+  padding:14px 28px;
+  background:#ffffff;
+  border-radius:22px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:22px;
-  box-shadow:0 6px 14px rgba(0,0,0,0.05);
+  gap:18px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.05);
 }
 
 .telegram-info{
   display:flex;
   align-items:center;
-  gap:22px;
+  gap:16px;
 }
 
 .telegram-info img{
-  width:30px;
-  height:30px;
+  width:46px;
+  height:46px;
   object-fit:contain;
-  transform:scale(2.25);
-  transform-origin:center;
   flex-shrink:0;
 }
 
 .telegram-info h2{
-  font-size:21px;
-  line-height:1;
+  font-size:20px;
+  line-height:1.05;
   font-weight:900;
   color:#0b2d78;
   margin-bottom:3px;
 }
 
 .telegram-info p{
-  font-size:13px;
-  line-height:1.24;
+  font-size:14px;
+  line-height:1.35;
   color:#173d8f;
 }
 
@@ -378,24 +375,23 @@ a{
 }
 
 .telegram-btn{
-  min-width:178px;
-  height:44px;
-  padding:0 18px;
-  border-radius:14px;
+  min-width:190px;
+  height:46px;
+  padding:0 20px;
+  border-radius:15px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:14px;
-  font-size:15px;
+  gap:12px;
+  font-size:14px;
   font-weight:800;
+  transition:0.2s ease;
 }
 
 .telegram-btn img{
-  width:28px;
-  height:28px;
+  width:30px;
+  height:30px;
   object-fit:contain;
-  transform:scale(1.7);
-  transform-origin:center;
   flex-shrink:0;
 }
 
@@ -408,6 +404,7 @@ a{
 .telegram-btn-de{
   background:linear-gradient(135deg,#16a8ff,#0067e8);
   color:white;
+  border:none;
 }
 
 /* FOOTER */
@@ -416,26 +413,24 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:58px;
-  padding:18px 20px 42px;
+  gap:56px;
+  padding:12px 20px 42px;
   flex-wrap:wrap;
 }
 
 .footer a{
   display:flex;
   align-items:center;
-  gap:24px;
+  gap:14px;
   font-size:17px;
   font-weight:700;
   color:#0b2d78;
 }
 
 .footer img{
-  width:30px;
-  height:30px;
+  width:34px;
+  height:34px;
   object-fit:contain;
-  transform:scale(2.6);
-  transform-origin:center;
   flex-shrink:0;
 }
 
@@ -443,9 +438,8 @@ a{
   content:"© TarifKompass 2026";
   flex-basis:100%;
   text-align:center;
-  margin-top:10px;
+  margin-top:8px;
   font-size:13px;
-  font-weight:600;
   color:rgba(11,45,120,0.55);
 }
 
@@ -547,7 +541,6 @@ a{
   .telegram-info img{
     width:36px;
     height:36px;
-    transform:scale(1);
   }
 
   .telegram-info h2{
@@ -576,7 +569,6 @@ a{
   .telegram-btn img{
     width:40px;
     height:40px;
-    transform:scale(1);
   }
 
   .footer{
@@ -587,13 +579,12 @@ a{
 
   .footer a{
     font-size:18px;
-    gap:18px;
+    gap:12px;
   }
 
   .footer img{
     width:30px;
     height:30px;
-    transform:scale(1.4);
   }
 
   .footer::after{
