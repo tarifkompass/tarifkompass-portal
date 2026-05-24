@@ -218,37 +218,95 @@ a{
 
   white-space:nowrap;
 }
-
-/* SERVICE CARDS */
+/* =========================
+   SERVICE CARDS
+========================= */
 
 .service-cards{
-  max-width:1140px;
-  margin:-44px auto 24px;
-  padding:0;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
-  position:relative;
-  z-index:10;
+    max-width:1280px;
+
+    margin:-72px auto 34px;
+
+    padding:0 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    gap:18px;
+
+    position:relative;
+    z-index:5;
 }
 
 .service-card{
-  display:block;
-  border-radius:22px;
-  overflow:hidden;
-  background:transparent;
-  transition:0.22s ease;
-}
+    display:block;
 
-.service-card:hover{
-  transform:translateY(-4px);
+    width:268px;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    transition:0.25s ease;
+
+    box-shadow:none;
+    filter:none;
+
+    background:transparent;
 }
 
 .service-card img{
-  width:100%;
-  display:block;
-  border-radius:22px;
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    border-radius:22px;
+
+    box-shadow:none;
+    filter:none;
 }
+
+/* hover */
+
+.service-card:hover{
+    transform:translateY(-4px);
+}
+
+/* mobile */
+
+@media(max-width:1150px){
+
+    .service-cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+@media(max-width:768px){
+
+    .service-cards{
+        margin:-50px auto 28px;
+        gap:14px;
+        padding:0 14px;
+    }
+
+    .service-card{
+        width:calc(50% - 10px);
+    }
+}
+
+@media(max-width:560px){
+
+    .service-card{
+        width:100%;
+        max-width:320px;
+    }
+}
+
 /* =========================
    AUDIENCE
 ========================= */
