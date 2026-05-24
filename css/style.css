@@ -318,33 +318,35 @@ a{
   color:#0b2d78;
 }
 
-/* TELEGRAM */
+/* ===== TELEGRAM ===== */
 
 .telegram-block{
   max-width:1120px;
-  min-height:92px;
-  margin:0 auto 34px;
-  padding:14px 28px;
+  min-height:104px;
+  margin:0 auto 40px;
+  padding:18px 30px;
   background:#ffffff;
-  border-radius:22px;
+  border-radius:24px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
+  gap:24px;
   box-shadow:0 6px 16px rgba(0,0,0,0.05);
 }
 
 .telegram-info{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:18px;
+  flex:1;
 }
 
 .telegram-info img{
-  width:58px;
-  height:58px;
+  width:64px;
+  height:64px;
+  min-width:64px;
+  min-height:64px;
   object-fit:contain;
-  flex-shrink:0;
 }
 
 .telegram-info h2{
@@ -352,11 +354,11 @@ a{
   line-height:1.05;
   font-weight:900;
   color:#0b2d78;
-  margin-bottom:3px;
+  margin-bottom:4px;
 }
 
 .telegram-info p{
-  font-size:14px;
+  font-size:15px;
   line-height:1.35;
   color:#173d8f;
 }
@@ -368,46 +370,45 @@ a{
 }
 
 .telegram-btn{
-  min-width:190px;
-  height:46px;
-  padding:0 20px;
-  border-radius:15px;
-  display:inline-flex;
+  min-width:196px;
+  height:52px;
+  padding:0 22px;
+  border-radius:16px;
+  display:flex;
   align-items:center;
   justify-content:center;
   gap:12px;
-  font-size:14px;
+  font-size:15px;
   font-weight:800;
-  transition:0.2s ease;
 }
 
 .telegram-btn img{
-  width:34px;
-  height:34px;
+  width:36px;
+  height:36px;
+  min-width:36px;
+  min-height:36px;
   object-fit:contain;
-  flex-shrink:0;
 }
 
 .telegram-btn-ru{
-  background:white;
-  color:#0b7cff;
+  background:#fff;
   border:2px solid #0b7cff;
+  color:#0b7cff;
 }
 
 .telegram-btn-de{
-  background:linear-gradient(135deg,#16a8ff,#0067e8);
-  color:white;
-  border:none;
+  background:linear-gradient(135deg,#19a8ff,#0069ea);
+  color:#fff;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 
 .footer{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:56px;
-  padding:12px 20px 42px;
+  gap:72px;
+  padding:8px 20px 42px;
   flex-wrap:wrap;
 }
 
@@ -416,15 +417,16 @@ a{
   align-items:center;
   gap:14px;
   font-size:17px;
-  font-weight:700;
+  font-weight:800;
   color:#0b2d78;
 }
 
 .footer img{
-  width:42px;
-  height:42px;
+  width:48px;
+  height:48px;
+  min-width:48px;
+  min-height:48px;
   object-fit:contain;
-  flex-shrink:0;
 }
 
 .footer::after{
