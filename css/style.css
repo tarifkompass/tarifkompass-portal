@@ -283,15 +283,15 @@ a{
   box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* тонкая боковая юбка */
+/* юбка почти исчезает */
 
 .audience-card > img{
   position:absolute;
 
   top:4px;
-  left:2px;
+  left:1px;
 
-  width:calc(100% - 4px);
+  width:calc(100% - 2px);
   height:calc(100% - 8px);
 
   object-fit:cover;
@@ -325,7 +325,6 @@ a{
   line-height:1.28;
   color:#173d8f;
 }
-
 /* INFO BLOCK */
 
 .info-transition{
