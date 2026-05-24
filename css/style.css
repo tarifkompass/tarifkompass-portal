@@ -19,6 +19,10 @@ a{
   text-decoration:none;
 }
 
+/* =========================
+   HERO
+========================= */
+
 .hero{
   position:relative;
   overflow:hidden;
@@ -39,7 +43,9 @@ a{
   min-height:650px;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .header{
   display:grid;
@@ -79,7 +85,9 @@ a{
   color:#0b2d78;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 
 .top-nav{
   display:flex;
@@ -119,7 +127,9 @@ a{
   background:linear-gradient(135deg,#49cfff,#1598ec);
 }
 
-/* LANG */
+/* =========================
+   LANGUAGE
+========================= */
 
 .lang-switch{
   display:flex;
@@ -149,7 +159,9 @@ a{
   color:white;
 }
 
-/* HERO TEXT */
+/* =========================
+   HERO TEXT
+========================= */
 
 .hero-content{
   max-width:760px;
@@ -170,14 +182,15 @@ a{
   margin-bottom:42px;
 }
 
-/* FEATURES */
+/* =========================
+   FEATURES
+========================= */
 
 .features{
   display:flex;
   align-items:center;
   justify-content:flex-start;
   gap:42px;
-
   flex-wrap:nowrap;
 }
 
@@ -185,7 +198,6 @@ a{
   display:flex;
   align-items:center;
   gap:22px;
-
   min-width:0;
 }
 
@@ -193,21 +205,15 @@ a{
   width:56px;
   height:56px;
   object-fit:contain;
-
   transform:scale(1.75);
   transform-origin:center;
-
   flex-shrink:0;
 }
-
-/* SMS чуть больше */
 
 .feature:nth-child(3) img{
   width:64px;
   height:64px;
-
   transform:scale(2.05);
-  transform-origin:center;
 }
 
 .feature span{
@@ -215,63 +221,51 @@ a{
   line-height:1.14;
   font-weight:900;
   color:#0b2d78;
-
   white-space:nowrap;
 }
+
 /* =========================
-        SERVICE CARDS
+   SERVICE CARDS
 ========================= */
 
 .service-cards{
-    max-width:1080px;
-    margin:-54px auto 28px;
-    padding:0 12px;
-
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:14px;
-
-    position:relative;
-    z-index:10;
+  max-width:1080px;
+  margin:-54px auto 28px;
+  padding:0 12px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  position:relative;
+  z-index:10;
 }
 
 .service-card{
-    display:block;
-
-    height:520px;
-
-    border-radius:22px;
-    overflow:hidden;
-
-    background:transparent;
-    box-shadow:none;
-    filter:none;
-
-    transition:0.22s ease;
+  display:block;
+  height:520px;
+  border-radius:22px;
+  overflow:hidden;
+  background:transparent;
+  box-shadow:none;
+  filter:none;
+  transition:0.22s ease;
 }
 
 .service-card img{
-    display:block;
-
-    width:calc(100% + 18px);
-    height:calc(100% + 8px);
-
-    margin:-4px -9px;
-
-    object-fit:cover;
-    object-position:center;
-
-    border-radius:22px;
-
-    box-shadow:none;
-    filter:none;
+  display:block;
+  width:calc(100% + 18px);
+  height:calc(100% + 8px);
+  margin:-4px -9px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:22px;
+  box-shadow:none;
+  filter:none;
 }
 
 .service-card:hover{
-    transform:translateY(-4px);
+  transform:translateY(-4px);
 }
 
-/* RESPONSIVE */
 /* =========================
    AUDIENCE
 ========================= */
@@ -306,8 +300,6 @@ a{
   box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* юбка тонкая и одинаковая */
-
 .audience-card > img{
   position:absolute;
   top:3px;
@@ -341,37 +333,9 @@ a{
   color:#173d8f;
 }
 
-/* MOBILE */
-
-@media(max-width:1150px){
-  .audience-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:760px){
-  .audience-grid{
-    grid-template-columns:1fr;
-  }
-
-  .audience-card{
-    min-height:140px;
-  }
-
-  .audience-card > div{
-    left:45%;
-    width:47%;
-  }
-
-  .audience-card h3{
-    font-size:15px;
-  }
-
-  .audience-card p{
-    font-size:12px;
-  }
-}
-/* INFO BLOCK */
+/* =========================
+   INFO TEXT
+========================= */
 
 .info-transition{
   max-width:1120px;
@@ -389,7 +353,10 @@ a{
 .info-transition strong{
   color:#0b2d78;
 }
-/* ===== TELEGRAM BLOCK ===== */
+
+/* =========================
+   TELEGRAM
+========================= */
 
 .telegram-block{
   max-width:1120px;
@@ -416,7 +383,6 @@ a{
   height:46px;
   object-fit:contain;
   flex-shrink:0;
-
   transform:scale(1.65);
   transform-origin:center;
 }
@@ -460,7 +426,6 @@ a{
   height:30px;
   object-fit:contain;
   flex-shrink:0;
-
   transform:scale(1.75);
   transform-origin:center;
 }
@@ -477,7 +442,9 @@ a{
   border:none;
 }
 
-/* ===== FOOTER ===== */
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
   display:flex;
@@ -502,7 +469,6 @@ a{
   height:34px;
   object-fit:contain;
   flex-shrink:0;
-
   transform:scale(4.2);
   transform-origin:center;
 }
@@ -516,91 +482,340 @@ a{
   color:rgba(11,45,120,0.55);
 }
 
-/* MOBILE */
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:1150px){
 
   .service-cards{
-    grid-template-columns:1fr 1fr;
+    max-width:720px;
+    grid-template-columns:repeat(2,1fr);
   }
 
   .audience-grid{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .features{
+    flex-wrap:wrap;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:760px){
 
   .hero{
-    padding:22px 18px 76px;
+    padding:22px 28px 66px;
     min-height:auto;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    background-position:center top;
   }
 
   .header{
-    grid-template-columns:1fr;
-    gap:18px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:start;
+    gap:14px;
+    margin-bottom:42px;
+  }
+
+  .logo{
+    gap:12px;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  .logo img{
+    width:58px;
+    height:58px;
+    flex-shrink:0;
+  }
+
+  .logo-title{
+    font-size:34px;
+    line-height:0.95;
+    white-space:nowrap;
+  }
+
+  .logo-subtitle{
+    font-size:11px;
+    line-height:1.2;
+    letter-spacing:1px;
+    white-space:nowrap;
   }
 
   .top-nav{
     display:none;
   }
 
+  .lang-switch{
+    display:flex;
+    gap:8px;
+    justify-self:end;
+    align-self:start;
+    margin-top:4px;
+    position:relative;
+    z-index:20;
+  }
+
+  .lang-btn{
+    width:38px;
+    height:38px;
+    font-size:13px;
+    border-radius:10px;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
   .hero-text h1{
-    font-size:42px;
+    font-size:43px;
+    line-height:1.08;
+    margin-bottom:24px;
   }
 
   .hero-text p{
-    font-size:18px;
+    font-size:22px;
+    line-height:1.55;
+    margin-bottom:36px;
   }
 
   .features{
+    display:flex;
     flex-direction:column;
     align-items:flex-start;
-    gap:18px;
+    gap:30px;
+    flex-wrap:nowrap;
+  }
+
+  .feature{
+    gap:22px;
+  }
+
+  .feature img{
+    width:50px;
+    height:50px;
+    transform:scale(1.6);
+  }
+
+  .feature:nth-child(3) img{
+    width:58px;
+    height:58px;
+    transform:scale(1.85);
+  }
+
+  .feature span{
+    font-size:24px;
+    line-height:1.18;
+    white-space:normal;
   }
 
   .service-cards{
+    max-width:360px;
     grid-template-columns:1fr;
-    margin-top:-34px;
-    padding:0 14px;
+    gap:18px;
+    margin:-34px auto 34px;
+    padding:0 16px;
+  }
+
+  .service-card{
+    height:440px;
+    border-radius:28px;
+  }
+
+  .service-card img{
+    width:calc(100% + 14px);
+    height:calc(100% + 6px);
+    margin:-3px -7px;
+    border-radius:28px;
+  }
+
+  .audience{
+    padding:0 28px;
+    margin-bottom:34px;
+  }
+
+  .audience h2{
+    font-size:40px;
+    line-height:1.08;
+    margin-bottom:28px;
   }
 
   .audience-grid{
     grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .audience-card{
+    min-height:170px;
+    border-radius:28px;
+  }
+
+  .audience-card > img{
+    top:6px;
+    left:6px;
+    width:calc(100% - 12px);
+    height:calc(100% - 12px);
+    border-radius:22px;
+  }
+
+  .audience-card > div{
+    left:47%;
+    width:45%;
+  }
+
+  .audience-card h3{
+    font-size:22px;
+    line-height:1.08;
+    margin-bottom:8px;
+  }
+
+  .audience-card p{
+    font-size:17px;
+    line-height:1.28;
+  }
+
+  .info-transition{
+    padding:0 32px;
+    margin:34px auto 34px;
+  }
+
+  .info-transition p{
+    font-size:24px;
+    line-height:1.65;
   }
 
   .telegram-block{
-    max-width:calc(100% - 40px);
+    max-width:calc(100% - 56px);
     min-height:auto;
-    margin-top:34px;
-    padding:22px;
+    margin:0 auto 34px;
+    padding:28px 26px;
     flex-direction:column;
     align-items:flex-start;
-    border-radius:24px;
+    border-radius:28px;
   }
 
   .telegram-info{
     flex-direction:column;
     align-items:flex-start;
-    gap:14px;
+    gap:18px;
+  }
+
+  .telegram-info img{
+    width:40px;
+    height:40px;
+    transform:scale(1.45);
+  }
+
+  .telegram-info h2{
+    font-size:28px;
+    line-height:1.08;
+  }
+
+  .telegram-info p{
+    font-size:20px;
+    line-height:1.35;
   }
 
   .telegram-buttons{
     width:100%;
     flex-direction:column;
-    gap:14px;
+    gap:16px;
   }
 
   .telegram-btn{
     width:100%;
-    height:54px;
-    font-size:17px;
-    border-radius:16px;
+    height:58px;
+    font-size:20px;
+    border-radius:18px;
+  }
+
+  .telegram-btn img{
+    width:32px;
+    height:32px;
+    transform:scale(1.35);
   }
 
   .footer{
     flex-direction:column;
-    gap:20px;
-    padding:24px 20px 40px;
+    gap:24px;
+    padding:24px 20px 44px;
+  }
+
+  .footer a{
+    font-size:20px;
+    gap:28px;
+  }
+
+  .footer img{
+    width:30px;
+    height:30px;
+    transform:scale(2.8);
+  }
+
+  .footer::after{
+    margin-top:10px;
+    font-size:14px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:420px){
+
+  .hero{
+    padding:20px 22px 60px;
+  }
+
+  .logo-title{
+    font-size:30px;
+  }
+
+  .logo-subtitle{
+    font-size:10px;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+  .hero-text p{
+    font-size:20px;
+  }
+
+  .service-cards{
+    max-width:340px;
+  }
+
+  .service-card{
+    height:420px;
+  }
+
+  .audience h2{
+    font-size:36px;
+  }
+
+  .audience-card{
+    min-height:160px;
+  }
+
+  .audience-card h3{
+    font-size:20px;
+  }
+
+  .audience-card p{
+    font-size:16px;
+  }
+
+  .info-transition p{
+    font-size:22px;
   }
 }
