@@ -22,7 +22,6 @@ a{
 .hero{
   position:relative;
   overflow:hidden;
-
   background:
   linear-gradient(
     90deg,
@@ -32,15 +31,11 @@ a{
     rgba(255,255,255,0.02) 100%
   ),
   url("../images/home-hero.webp");
-
   background-size:cover;
   background-position:center;
-
   border-bottom-left-radius:42px;
   border-bottom-right-radius:42px;
-
   padding:28px 54px 74px;
-
   min-height:650px;
 }
 
@@ -50,9 +45,7 @@ a{
   display:grid;
   grid-template-columns:auto 1fr auto;
   align-items:start;
-
   gap:34px;
-
   margin-bottom:54px;
 }
 
@@ -80,12 +73,9 @@ a{
 
 .logo-subtitle{
   margin-top:8px;
-
   font-size:13px;
   font-weight:800;
-
   letter-spacing:1.3px;
-
   color:#0b2d78;
 }
 
@@ -95,24 +85,17 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-
   gap:12px;
-
   padding-top:2px;
 }
 
 .nav-btn{
   padding:15px 24px;
-
   border-radius:12px;
-
   color:white;
-
   font-size:15px;
   font-weight:900;
-
   box-shadow:0 5px 12px rgba(0,0,0,0.10);
-
   transition:0.22s ease;
 }
 
@@ -141,23 +124,18 @@ a{
 .lang-switch{
   display:flex;
   gap:10px;
-
   justify-self:end;
 }
 
 .lang-btn{
   width:44px;
   height:44px;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   border-radius:10px;
-
   font-size:14px;
   font-weight:900;
-
   box-shadow:0 5px 12px rgba(0,0,0,0.10);
 }
 
@@ -181,18 +159,14 @@ a{
   font-size:72px;
   line-height:1.02;
   font-weight:900;
-
   color:#0b2d78;
-
   margin-bottom:24px;
 }
 
 .hero-text p{
   font-size:23px;
   line-height:1.55;
-
   color:#173d8f;
-
   margin-bottom:42px;
 }
 
@@ -208,20 +182,21 @@ a{
 .feature{
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:26px;
 }
 
 .feature img{
-  width:38px;
-  height:38px;
+  width:42px;
+  height:42px;
   object-fit:contain;
+  transform:scale(3.8);
+  transform-origin:center;
 }
 
 .feature span{
   font-size:18px;
   line-height:1.18;
   font-weight:900;
-
   color:#0b2d78;
 }
 
@@ -229,28 +204,20 @@ a{
 
 .service-cards{
   max-width:1140px;
-
   margin:-44px auto 24px;
   padding:0;
-
   display:grid;
   grid-template-columns:repeat(4,1fr);
-
   gap:12px;
-
   position:relative;
   z-index:10;
 }
 
 .service-card{
   display:block;
-
   border-radius:22px;
-
   overflow:hidden;
-
   background:transparent;
-
   transition:0.22s ease;
 }
 
@@ -261,7 +228,6 @@ a{
 .service-card img{
   width:100%;
   display:block;
-
   border-radius:22px;
 }
 
@@ -269,79 +235,60 @@ a{
 
 .audience{
   max-width:1230px;
-
   margin:0 auto 20px;
-
   padding:0 20px;
 }
 
 .audience h2{
   text-align:center;
-
   font-size:34px;
   font-weight:900;
-
   color:#0b2d78;
-
   margin-bottom:22px;
 }
 
 .audience-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-
   gap:12px;
 }
 
 .audience-card{
   position:relative;
-
   min-height:118px;
-
   border-radius:18px;
-
   overflow:hidden;
-
   background:transparent;
 }
 
 .audience-card > img{
   position:absolute;
   inset:0;
-
   width:100%;
   height:100%;
-
   object-fit:cover;
 }
 
 .audience-card > div{
   position:absolute;
-
   top:50%;
   left:46%;
-
   transform:translateY(-50%);
-
-  width:44%;
-
+  width:45%;
   z-index:2;
 }
 
 .audience-card h3{
-  font-size:12px;
+  font-size:14px;
   line-height:1.05;
   font-weight:900;
-
   color:#0b2d78;
-
-  margin-bottom:4px;
+  margin-bottom:5px;
 }
 
 .audience-card p{
-  font-size:11px;
-  line-height:1.28;
-
+  font-size:12px;
+  line-height:1.25;
   color:#173d8f;
 }
 
@@ -349,17 +296,14 @@ a{
 
 .info-transition{
   max-width:1120px;
-
   margin:32px auto 24px;
   padding:0 20px;
-
   text-align:center;
 }
 
 .info-transition p{
   font-size:18px;
   line-height:1.75;
-
   color:#173d8f;
 }
 
@@ -371,22 +315,15 @@ a{
 
 .telegram-block{
   max-width:1200px;
-
   min-height:84px;
-
   margin:0 auto 26px;
   padding:12px 32px;
-
   background:white;
-
   border-radius:18px;
-
   display:flex;
   align-items:center;
   justify-content:space-between;
-
   gap:22px;
-
   box-shadow:0 6px 14px rgba(0,0,0,0.05);
 }
 
@@ -397,27 +334,23 @@ a{
 }
 
 .telegram-info img{
-  width:36px;
-  height:36px;
-
+  width:38px;
+  height:38px;
   object-fit:contain;
+  flex-shrink:0;
 }
 
 .telegram-info h2{
   font-size:21px;
   line-height:1;
-
   font-weight:900;
-
   color:#0b2d78;
-
   margin-bottom:3px;
 }
 
 .telegram-info p{
   font-size:13px;
   line-height:1.24;
-
   color:#173d8f;
 }
 
@@ -430,36 +363,31 @@ a{
 .telegram-btn{
   min-width:178px;
   height:44px;
-
   padding:0 18px;
-
   border-radius:14px;
-
   display:inline-flex;
   align-items:center;
   justify-content:center;
-
   gap:10px;
-
   font-size:15px;
   font-weight:800;
 }
 
 .telegram-btn img{
-  width:22px;
-  height:22px;
+  width:40px;
+  height:40px;
+  object-fit:contain;
+  flex-shrink:0;
 }
 
 .telegram-btn-ru{
   background:white;
   color:#0b7cff;
-
   border:2px solid #0b7cff;
 }
 
 .telegram-btn-de{
   background:linear-gradient(135deg,#16a8ff,#0067e8);
-
   color:white;
 }
 
@@ -469,29 +397,25 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-
   gap:58px;
-
   padding:18px 20px 42px;
-
   flex-wrap:wrap;
 }
 
 .footer a{
   display:flex;
   align-items:center;
-
-  gap:14px;
-
+  gap:15px;
   font-size:17px;
   font-weight:700;
-
   color:#0b2d78;
 }
 
 .footer img{
-  width:24px;
-  height:24px;
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  flex-shrink:0;
 }
 
 /* MOBILE */
@@ -537,6 +461,12 @@ a{
     gap:18px;
   }
 
+  .feature img{
+    width:34px;
+    height:34px;
+    transform:scale(3.1);
+  }
+
   .service-cards{
     grid-template-columns:1fr;
     margin-top:-34px;
@@ -566,7 +496,6 @@ a{
   .telegram-block{
     flex-direction:column;
     align-items:flex-start;
-
     padding:22px;
   }
 
