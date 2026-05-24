@@ -317,36 +317,36 @@ a{
 .info-transition strong{
   color:#0b2d78;
 }
-
-/* ===== TELEGRAM ===== */
+/* ===== TELEGRAM BLOCK ===== */
 
 .telegram-block{
   max-width:1120px;
-  min-height:104px;
-  margin:0 auto 40px;
-  padding:18px 30px;
+  min-height:92px;
+  margin:0 auto 34px;
+  padding:14px 28px;
   background:#ffffff;
-  border-radius:24px;
+  border-radius:22px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:24px;
+  gap:18px;
   box-shadow:0 6px 16px rgba(0,0,0,0.05);
 }
 
 .telegram-info{
   display:flex;
   align-items:center;
-  gap:18px;
-  flex:1;
+  gap:16px;
 }
 
 .telegram-info img{
-  width:64px;
-  height:64px;
-  min-width:64px;
-  min-height:64px;
+  width:46px;
+  height:46px;
   object-fit:contain;
+  flex-shrink:0;
+
+  transform:scale(1.65);
+  transform-origin:center;
 }
 
 .telegram-info h2{
@@ -354,11 +354,11 @@ a{
   line-height:1.05;
   font-weight:900;
   color:#0b2d78;
-  margin-bottom:4px;
+  margin-bottom:3px;
 }
 
 .telegram-info p{
-  font-size:15px;
+  font-size:14px;
   line-height:1.35;
   color:#173d8f;
 }
@@ -370,35 +370,39 @@ a{
 }
 
 .telegram-btn{
-  min-width:196px;
-  height:52px;
-  padding:0 22px;
-  border-radius:16px;
-  display:flex;
+  min-width:190px;
+  height:46px;
+  padding:0 20px;
+  border-radius:15px;
+  display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:12px;
-  font-size:15px;
+  font-size:14px;
   font-weight:800;
+  transition:0.2s ease;
 }
 
 .telegram-btn img{
-  width:36px;
-  height:36px;
-  min-width:36px;
-  min-height:36px;
+  width:30px;
+  height:30px;
   object-fit:contain;
+  flex-shrink:0;
+
+  transform:scale(1.75);
+  transform-origin:center;
 }
 
 .telegram-btn-ru{
-  background:#fff;
-  border:2px solid #0b7cff;
+  background:white;
   color:#0b7cff;
+  border:2px solid #0b7cff;
 }
 
 .telegram-btn-de{
-  background:linear-gradient(135deg,#19a8ff,#0069ea);
-  color:#fff;
+  background:linear-gradient(135deg,#16a8ff,#0067e8);
+  color:white;
+  border:none;
 }
 
 /* ===== FOOTER ===== */
@@ -407,26 +411,28 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:72px;
-  padding:8px 20px 42px;
+  gap:56px;
+  padding:12px 20px 42px;
   flex-wrap:wrap;
 }
 
 .footer a{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:28px;
   font-size:17px;
-  font-weight:800;
+  font-weight:700;
   color:#0b2d78;
 }
 
 .footer img{
-  width:48px;
-  height:48px;
-  min-width:48px;
-  min-height:48px;
+  width:34px;
+  height:34px;
   object-fit:contain;
+  flex-shrink:0;
+
+  transform:scale(2.3);
+  transform-origin:center;
 }
 
 .footer::after{
