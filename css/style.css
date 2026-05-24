@@ -223,90 +223,76 @@ a{
 ========================= */
 
 .service-cards{
-    max-width:1280px;
+  max-width:1080px;
+  margin:-54px auto 28px;
+  padding:0 12px;
 
-    margin:-72px auto 34px;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:14px;
 
-    padding:0 20px;
-
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-
-    gap:18px;
-
-    position:relative;
-    z-index:5;
+  position:relative;
+  z-index:10;
 }
 
 .service-card{
-    display:block;
+  display:block;
+  height:390px;
 
-    width:268px;
+  border-radius:22px;
+  overflow:hidden;
 
-    border-radius:22px;
+  background:transparent;
+  box-shadow:none;
+  filter:none;
 
-    overflow:hidden;
-
-    text-decoration:none;
-
-    transition:0.25s ease;
-
-    box-shadow:none;
-    filter:none;
-
-    background:transparent;
+  transition:0.22s ease;
 }
 
 .service-card img{
-    display:block;
+  display:block;
 
-    width:100%;
-    height:auto;
+  width:calc(100% + 18px);
+  height:calc(100% + 18px);
 
-    border-radius:22px;
+  margin:-9px;
 
-    box-shadow:none;
-    filter:none;
+  object-fit:cover;
+  object-position:center;
+
+  border-radius:22px;
+
+  box-shadow:none;
+  filter:none;
 }
-
-/* hover */
 
 .service-card:hover{
-    transform:translateY(-4px);
+  transform:translateY(-4px);
 }
 
-/* mobile */
+/* RESPONSIVE */
 
 @media(max-width:1150px){
+  .service-cards{
+    max-width:720px;
+    grid-template-columns:repeat(2, 1fr);
+  }
 
-    .service-cards{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-}
-
-@media(max-width:768px){
-
-    .service-cards{
-        margin:-50px auto 28px;
-        gap:14px;
-        padding:0 14px;
-    }
-
-    .service-card{
-        width:calc(50% - 10px);
-    }
+  .service-card{
+    height:390px;
+  }
 }
 
 @media(max-width:560px){
+  .service-cards{
+    grid-template-columns:1fr;
+    max-width:320px;
+  }
 
-    .service-card{
-        width:100%;
-        max-width:320px;
-    }
+  .service-card{
+    height:430px;
+  }
 }
-
 /* =========================
    AUDIENCE
 ========================= */
