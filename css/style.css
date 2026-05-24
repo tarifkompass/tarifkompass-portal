@@ -274,6 +274,16 @@ a{
   object-fit:cover;
 }
 
+/* 2-я и 3-я картинки: режем бока, не верх/низ */
+.audience-card:nth-child(2) > img,
+.audience-card:nth-child(3) > img{
+  top:0;
+  left:-14px;
+  width:calc(100% + 28px);
+  height:100%;
+  object-fit:cover;
+}
+
 .audience-card > div{
   position:absolute;
   top:50%;
@@ -335,13 +345,15 @@ a{
 .telegram-info{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:22px;
 }
 
 .telegram-info img{
-  width:38px;
-  height:38px;
+  width:30px;
+  height:30px;
   object-fit:contain;
+  transform:scale(2.25);
+  transform-origin:center;
   flex-shrink:0;
 }
 
@@ -373,15 +385,17 @@ a{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:10px;
+  gap:14px;
   font-size:15px;
   font-weight:800;
 }
 
 .telegram-btn img{
-  width:40px;
-  height:40px;
+  width:28px;
+  height:28px;
   object-fit:contain;
+  transform:scale(1.7);
+  transform-origin:center;
   flex-shrink:0;
 }
 
@@ -410,16 +424,18 @@ a{
 .footer a{
   display:flex;
   align-items:center;
-  gap:15px;
+  gap:24px;
   font-size:17px;
   font-weight:700;
   color:#0b2d78;
 }
 
 .footer img{
-  width:28px;
-  height:28px;
+  width:30px;
+  height:30px;
   object-fit:contain;
+  transform:scale(2.6);
+  transform-origin:center;
   flex-shrink:0;
 }
 
@@ -531,6 +547,7 @@ a{
   .telegram-info img{
     width:36px;
     height:36px;
+    transform:scale(1);
   }
 
   .telegram-info h2{
@@ -559,6 +576,7 @@ a{
   .telegram-btn img{
     width:40px;
     height:40px;
+    transform:scale(1);
   }
 
   .footer{
@@ -569,12 +587,13 @@ a{
 
   .footer a{
     font-size:18px;
-    gap:12px;
+    gap:18px;
   }
 
   .footer img{
     width:30px;
     height:30px;
+    transform:scale(1.4);
   }
 
   .footer::after{
