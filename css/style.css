@@ -284,16 +284,20 @@ a{
   box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
+/* уменьшаем "юбку" */
+
 .audience-card > img{
   position:absolute;
-  inset:0;
 
-  width:100%;
-  height:100%;
+  top:4px;
+  left:4px;
+
+  width:calc(100% - 8px);
+  height:calc(100% - 8px);
 
   object-fit:cover;
 
-  border-radius:22px;
+  border-radius:18px;
 }
 
 .audience-card > div{
