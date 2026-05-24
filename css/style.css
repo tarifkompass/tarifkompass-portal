@@ -249,7 +249,6 @@ a{
   display:block;
   border-radius:22px;
 }
-
 /* AUDIENCE */
 
 .audience{
@@ -284,15 +283,15 @@ a{
   box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* уменьшаем "юбку" */
+/* тонкая боковая юбка */
 
 .audience-card > img{
   position:absolute;
 
   top:4px;
-  left:4px;
+  left:2px;
 
-  width:calc(100% - 8px);
+  width:calc(100% - 4px);
   height:calc(100% - 8px);
 
   object-fit:cover;
