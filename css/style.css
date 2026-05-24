@@ -411,15 +411,15 @@ a{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:56px;
-  padding:12px 20px 42px;
+  gap:72px;
+  padding:18px 20px 48px;
   flex-wrap:wrap;
 }
 
 .footer a{
   display:flex;
   align-items:center;
-  gap:28px;
+  gap:42px;
   font-size:17px;
   font-weight:700;
   color:#0b2d78;
@@ -431,7 +431,7 @@ a{
   object-fit:contain;
   flex-shrink:0;
 
-  transform:scale(2.3);
+  transform:scale(4.2);
   transform-origin:center;
 }
 
@@ -439,7 +439,7 @@ a{
   content:"© TarifKompass 2026";
   flex-basis:100%;
   text-align:center;
-  margin-top:8px;
+  margin-top:14px;
   font-size:13px;
   color:rgba(11,45,120,0.55);
 }
