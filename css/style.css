@@ -19,9 +19,7 @@ a{
   text-decoration:none;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   position:relative;
@@ -43,9 +41,7 @@ a{
   min-height:650px;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .header{
   display:grid;
@@ -89,9 +85,7 @@ a{
   white-space:nowrap;
 }
 
-/* =========================
-   NAV
-========================= */
+/* NAV */
 
 .top-nav{
   display:flex;
@@ -131,9 +125,7 @@ a{
   background:linear-gradient(135deg,#49cfff,#1598ec);
 }
 
-/* =========================
-   LANGUAGE
-========================= */
+/* LANGUAGE */
 
 .lang-switch{
   display:flex;
@@ -163,9 +155,7 @@ a{
   color:white;
 }
 
-/* =========================
-   HERO TEXT
-========================= */
+/* HERO TEXT */
 
 .hero-content{
   max-width:760px;
@@ -186,9 +176,7 @@ a{
   margin-bottom:42px;
 }
 
-/* =========================
-   FEATURES
-========================= */
+/* FEATURES */
 
 .features{
   display:flex;
@@ -228,9 +216,7 @@ a{
   white-space:nowrap;
 }
 
-/* =========================
-   SERVICE CARDS
-========================= */
+/* SERVICE CARDS */
 
 .service-cards{
   max-width:1080px;
@@ -249,7 +235,7 @@ a{
   border-radius:22px;
   overflow:hidden;
   background:transparent;
-  box-shadow:none;
+  box-shadow:0 10px 22px rgba(0,0,0,0.10);
   filter:none;
   transition:0.22s ease;
 }
@@ -268,11 +254,10 @@ a{
 
 .service-card:hover{
   transform:translateY(-4px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.14);
 }
 
-/* =========================
-   AUDIENCE
-========================= */
+/* AUDIENCE */
 
 .audience{
   max-width:1230px;
@@ -337,9 +322,7 @@ a{
   color:#173d8f;
 }
 
-/* =========================
-   INFO TEXT
-========================= */
+/* INFO TEXT */
 
 .info-transition{
   max-width:1120px;
@@ -358,9 +341,7 @@ a{
   color:#0b2d78;
 }
 
-/* =========================
-   TELEGRAM
-========================= */
+/* TELEGRAM */
 
 .telegram-block{
   max-width:1120px;
@@ -379,15 +360,15 @@ a{
 .telegram-info{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:18px;
 }
 
 .telegram-info img{
-  width:46px;
-  height:46px;
+  width:52px;
+  height:52px;
   object-fit:contain;
   flex-shrink:0;
-  transform:scale(1.65);
+  transform:scale(1.9);
   transform-origin:center;
 }
 
@@ -419,18 +400,18 @@ a{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:12px;
+  gap:14px;
   font-size:14px;
   font-weight:800;
   transition:0.2s ease;
 }
 
 .telegram-btn img{
-  width:30px;
-  height:30px;
+  width:36px;
+  height:36px;
   object-fit:contain;
   flex-shrink:0;
-  transform:scale(1.75);
+  transform:scale(2);
   transform-origin:center;
 }
 
@@ -446,9 +427,7 @@ a{
   border:none;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .footer{
   display:flex;
@@ -469,11 +448,11 @@ a{
 }
 
 .footer img{
-  width:34px;
-  height:34px;
+  width:38px;
+  height:38px;
   object-fit:contain;
   flex-shrink:0;
-  transform:scale(3.2);
+  transform:scale(3.6);
   transform-origin:center;
 }
 
@@ -486,9 +465,7 @@ a{
   color:rgba(11,45,120,0.55);
 }
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media(max-width:1150px){
 
@@ -506,9 +483,7 @@ a{
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:760px){
 
@@ -639,7 +614,7 @@ a{
   .service-cards{
     max-width:340px;
     grid-template-columns:1fr;
-    gap:18px;
+    gap:20px;
     margin:-24px auto 32px;
     padding:0 10px;
   }
@@ -649,7 +624,7 @@ a{
     border-radius:28px;
     overflow:hidden;
     background:transparent;
-    box-shadow:none;
+    box-shadow:0 12px 26px rgba(0,0,0,0.14);
   }
 
   .service-card img{
@@ -736,9 +711,9 @@ a{
   }
 
   .telegram-info img{
-    width:34px;
-    height:34px;
-    transform:scale(1.35);
+    width:42px;
+    height:42px;
+    transform:scale(1.7);
   }
 
   .telegram-info h2{
@@ -762,12 +737,13 @@ a{
     height:56px;
     font-size:18px;
     border-radius:18px;
+    gap:16px;
   }
 
   .telegram-btn img{
-    width:28px;
-    height:28px;
-    transform:scale(1.25);
+    width:34px;
+    height:34px;
+    transform:scale(1.7);
   }
 
   .footer{
@@ -783,9 +759,9 @@ a{
   }
 
   .footer img{
-    width:28px;
-    height:28px;
-    transform:scale(2.2);
+    width:34px;
+    height:34px;
+    transform:scale(2.8);
   }
 
   .footer::after{
@@ -794,9 +770,7 @@ a{
   }
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* SMALL MOBILE */
 
 @media(max-width:420px){
 
