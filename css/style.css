@@ -193,6 +193,10 @@ a{
   transform-origin:center;
 }
 
+.feature:nth-child(3) img{
+  transform:scale(4.35);
+}
+
 .feature span{
   font-size:18px;
   line-height:1.18;
@@ -263,9 +267,10 @@ a{
 
 .audience-card > img{
   position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
+  top:-7px;
+  left:-7px;
+  width:calc(100% + 14px);
+  height:calc(100% + 14px);
   object-fit:cover;
 }
 
@@ -296,14 +301,14 @@ a{
 
 .info-transition{
   max-width:1120px;
-  margin:32px auto 24px;
+  margin:26px auto 24px;
   padding:0 20px;
   text-align:center;
 }
 
 .info-transition p{
   font-size:18px;
-  line-height:1.75;
+  line-height:1.65;
   color:#173d8f;
 }
 
@@ -418,6 +423,16 @@ a{
   flex-shrink:0;
 }
 
+.footer::after{
+  content:"© TarifKompass 2026";
+  flex-basis:100%;
+  text-align:center;
+  margin-top:10px;
+  font-size:13px;
+  font-weight:600;
+  color:rgba(11,45,120,0.55);
+}
+
 /* MOBILE */
 
 @media(max-width:1150px){
@@ -467,6 +482,10 @@ a{
     transform:scale(3.1);
   }
 
+  .feature:nth-child(3) img{
+    transform:scale(3.7);
+  }
+
   .service-cards{
     grid-template-columns:1fr;
     margin-top:-34px;
@@ -494,22 +513,72 @@ a{
   }
 
   .telegram-block{
+    max-width:calc(100% - 40px);
+    min-height:auto;
+    margin-top:34px;
+    padding:22px;
     flex-direction:column;
     align-items:flex-start;
-    padding:22px;
+    border-radius:24px;
+  }
+
+  .telegram-info{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+
+  .telegram-info img{
+    width:36px;
+    height:36px;
+  }
+
+  .telegram-info h2{
+    font-size:24px;
+    line-height:1.08;
+  }
+
+  .telegram-info p{
+    font-size:15px;
+    line-height:1.32;
   }
 
   .telegram-buttons{
     width:100%;
     flex-direction:column;
+    gap:14px;
   }
 
   .telegram-btn{
     width:100%;
+    height:54px;
+    font-size:17px;
+    border-radius:16px;
+  }
+
+  .telegram-btn img{
+    width:40px;
+    height:40px;
   }
 
   .footer{
     flex-direction:column;
-    gap:22px;
+    gap:20px;
+    padding:24px 20px 40px;
+  }
+
+  .footer a{
+    font-size:18px;
+    gap:12px;
+  }
+
+  .footer img{
+    width:30px;
+    height:30px;
+  }
+
+  .footer::after{
+    margin-top:10px;
+    font-size:14px;
   }
 }
