@@ -249,81 +249,127 @@ a{
   display:block;
   border-radius:22px;
 }
-/* AUDIENCE */
+/* =========================
+   AUDIENCE
+========================= */
 
 .audience{
-  max-width:1230px;
-  margin:0 auto 20px;
-  padding:0 20px;
+    max-width:1230px;
+    margin:0 auto 26px;
+    padding:0 20px;
 }
 
 .audience h2{
-  text-align:center;
-  font-size:34px;
-  font-weight:900;
-  color:#0b2d78;
-  margin-bottom:22px;
+    text-align:center;
+    font-size:34px;
+    font-weight:900;
+    color:#0b2d78;
+    margin-bottom:22px;
+    line-height:1.1;
 }
 
 .audience-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
 .audience-card{
-  position:relative;
-  min-height:118px;
+    position:relative;
+    min-height:118px;
 
-  border-radius:22px;
-  overflow:hidden;
+    border-radius:22px;
+    overflow:hidden;
 
-  background:#ffffff;
+    background:#ffffff;
 
-  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+    box-shadow:0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* юбка почти в ноль */
+/* одинаковая "юбка" со всех сторон */
 
 .audience-card > img{
-  position:absolute;
+    position:absolute;
 
-  top:4px;
-  left:0;
+    top:10px;
+    left:10px;
 
-  width:100%;
-  height:calc(100% - 8px);
+    width:calc(100% - 20px);
+    height:calc(100% - 20px);
 
-  object-fit:cover;
+    object-fit:cover;
 
-  border-radius:18px;
+    border-radius:16px;
 }
 
 .audience-card > div{
-  position:absolute;
+    position:absolute;
 
-  top:50%;
-  left:46%;
+    top:50%;
+    left:48%;
 
-  transform:translateY(-50%);
+    transform:translateY(-50%);
 
-  width:42%;
+    width:39%;
 
-  z-index:2;
+    z-index:2;
 }
 
 .audience-card h3{
-  font-size:14px;
-  line-height:1.04;
-  font-weight:900;
-  color:#0b2d78;
-  margin-bottom:5px;
+    font-size:14px;
+    line-height:1.04;
+    font-weight:900;
+    color:#0b2d78;
+    margin-bottom:5px;
 }
 
 .audience-card p{
-  font-size:12px;
-  line-height:1.28;
-  color:#173d8f;
+    font-size:12px;
+    line-height:1.28;
+    color:#173d8f;
+}
+
+/* mobile */
+
+@media (max-width:1100px){
+
+    .audience-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width:768px){
+
+    .audience{
+        padding:0 14px;
+    }
+
+    .audience h2{
+        font-size:28px;
+        margin-bottom:18px;
+    }
+
+    .audience-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .audience-card{
+        min-height:128px;
+    }
+
+    .audience-card > div{
+        left:47%;
+        width:41%;
+    }
+
+    .audience-card h3{
+        font-size:15px;
+    }
+
+    .audience-card p{
+        font-size:13px;
+    }
 }
 /* INFO BLOCK */
 
