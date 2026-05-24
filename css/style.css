@@ -1,562 +1,697 @@
-/* =========================
-   RESET
-========================= */
+/* =========================================================
+   TARIFKOMPASS MAIN STYLE
+   FINAL REBUILD
+========================================================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(243,245,249,0.00) 0%,
-      rgba(243,245,249,0.35) 58%,
-      rgba(243,245,249,0.92) 78%,
-      #f3f5f9 100%
-    ),
-    url("../images/home-hero.webp");
-
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-
-  color: #0b2d78;
-  overflow-x: hidden;
+body{
+  font-family:Arial,sans-serif;
+  background:#f3f5f9;
+  color:#0b2d78;
+  overflow-x:hidden;
 }
 
-a {
-  text-decoration: none;
+a{
+  text-decoration:none;
 }
 
-/* =========================
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
-.hero {
-  position: relative;
-  padding: 28px 60px 140px;
-  min-height: 760px;
+.hero{
+  position:relative;
+
+  min-height:760px;
+
+  padding:36px 74px 220px;
+
+  overflow:hidden;
+
+  border-bottom-left-radius:42px;
+  border-bottom-right-radius:42px;
 
   background:
     linear-gradient(
       90deg,
-      rgba(255,255,255,0.97) 0%,
-      rgba(255,255,255,0.92) 26%,
-      rgba(255,255,255,0.62) 44%,
-      rgba(255,255,255,0.12) 70%,
+      rgba(255,255,255,0.98) 0%,
+      rgba(255,255,255,0.95) 26%,
+      rgba(255,255,255,0.68) 45%,
+      rgba(255,255,255,0.18) 68%,
       rgba(255,255,255,0.00) 100%
-    );
+    ),
+    url("../images/home-hero.webp");
+
+  background-size:cover;
+  background-position:center center;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 240px;
+.hero::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:-2px;
+
+  height:220px;
 
   background:
     linear-gradient(
       180deg,
       rgba(243,245,249,0.00) 0%,
-      rgba(243,245,249,0.50) 52%,
-      rgba(243,245,249,0.92) 82%,
+      rgba(243,245,249,0.55) 54%,
+      rgba(243,245,249,0.94) 84%,
       #f3f5f9 100%
     );
 
-  pointer-events: none;
+  pointer-events:none;
 }
 
-/* =========================
+/* =========================================================
    HEADER
-========================= */
+========================================================= */
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  margin-bottom: 70px;
-  position: relative;
-  z-index: 5;
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  gap:40px;
+
+  position:relative;
+  z-index:5;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.logo{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
 }
 
-.logo img {
-  width: 70px;
-  height: 70px;
+.logo img{
+  width:78px;
+  height:78px;
+  object-fit:contain;
 }
 
-.logo-title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1;
-  color: #0b2d78;
+.logo-title{
+  font-size:60px;
+  line-height:0.92;
+  font-weight:900;
+  color:#0b2d78;
 }
 
-.logo-title span {
-  color: #f4a400;
+.logo-title span{
+  color:#f4a400;
 }
 
-.logo-subtitle {
-  margin-top: 8px;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 1.4px;
-  color: #0b2d78;
+.logo-subtitle{
+  margin-top:10px;
+
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:1.5px;
+
+  color:#0b2d78;
 }
 
-/* =========================
-   NAV
-========================= */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
-.top-nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.top-nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
 }
 
-.nav-btn {
-  color: white;
-  padding: 14px 22px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 900;
-  transition: 0.25s ease;
-  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+.nav-btn{
+  padding:16px 24px;
+
+  border-radius:14px;
+
+  font-size:15px;
+  font-weight:900;
+
+  color:white;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.12);
+
+  transition:0.25s ease;
 }
 
-.nav-btn:hover {
-  transform: translateY(-3px);
+.nav-btn:hover{
+  transform:translateY(-4px);
 }
 
-.nav-mobile {
-  background: linear-gradient(135deg,#0b7cff,#0052d6);
+.nav-mobile{
+  background:linear-gradient(135deg,#0b7cff,#0052d6);
 }
 
-.nav-internet {
-  background: linear-gradient(135deg,#18c884,#00996b);
+.nav-internet{
+  background:linear-gradient(135deg,#18c884,#00996b);
 }
 
-.nav-strom {
-  background: linear-gradient(135deg,#ffbe1f,#f49b00);
+.nav-strom{
+  background:linear-gradient(135deg,#ffbe1f,#f49b00);
 }
 
-.nav-gas {
-  background: linear-gradient(135deg,#36b8ff,#1193eb);
+.nav-gas{
+  background:linear-gradient(135deg,#36b8ff,#1193eb);
 }
 
-/* =========================
+/* =========================================================
    LANG
-========================= */
+========================================================= */
 
-.lang-switch {
-  display: flex;
-  gap: 8px;
+.lang-switch{
+  display:flex;
+  gap:10px;
 }
 
-.lang-btn {
-  width: 42px;
-  height: 42px;
+.lang-btn{
+  width:48px;
+  height:48px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius:12px;
 
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  box-shadow: 0 5px 12px rgba(0,0,0,0.10);
+  font-size:15px;
+  font-weight:900;
+
+  box-shadow:
+    0 6px 14px rgba(0,0,0,0.10);
 }
 
-.lang-btn.passive {
-  background: white;
-  color: #0b2d78;
+.lang-btn.passive{
+  background:white;
+  color:#0b2d78;
 }
 
-.lang-btn.active {
-  background: #0b7cff;
-  color: white;
+.lang-btn.active{
+  background:#0b7cff;
+  color:white;
 }
 
-/* =========================
+/* =========================================================
    HERO CONTENT
-========================= */
+========================================================= */
 
-.hero-content {
-  position: relative;
-  z-index: 5;
-  max-width: 700px;
+.hero-content{
+  position:relative;
+  z-index:5;
+
+  max-width:720px;
+
+  margin-top:84px;
 }
 
-.hero-text h1 {
-  font-size: 70px;
-  line-height: 1.05;
-  font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 28px;
+.hero-content h1{
+  font-size:78px;
+  line-height:1.02;
+  font-weight:900;
+
+  color:#0b2d78;
+
+  margin-bottom:34px;
 }
 
-.hero-text p {
-  font-size: 25px;
-  line-height: 1.55;
-  color: #173d8f;
-  margin-bottom: 52px;
+.hero-content p{
+  font-size:28px;
+  line-height:1.55;
+
+  color:#173d8f;
+
+  margin-bottom:58px;
 }
 
-/* =========================
-   FEATURES
-========================= */
+/* =========================================================
+   HERO FEATURES
+========================================================= */
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 56px;
+.hero-features{
+  display:flex;
+  gap:44px;
+  flex-wrap:wrap;
 }
 
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.hero-feature{
+  display:flex;
+  align-items:center;
+  gap:16px;
 }
 
-.feature img {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-  transform: scale(3.6);
+.hero-feature img{
+  width:34px;
+  height:34px;
+
+  object-fit:contain;
+
+  transform:scale(3.4);
 }
 
-.feature span {
-  font-size: 19px;
-  line-height: 1.22;
-  font-weight: 900;
-  color: #0b2d78;
+.hero-feature span{
+  font-size:21px;
+  line-height:1.22;
+  font-weight:900;
+
+  color:#0b2d78;
 }
 
-/* =========================
-   BIG CARDS
-========================= */
+/* =========================================================
+   MAIN CATEGORY CARDS
+========================================================= */
 
-.service-cards {
-  max-width: 1180px;
-  margin: -120px auto 90px;
-  padding: 0 40px;
+.main-cards{
+  max-width:1380px;
 
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 24px;
+  margin:-120px auto 80px;
 
-  position: relative;
-  z-index: 10;
+  padding:0 40px;
+
+  position:relative;
+  z-index:20;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
 }
 
-.service-card {
-  border-radius: 26px;
-  overflow: hidden;
+.main-card{
+  border-radius:28px;
 
-  transition: 0.25s ease;
+  overflow:hidden;
 
   box-shadow:
-    0 10px 24px rgba(0,0,0,0.10);
+    0 14px 28px rgba(0,0,0,0.12);
+
+  transition:0.25s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
+.main-card:hover{
+  transform:translateY(-6px);
 }
 
-.service-card img {
-  width: 100%;
-  display: block;
+.main-card img{
+  width:100%;
+  display:block;
 }
 
-/* =========================
+/* =========================================================
    AUDIENCE
-========================= */
+========================================================= */
 
-.audience {
-  max-width: 1100px;
-  margin: 0 auto 60px;
-  padding: 0 40px;
-  text-align: center;
+.audience{
+  max-width:1420px;
+
+  margin:0 auto 60px;
+
+  padding:0 40px;
 }
 
-.audience h2 {
-  font-size: 42px;
-  line-height: 1.08;
-  font-weight: 900;
-  color: #0b2d78;
-  margin-bottom: 28px;
+.audience h2{
+  text-align:center;
+
+  font-size:52px;
+  line-height:1.05;
+  font-weight:900;
+
+  color:#0b2d78;
+
+  margin-bottom:42px;
 }
 
-.audience p {
-  font-size: 23px;
-  line-height: 1.65;
-  color: #173d8f;
-  margin-bottom: 22px;
+.audience-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
 }
 
-/* =========================
-   TELEGRAM
-========================= */
+.audience-card{
+  background:white;
 
-.telegram-block {
-  max-width: 1280px;
-  margin: 0 auto 42px;
-  padding: 14px 30px;
+  border-radius:22px;
 
-  border-radius: 20px;
-  background: rgba(255,255,255,0.88);
-
-  backdrop-filter: blur(10px);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  padding:18px;
 
   box-shadow:
-    0 8px 20px rgba(0,0,0,0.06);
+    0 10px 24px rgba(0,0,0,0.06);
+
+  transition:0.25s ease;
 }
 
-.telegram-info {
-  display: flex;
-  align-items: center;
-  gap: 18px;
+.audience-card:hover{
+  transform:translateY(-4px);
 }
 
-.telegram-info img {
-  width: 28px;
-  height: 28px;
-  transform: scale(2.2);
+.audience-card img{
+  width:100%;
+
+  border-radius:18px;
+
+  margin-bottom:18px;
 }
 
-.telegram-info h2 {
-  font-size: 28px;
-  font-weight: 900;
-  color: #0b2d78;
+.audience-card h3{
+  font-size:27px;
+  line-height:1.12;
+  font-weight:900;
+
+  color:#0b2d78;
+
+  margin-bottom:14px;
 }
 
-.telegram-info p {
-  font-size: 14px;
-  color: #173d8f;
+.audience-card p{
+  font-size:21px;
+  line-height:1.52;
+
+  color:#173d8f;
 }
 
-.telegram-buttons {
-  display: flex;
-  gap: 16px;
+/* =========================================================
+   EXTRA TEXT
+========================================================= */
+
+.home-info{
+  max-width:1180px;
+
+  margin:0 auto 44px;
+
+  padding:0 40px;
+
+  text-align:center;
 }
 
-.telegram-btn {
-  min-width: 185px;
-  height: 48px;
+.home-info p{
+  font-size:24px;
+  line-height:1.7;
 
-  border-radius: 14px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-
-  font-size: 16px;
-  font-weight: 900;
-
-  transition: 0.25s ease;
+  color:#173d8f;
 }
 
-.telegram-btn:hover {
-  transform: translateY(-3px);
+/* =========================================================
+   TELEGRAM
+========================================================= */
+
+.telegram-block{
+  max-width:1420px;
+
+  margin:0 auto 50px;
+
+  padding:22px 34px;
+
+  background:white;
+
+  border-radius:24px;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.06);
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
 }
 
-.telegram-btn img {
-  width: 22px;
-  height: 22px;
+.telegram-left{
+  display:flex;
+  align-items:center;
+  gap:22px;
 }
 
-.telegram-btn-ru {
-  border: 2px solid #0b7cff;
-  color: #0b7cff;
-  background: white;
+.telegram-left img{
+  width:44px;
+  height:44px;
+
+  transform:scale(3.1);
 }
 
-.telegram-btn-de {
-  background: linear-gradient(135deg,#16a8ff,#0067e8);
-  color: white;
+.telegram-title{
+  font-size:38px;
+  line-height:1.1;
+  font-weight:900;
+
+  color:#0b2d78;
+
+  margin-bottom:8px;
 }
 
-/* =========================
+.telegram-subtitle{
+  font-size:18px;
+  line-height:1.45;
+
+  color:#173d8f;
+}
+
+.telegram-buttons{
+  display:flex;
+  gap:18px;
+}
+
+.telegram-btn{
+  min-width:220px;
+  height:62px;
+
+  border-radius:16px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  font-size:21px;
+  font-weight:900;
+
+  transition:0.25s ease;
+}
+
+.telegram-btn:hover{
+  transform:translateY(-3px);
+}
+
+.telegram-btn img{
+  width:24px;
+  height:24px;
+}
+
+.telegram-btn-ru{
+  border:2px solid #0b7cff;
+  background:white;
+  color:#0b7cff;
+}
+
+.telegram-btn-de{
+  background:linear-gradient(135deg,#16a8ff,#0067e8);
+  color:white;
+}
+
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
 
-  gap: 54px;
+  gap:70px;
 
-  padding: 24px 20px 46px;
+  padding:16px 20px 50px;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+.footer a{
+  display:flex;
+  align-items:center;
+  gap:16px;
 
-  font-size: 18px;
-  font-weight: 700;
+  font-size:22px;
+  font-weight:800;
 
-  color: #0b2d78;
+  color:#0b2d78;
 }
 
-.footer img {
-  width: 32px;
-  height: 32px;
-  transform: scale(3.5);
+.footer img{
+  width:28px;
+  height:28px;
+
+  transform:scale(3.1);
 }
 
-.footer::after {
-  content: "© TarifKompass 2026";
-  flex-basis: 100%;
-  text-align: center;
+.footer::after{
+  content:"© TarifKompass 2026";
 
-  margin-top: 6px;
+  flex-basis:100%;
 
-  font-size: 14px;
-  color: rgba(11,45,120,0.55);
+  text-align:center;
+
+  margin-top:12px;
+
+  font-size:16px;
+
+  color:rgba(11,45,120,0.55);
 }
 
-/* =========================
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
-@media (max-width: 760px) {
+@media(max-width:760px){
 
-  body {
-    background-attachment: scroll;
+  .hero{
+    min-height:auto;
+
+    padding:24px 18px 90px;
+
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+
+    background-position:center top;
   }
 
-  .hero {
-    padding: 22px 18px 80px;
-    min-height: auto;
+  .header{
+    flex-direction:column;
+    gap:20px;
   }
 
-  .header {
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 44px;
+  .logo img{
+    width:60px;
+    height:60px;
   }
 
-  .logo img {
-    width: 58px;
-    height: 58px;
+  .logo-title{
+    font-size:34px;
   }
 
-  .logo-title {
-    font-size: 31px;
+  .logo-subtitle{
+    font-size:10px;
   }
 
-  .logo-subtitle {
-    font-size: 10px;
+  .top-nav{
+    display:none;
   }
 
-  .top-nav {
-    display: none;
+  .lang-switch{
+    margin-left:76px;
   }
 
-  .lang-switch {
-    margin-left: 68px;
+  .hero-content{
+    margin-top:40px;
   }
 
-  .hero-text h1 {
-    font-size: 42px;
-    line-height: 1.10;
+  .hero-content h1{
+    font-size:48px;
+    line-height:1.08;
   }
 
-  .hero-text p {
-    font-size: 20px;
-    line-height: 1.55;
+  .hero-content p{
+    font-size:22px;
+    line-height:1.55;
   }
 
-  .features {
-    flex-direction: column;
-    gap: 28px;
+  .hero-features{
+    flex-direction:column;
+    gap:28px;
   }
 
-  .feature img {
-    transform: scale(3);
+  .hero-feature img{
+    transform:scale(3);
   }
 
-  .feature span {
-    font-size: 20px;
+  .hero-feature span{
+    font-size:20px;
   }
 
-  .service-cards {
-    grid-template-columns: 1fr;
-    margin-top: -40px;
-    gap: 26px;
-    padding: 0 20px;
+  .main-cards{
+    grid-template-columns:1fr;
+
+    margin-top:-40px;
+
+    gap:24px;
+
+    padding:0 20px;
   }
 
-  .audience {
-    padding: 0 24px;
+  .audience{
+    padding:0 20px;
   }
 
-  .audience h2 {
-    font-size: 34px;
+  .audience h2{
+    font-size:38px;
   }
 
-  .audience p {
-    font-size: 19px;
-    line-height: 1.55;
+  .audience-grid{
+    grid-template-columns:1fr;
   }
 
-  .telegram-block {
-    margin: 0 20px 36px;
-    padding: 26px;
-
-    flex-direction: column;
-    align-items: flex-start;
+  .audience-card h3{
+    font-size:24px;
   }
 
-  .telegram-info {
-    flex-direction: column;
-    align-items: flex-start;
+  .audience-card p{
+    font-size:18px;
   }
 
-  .telegram-info h2 {
-    font-size: 30px;
+  .home-info{
+    padding:0 24px;
   }
 
-  .telegram-buttons {
-    width: 100%;
-    flex-direction: column;
+  .home-info p{
+    font-size:20px;
   }
 
-  .telegram-btn {
-    width: 100%;
-    height: 58px;
-    font-size: 19px;
+  .telegram-block{
+    margin:0 20px 40px;
+
+    padding:26px;
+
+    flex-direction:column;
+    align-items:flex-start;
   }
 
-  .footer {
-    flex-direction: column;
-    gap: 30px;
+  .telegram-left{
+    flex-direction:column;
+    align-items:flex-start;
   }
 
-  .footer a {
-    font-size: 22px;
+  .telegram-title{
+    font-size:30px;
+  }
+
+  .telegram-subtitle{
+    font-size:18px;
+  }
+
+  .telegram-buttons{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .telegram-btn{
+    width:100%;
+    height:58px;
+
+    font-size:20px;
+  }
+
+  .footer{
+    flex-direction:column;
+    gap:34px;
+  }
+
+  .footer a{
+    font-size:22px;
   }
 }
