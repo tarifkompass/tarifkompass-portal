@@ -256,23 +256,24 @@ a {
 }
 
 .audience-card {
-  min-height: 154px;
+  min-height: 164px;
   border-radius: 20px;
   background: white;
   box-shadow: 0 6px 15px rgba(0,0,0,0.06);
-  padding: 16px;
+  padding: 18px;
   display: grid;
-  grid-template-columns: 88px 1fr;
+  grid-template-columns: 118px 1fr;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   overflow: hidden;
 }
 
 .audience-card > img {
   position: static;
-  width: 88px;
-  height: 88px;
+  width: 118px;
+  height: 96px;
   object-fit: cover;
+  object-position: left center;
   border-radius: 14px;
   box-shadow: 0 5px 12px rgba(11,45,120,0.12);
 }
