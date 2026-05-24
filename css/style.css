@@ -189,11 +189,19 @@ a{
   width:52px;
   height:52px;
   object-fit:contain;
+
+  transform:scale(1.75);
+  transform-origin:center;
 }
+
+/* SMS/объяснения — чуть больше */
 
 .feature:nth-child(3) img{
   width:58px;
   height:58px;
+
+  transform:scale(2.15);
+  transform-origin:center;
 }
 
 .feature span{
