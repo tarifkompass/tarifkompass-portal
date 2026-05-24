@@ -462,7 +462,7 @@ a{
 .footer a{
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:10px;
   font-size:17px;
   font-weight:700;
   color:#0b2d78;
@@ -527,9 +527,9 @@ a{
 
   .header{
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
     align-items:flex-start;
-    gap:12px;
+    gap:10px;
     margin-bottom:34px;
   }
 
@@ -537,14 +537,14 @@ a{
     display:flex;
     align-items:flex-start;
     gap:10px;
-    flex:1;
+    width:100%;
     min-width:0;
     overflow:hidden;
   }
 
   .logo img{
-    width:62px;
-    height:62px;
+    width:58px;
+    height:58px;
     flex-shrink:0;
   }
 
@@ -554,18 +554,17 @@ a{
   }
 
   .logo-title{
-    font-size:34px;
+    font-size:32px;
     line-height:0.92;
     white-space:nowrap;
     overflow:hidden;
-    text-overflow:clip;
   }
 
   .logo-subtitle{
     margin-top:6px;
-    font-size:10px;
+    font-size:9px;
     line-height:1.2;
-    letter-spacing:0.8px;
+    letter-spacing:0.7px;
     white-space:nowrap;
     overflow:hidden;
   }
@@ -577,15 +576,15 @@ a{
   .lang-switch{
     display:flex;
     gap:8px;
-    flex-shrink:0;
-    margin-top:6px;
+    margin-left:68px;
+    margin-top:0;
     position:relative;
     z-index:20;
   }
 
   .lang-btn{
-    width:44px;
-    height:44px;
+    width:42px;
+    height:42px;
     border-radius:12px;
     font-size:14px;
     font-weight:900;
@@ -646,7 +645,7 @@ a{
   }
 
   .service-card{
-    height:380px;
+    height:auto;
     border-radius:28px;
     overflow:hidden;
     background:transparent;
@@ -655,8 +654,8 @@ a{
 
   .service-card img{
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:auto;
+    object-fit:contain;
     object-position:center;
     border-radius:28px;
     margin:0;
@@ -806,8 +805,8 @@ a{
   }
 
   .logo img{
-    width:58px;
-    height:58px;
+    width:56px;
+    height:56px;
   }
 
   .logo-title{
@@ -816,6 +815,10 @@ a{
 
   .logo-subtitle{
     font-size:9px;
+  }
+
+  .lang-switch{
+    margin-left:66px;
   }
 
   .lang-btn{
@@ -834,10 +837,6 @@ a{
 
   .service-cards{
     max-width:330px;
-  }
-
-  .service-card{
-    height:360px;
   }
 
   .audience h2{
