@@ -175,40 +175,48 @@ a{
 .features{
   display:flex;
   align-items:center;
-  gap:58px;
-  flex-wrap:wrap;
+  justify-content:flex-start;
+  gap:42px;
+
+  flex-wrap:nowrap;
 }
 
 .feature{
   display:flex;
   align-items:center;
-  gap:30px;
+  gap:22px;
+
+  min-width:0;
 }
 
 .feature img{
-  width:60px;
-  height:60px;
+  width:56px;
+  height:56px;
   object-fit:contain;
+
+  transform:scale(1.75);
+  transform-origin:center;
+
+  flex-shrink:0;
+}
+
+/* SMS чуть больше */
+
+.feature:nth-child(3) img{
+  width:64px;
+  height:64px;
 
   transform:scale(2.05);
   transform-origin:center;
 }
 
-/* SMS — чуть больше остальных */
-
-.feature:nth-child(3) img{
-  width:68px;
-  height:68px;
-
-  transform:scale(2.45);
-  transform-origin:center;
-}
-
 .feature span{
-  font-size:18px;
-  line-height:1.18;
+  font-size:17px;
+  line-height:1.14;
   font-weight:900;
   color:#0b2d78;
+
+  white-space:nowrap;
 }
 
 /* SERVICE CARDS */
