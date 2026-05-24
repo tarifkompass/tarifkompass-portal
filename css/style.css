@@ -186,15 +186,14 @@ a{
 }
 
 .feature img{
-  width:42px;
-  height:42px;
+  width:52px;
+  height:52px;
   object-fit:contain;
-  transform:scale(3.8);
-  transform-origin:center;
 }
 
 .feature:nth-child(3) img{
-  transform:scale(4.35);
+  width:58px;
+  height:58px;
 }
 
 .feature span{
@@ -254,33 +253,27 @@ a{
 .audience-grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:12px;
+  gap:14px;
 }
 
 .audience-card{
   position:relative;
-  min-height:118px;
+  min-height:120px;
   border-radius:18px;
   overflow:hidden;
-  background:transparent;
+  background:#f6f8fc;
+  padding:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.04);
 }
 
 .audience-card > img{
   position:absolute;
-  top:-7px;
-  left:-7px;
-  width:calc(100% + 14px);
-  height:calc(100% + 14px);
+  top:8px;
+  left:8px;
+  width:calc(100% - 16px);
+  height:calc(100% - 16px);
   object-fit:cover;
-}
-
-.audience-card:nth-child(2) > img,
-.audience-card:nth-child(3) > img{
-  top:0;
-  left:-14px;
-  width:calc(100% + 28px);
-  height:100%;
-  object-fit:cover;
+  border-radius:14px;
 }
 
 .audience-card > div{
@@ -288,13 +281,13 @@ a{
   top:50%;
   left:46%;
   transform:translateY(-50%);
-  width:45%;
+  width:42%;
   z-index:2;
 }
 
 .audience-card h3{
   font-size:14px;
-  line-height:1.05;
+  line-height:1.04;
   font-weight:900;
   color:#0b2d78;
   margin-bottom:5px;
@@ -302,7 +295,7 @@ a{
 
 .audience-card p{
   font-size:12px;
-  line-height:1.25;
+  line-height:1.28;
   color:#173d8f;
 }
 
@@ -348,8 +341,8 @@ a{
 }
 
 .telegram-info img{
-  width:46px;
-  height:46px;
+  width:58px;
+  height:58px;
   object-fit:contain;
   flex-shrink:0;
 }
@@ -389,8 +382,8 @@ a{
 }
 
 .telegram-btn img{
-  width:30px;
-  height:30px;
+  width:34px;
+  height:34px;
   object-fit:contain;
   flex-shrink:0;
 }
@@ -428,8 +421,8 @@ a{
 }
 
 .footer img{
-  width:34px;
-  height:34px;
+  width:42px;
+  height:42px;
   object-fit:contain;
   flex-shrink:0;
 }
@@ -486,16 +479,6 @@ a{
     gap:18px;
   }
 
-  .feature img{
-    width:34px;
-    height:34px;
-    transform:scale(3.1);
-  }
-
-  .feature:nth-child(3) img{
-    transform:scale(3.7);
-  }
-
   .service-cards{
     grid-template-columns:1fr;
     margin-top:-34px;
@@ -504,22 +487,6 @@ a{
 
   .audience-grid{
     grid-template-columns:1fr;
-  }
-
-  .audience-card{
-    min-height:150px;
-  }
-
-  .audience-card > div{
-    width:46%;
-  }
-
-  .audience-card h3{
-    font-size:15px;
-  }
-
-  .audience-card p{
-    font-size:12px;
   }
 
   .telegram-block{
@@ -538,21 +505,6 @@ a{
     gap:14px;
   }
 
-  .telegram-info img{
-    width:36px;
-    height:36px;
-  }
-
-  .telegram-info h2{
-    font-size:24px;
-    line-height:1.08;
-  }
-
-  .telegram-info p{
-    font-size:15px;
-    line-height:1.32;
-  }
-
   .telegram-buttons{
     width:100%;
     flex-direction:column;
@@ -566,29 +518,9 @@ a{
     border-radius:16px;
   }
 
-  .telegram-btn img{
-    width:40px;
-    height:40px;
-  }
-
   .footer{
     flex-direction:column;
     gap:20px;
     padding:24px 20px 40px;
-  }
-
-  .footer a{
-    font-size:18px;
-    gap:12px;
-  }
-
-  .footer img{
-    width:30px;
-    height:30px;
-  }
-
-  .footer::after{
-    margin-top:10px;
-    font-size:14px;
   }
 }
