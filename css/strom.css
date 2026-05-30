@@ -205,12 +205,15 @@
     margin-bottom:4px;
     color:#07347f;
     font-size:1.08rem;
+    text-decoration:underline;
+    text-underline-offset:4px;
 }
 
 .comparison-description p{
-    margin:0;
+    margin-top:-4px;
     color:#07347f;
-    line-height:1.65;
+    font-size:1.08rem;
+    line-height:1.55;
 }
 
 .comparison-link{
