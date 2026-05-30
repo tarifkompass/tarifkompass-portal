@@ -75,13 +75,19 @@
   filter: none !important;
 }
 
+/* MAIN OFFERS BLOCK */
+
+.offers-section {
+  position: relative;
+}
+
 /* PROVIDERS */
 
 .provider-eon {
   color: #e30613;
 }
 
-/* OFFER */
+/* MAIN OFFER CARD */
 
 .offer-card::before {
   background: linear-gradient(180deg, var(--accent), var(--accent-dark));
@@ -109,7 +115,106 @@
   transform: translateY(-3px);
 }
 
-/* COMPARISON */
+/* COMPARISON INTRO */
+
+.comparison-intro {
+  margin-top: 34px;
+}
+
+/* COMPARISON OFFERS BLOCK */
+
+.comparison-grid {
+  align-items: stretch;
+}
+
+.comparison-card {
+  min-height: 0;
+  padding: 28px 32px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* COMPARATOR TOP */
+
+.comparison-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.comparison-main-logo {
+  max-width: 260px;
+  width: 52%;
+  height: auto;
+  object-fit: contain;
+}
+
+.comparison-small-banner {
+  max-width: 138px;
+  width: 28%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* COMPARATOR BENEFITS */
+
+.comparison-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 22px;
+}
+
+.comparison-benefits span {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  color: #07347f;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.comparison-benefits span::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--accent-dark);
+  font-size: 26px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1;
+}
+
+/* COMPARATOR DESCRIPTION */
+
+.comparison-description {
+  margin-top: 2px;
+}
+
+.comparison-description p {
+  margin: 0;
+  color: #06347f;
+  line-height: 1.65;
+}
+
+.comparison-description strong {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: #07347f;
+}
+
+/* COMPARATOR BUTTON */
 
 .comparison-link {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
@@ -120,32 +225,73 @@
   transform: translateY(-3px);
 }
 
-.verivox-card {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,0.98),
-      rgba(255,255,255,0.74)
-    ),
-    linear-gradient(
-      135deg,
-      #fff6e5,
-      #ffffff
-    );
+.comparison-link-centered {
+  align-self: center;
+  margin-top: auto;
+  min-width: 220px;
+  text-align: center;
 }
+
+/* COMPARATOR CARD THEMES */
 
 .check24-card {
   background:
     linear-gradient(
       90deg,
       rgba(255,255,255,0.98),
-      rgba(255,255,255,0.74)
+      rgba(255,255,255,0.76)
     ),
     linear-gradient(
       135deg,
       #fff3dc,
       #ffffff
     );
+}
+
+.second-comparator-card {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.98),
+      rgba(255,255,255,0.78)
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fff6e5
+    );
+}
+
+/* SECOND COMPARATOR PLACEHOLDER */
+
+.comparison-placeholder-logo {
+  color: #07347f;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.comparison-placeholder-badge {
+  flex: 0 0 auto;
+  min-width: 78px;
+  padding: 10px 14px;
+  border: 2px dashed rgba(7,52,127,0.24);
+  border-radius: 14px;
+  color: rgba(7,52,127,0.55);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* REMOVE OLD TRUST VISUALS IF OLD HTML REMAINS */
+
+.comparison-trust-icons {
+  display: none !important;
+}
+
+.comparison-visual-wrap {
+  display: none !important;
 }
 
 /* MINI GUIDE */
@@ -168,10 +314,29 @@
   border: none;
 }
 
+/* TABLET */
+
+@media (max-width: 980px) {
+  .comparison-card {
+    padding: 26px;
+  }
+
+  .comparison-main-logo {
+    max-width: 230px;
+  }
+
+  .comparison-small-banner {
+    max-width: 120px;
+  }
+
+  .comparison-placeholder-logo {
+    font-size: 26px;
+  }
+}
+
 /* MOBILE */
 
 @media (max-width: 760px) {
-
   .hero {
     background-position: center top;
   }
@@ -180,4 +345,59 @@
     max-width: 100%;
   }
 
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card {
+    padding: 24px 20px;
+  }
+
+  .comparison-top-row {
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .comparison-main-logo {
+    max-width: 210px;
+    width: 58%;
+  }
+
+  .comparison-small-banner {
+    max-width: 100px;
+    width: 30%;
+  }
+
+  .comparison-benefits {
+    gap: 10px;
+  }
+
+  .comparison-benefits span {
+    padding-left: 30px;
+    font-size: 15px;
+  }
+
+  .comparison-benefits span::before {
+    font-size: 23px;
+  }
+
+  .comparison-description p {
+    line-height: 1.55;
+  }
+
+  .comparison-link-centered {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .comparison-placeholder-logo {
+    font-size: 24px;
+  }
+
+  .comparison-placeholder-badge {
+    min-width: 64px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 }
