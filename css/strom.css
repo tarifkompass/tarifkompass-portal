@@ -297,8 +297,21 @@
         min-width:auto;
     }
 
+.comparison-link {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
 }
 
+.comparison-card-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.comparison-card {
+  position: relative;
+  overflow: hidden;
+}
 /* MINI GUIDE */
 
 .guide-card h3 {
