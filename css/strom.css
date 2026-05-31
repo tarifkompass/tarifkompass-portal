@@ -503,4 +503,9 @@
     margin-right: 0 !important;
     justify-self: center;
   }
+  @media (min-width: 769px) {
+  .offer-tags .tag-verbrauch-de {
+    position: relative !important;
+    left: -45px !important;
+  }
 }
