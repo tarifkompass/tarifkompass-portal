@@ -111,9 +111,7 @@
   max-width: none;
   height: auto;
   display: block;
-  transform: scale(1.05);
-  transform-origin: center;
-}
+ }
 .offer-card {
   padding-top: 6px;
   padding-bottom: 6px;
