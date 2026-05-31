@@ -173,6 +173,14 @@ body {
     display: flex;
     align-items: center;
 }
+.offer-tags span::before {
+    flex: 0 22px;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background: var(--accent-light) !important;
+    color: var(--accent-dark) !important;
+}
 
 .offer-action {
     display: flex;
