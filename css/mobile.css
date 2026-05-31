@@ -141,6 +141,54 @@ body {
   transform: scale(1.00);
   transform-origin: center;
 }
+
+.offer-card {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.offer-tags {
+  align-items: center;
+}
+
+.offer-tags span {
+  font-size: 0.95rem;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+}
+
+.offer-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
 /* =========================
    COMPARISON OFFERS
    ========================= */
