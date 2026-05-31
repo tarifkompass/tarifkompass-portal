@@ -481,4 +481,26 @@
     padding: 8px 10px;
     font-size: 12px;
   }
+  @media (min-width: 769px) {
+  .offer-tags span:nth-child(2) {
+    transform: translateX(-28px);
+  }
+@media (max-width: 768px) {
+  .offer-tags {
+    align-items: flex-start !important;
+  }
+
+  .offer-tags span {
+    display: grid !important;
+    grid-template-columns: 32px 1fr;
+    align-items: center;
+    width: 100%;
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .offer-tags span::before {
+    margin-right: 0 !important;
+    justify-self: center;
+  }
 }
