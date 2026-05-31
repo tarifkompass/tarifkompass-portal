@@ -83,8 +83,16 @@
 
 /* PROVIDERS */
 
-.provider-eon {
-  color: #e30613;
+.provider-tibber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.provider-tibber img {
+  max-width: 118px;
+  height: auto;
+  display: block;
 }
 
 /* MAIN OFFER CARD */
