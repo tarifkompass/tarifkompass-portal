@@ -151,12 +151,12 @@
 }
 
 .offer-tags span::before {
-  flex: 0 0 22px;
-  width: 22px;
-  height: 22px;
-  margin-right: 10px;
-  background: var(--accent-light) !important;
-  color: var(--accent-dark) !important;
+    flex: 0 24px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: var(--accent-light) !important;
+    color: var(--accent-dark) !important;
 }
 
 .offer-tags .tag-shift-right {
