@@ -142,8 +142,8 @@ body {
     transform-origin: center;
 }
 .offer-card {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     border: 1px solid rgba(0, 102, 255, 0.35);
 }
 
