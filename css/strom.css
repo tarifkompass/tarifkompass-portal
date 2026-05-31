@@ -90,25 +90,18 @@
 }
 
 .provider-tibber img {
-  max-width: 135px;
+  max-width: 165px;
   height: auto;
   display: block;
 }
 
-.offer-card {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  border: 1px solid rgba(255, 153, 0, 0.2);
-}
-
-.offer-price {
-  font-size: 1.65rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-
 /* MAIN OFFER CARD */
+
+.offer-card {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid rgba(255, 153, 0, 0.35);
+}
 
 .offer-card::before {
   background: linear-gradient(180deg, var(--accent), var(--accent-dark));
@@ -123,7 +116,20 @@
   color: var(--accent-dark) !important;
 }
 
+.offer-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .offer-price {
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 12px;
   color: var(--text-main);
 }
 
@@ -135,7 +141,6 @@
 .offer-btn:hover {
   transform: translateY(-3px);
 }
-
 /* COMPARISON INTRO */
 
 .comparison-intro {
