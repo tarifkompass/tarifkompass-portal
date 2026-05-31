@@ -117,7 +117,8 @@
 
 .offer-title {
   color: var(--accent-dark) !important;
-  font-size: 1.28rem;
+  font-size: 1.18rem;
+  font-weight: 600;
   line-height: 1.1;
   margin-bottom: 4px;
   text-align: center;
