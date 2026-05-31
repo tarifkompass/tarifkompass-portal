@@ -535,10 +535,10 @@ body {
   }
 
   .offer-card .offer-tags span::before {
-    flex: 0 0 22px !important;
-    width: 22px !important;
-    height: 22px !important;
-    margin-right: 10px !important;
+    flex: 0 0 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 12px !important;
   }
 
 }
