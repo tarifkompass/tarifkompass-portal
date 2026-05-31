@@ -432,6 +432,9 @@
 /* MOBILE */
 
 @media (max-width: 760px) {
+  .provider-planb img {
+    margin-top: 8px;
+}
   .hero {
     background-position: center top;
   }
