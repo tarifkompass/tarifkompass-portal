@@ -125,6 +125,20 @@ body {
 .provider-simon {
   color: #111111;
 }
+.provider-wetell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 185px;
+    overflow: visible;
+}
+
+.provider-wetell img {
+    width: 145px;
+    max-width: none;
+    height: auto;
+    display: block;
+}
 
 /* =========================
    COMPARISON OFFERS
