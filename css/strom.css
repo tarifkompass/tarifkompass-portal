@@ -116,13 +116,14 @@
 }
 
 .offer-title {
-  color: var(--accent-dark) !important;
-  font-size: 1.18rem;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 1.1;
-  margin-bottom: 4px;
-  text-align: center;
+    color: var(--accent-dark) !important;
+    font-size: 1.18rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.1;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .offer-tags {
