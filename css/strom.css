@@ -90,9 +90,22 @@
 }
 
 .provider-tibber img {
-  max-width: 118px;
+  max-width: 135px;
   height: auto;
   display: block;
+}
+
+.offer-card {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: 1px solid rgba(255, 153, 0, 0.2);
+}
+
+.offer-price {
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 /* MAIN OFFER CARD */
