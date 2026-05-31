@@ -82,15 +82,16 @@
 }
 
 /* PROVIDERS */
-
 .provider-tibber {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 170px;
 }
 
 .provider-tibber img {
-  max-width: 185px;
+  width: 185px;
+  max-width: none;
   height: auto;
   display: block;
 }
