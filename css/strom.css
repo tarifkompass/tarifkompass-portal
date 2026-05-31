@@ -100,8 +100,8 @@
 }
 
 .offer-card {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 1px solid rgba(255, 153, 0, 0.35);
 }
 
@@ -118,8 +118,9 @@
 .offer-title {
   color: var(--accent-dark) !important;
   font-size: 1.28rem;
-  line-height: 1.15;
-  margin-bottom: 10px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+  text-align: center;
 }
 
 .offer-tags {
