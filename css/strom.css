@@ -130,8 +130,10 @@
 }
 
 .offer-tags span {
-  font-size: 0.95rem;
-  line-height: 1.15;
+    font-size: 0.95rem;
+    line-height: 1.15;
+    display: inline-flex;
+    align-items: center;
 }
 
 .offer-tags span::before {
@@ -140,7 +142,7 @@
 }
 
 .offer-tags .tag-shift-right {
-  margin-left: 18px;
+    margin-left: 8px;
 }
 
 .offer-action {
