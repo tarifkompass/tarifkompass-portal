@@ -88,6 +88,7 @@
   justify-content: center;
   min-width: 185px;
   overflow: visible;
+  border-right: 1px solid rgba(0, 45, 120, 0.12);
 }
 
 .provider-tibber img {
