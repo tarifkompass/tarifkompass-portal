@@ -533,7 +533,10 @@ body {
   .provider-congstar img {
     width: 82px !important;
   }
-
+  .provider-fraenk img {
+    width: 135px !important;
+    margin-left: -12px;
+}
   .comparison-grid {
     grid-template-columns: 1fr;
     padding: 0 20px;
@@ -597,5 +600,5 @@ body {
   }
 
 }
-}
+
 
