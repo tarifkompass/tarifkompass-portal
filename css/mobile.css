@@ -156,7 +156,25 @@ body {
     display: block;
    margin-left: -28px;
 }
+.provider-congstar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+}
 
+.provider-congstar img {
+    width: 86px;
+    height: auto;
+    display: block;
+    margin-left: -18px;
+}
+
+.offer-congstar-price {
+    color: #111111;
+    font-weight: 800;
+    font-style: italic;
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
