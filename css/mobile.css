@@ -181,16 +181,12 @@ body {
     justify-content: center;
     min-width: 165px;
 }
-
 .provider-fraenk img {
     width: 130px;
     height: auto;
     display: block;
   }
-.provider-fraenk {
-    justify-content: flex-end;
-    padding-right: 25px;
-}
+
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -534,10 +530,8 @@ body {
     width: 82px !important;
   }
   .provider-fraenk img {
-    width: 135px !important;
-    margin-left: -50px !important;
-    border: 3px solid red !important;
-}
+    width: 82px !important;
+  }
   .comparison-grid {
     grid-template-columns: 1fr;
     padding: 0 20px;
