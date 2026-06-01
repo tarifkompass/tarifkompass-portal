@@ -522,6 +522,8 @@
 @media (max-width: 768px) {
   .offer-tags {
     align-items: flex-start !important;
+    .provider-primavolt img {
+    transform: translateX(-15px) translateY(4px);
   }
 
   .offer-tags span {
