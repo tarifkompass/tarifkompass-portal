@@ -212,6 +212,18 @@ body {
     margin-bottom: 10px;
     color: #3aa55d;
 }
+.offer-freenet-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.offer-freenet-icon img {
+    width: 32px;
+    height: auto;
+    display: block;
+}
 /* =========================
    COMPARISON OFFERS
    ========================= */
