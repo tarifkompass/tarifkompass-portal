@@ -95,7 +95,7 @@
   max-width: none;
   height: auto;
   display: block;
-  transform: scale(1.22) translateX(-8px);
+  transform: scale(1.22) translateX(-10px);
   transform-origin: center;
 }
 .provider-planb {
