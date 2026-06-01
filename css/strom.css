@@ -539,4 +539,7 @@
     margin-right: 0 !important;
     justify-self: center;
   }
+    .offer-card .provider-primavolt img {
+    transform: translateX(0px) translateY(8px) !important;
+}
  }
