@@ -542,4 +542,9 @@
     .offer-card .provider-primavolt img {
     transform: translateX(0px) translateY(8px) !important;
 }
+    .offer-provider img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+}
  }
