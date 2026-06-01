@@ -535,7 +535,8 @@ body {
   }
   .provider-fraenk img {
     width: 135px !important;
-    margin-left: -12px;
+    margin-left: -50px !important;
+    border: 3px solid red !important;
 }
   .comparison-grid {
     grid-template-columns: 1fr;
