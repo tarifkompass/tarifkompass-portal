@@ -595,4 +595,10 @@ body {
 .provider-freenet img {
     margin-top: 6px !important;
 }
+  @media (max-width: 768px) {
+
+    .provider-congstar img {
+        width: 52px;
+    }
 }
+
