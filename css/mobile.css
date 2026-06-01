@@ -140,7 +140,9 @@ body {
     display: block;
     transform: scale(1);
     transform-origin: center;
+   margin-left: -12px;
 }
+
 .provider-freenet {
     display: flex;
     align-items: center;
@@ -152,6 +154,7 @@ body {
     width: 145px;
     height: auto;
     display: block;
+   margin-left: -12px;
 }
 
 .offer-card {
