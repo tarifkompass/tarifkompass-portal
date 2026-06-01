@@ -140,7 +140,7 @@ body {
     display: block;
     transform: scale(1);
     transform-origin: center;
-   margin-left: -12px;
+   margin-left: -15px;
 }
 
 .provider-freenet {
@@ -154,7 +154,7 @@ body {
     width: 145px;
     height: auto;
     display: block;
-   margin-left: -12px;
+   margin-left: -15px;
 }
 
 .offer-card {
@@ -204,8 +204,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 5;
 }
-
+.offer-btn {
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+}
 .offer-price {
     font-size: 1.35rem;
     font-weight: 600;
