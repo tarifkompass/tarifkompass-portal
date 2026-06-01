@@ -523,7 +523,7 @@
   .offer-tags {
     align-items: flex-start !important;
     .provider-primavolt img {
-    transform: translateX(-15px) translateY(4px);
+    transform: translateX(0px) translateY(8px);
   }
 
   .offer-tags span {
