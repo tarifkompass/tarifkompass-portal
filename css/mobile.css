@@ -191,7 +191,7 @@ body {
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
-    border: 2px solid rgba(0, 102, 255, 0.38);
+    border: 1.5px solid rgba(0, 102, 255, 0.38);
     margin-bottom: 22px;
 }
 
@@ -282,6 +282,7 @@ body {
   background: #fffdfa;
   border-radius: 24px;
   padding: 24px 22px;
+  border: 1.5px solid rgba(0, 102, 255, 0.38);
   box-shadow: 0 10px 24px rgba(0,0,0,.05);
   min-height: auto;
   display: block;
