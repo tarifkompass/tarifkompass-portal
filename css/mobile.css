@@ -175,6 +175,18 @@ body {
     font-weight: 800;
     font-style: italic;
 }
+.provider-fraenk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+}
+
+.provider-fraenk img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
