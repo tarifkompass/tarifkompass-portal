@@ -153,11 +153,6 @@ body {
     height: auto;
     display: block;
 }
-@media (max-width: 760px) {
-
-    .provider-freenet {
-        padding-top: 8px;
-    }
 
 .offer-card {
     padding-top: 4px;
@@ -558,5 +553,7 @@ body {
     margin-right: 0 !important;
     justify-self: center !important;
   }
-
+.provider-freenet img {
+    margin-top: 8px !important;
+}
 }
