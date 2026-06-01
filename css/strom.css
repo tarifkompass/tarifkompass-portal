@@ -111,6 +111,7 @@
   max-width: none;
   height: auto;
   display: block;
+  transform: translateX(-10px);
  }
 .provider-primavolt {
     display: flex;
