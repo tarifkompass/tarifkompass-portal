@@ -129,7 +129,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 185px;
+    min-width: 220px;
     overflow: visible;
 }
 
@@ -145,7 +145,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 185px;
+    min-width: 220px;
 }
 
 .provider-freenet img {
