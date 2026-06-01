@@ -141,6 +141,18 @@ body {
     transform: scale(1);
     transform-origin: center;
 }
+.provider-freenet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 185px;
+}
+
+.provider-freenet img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
