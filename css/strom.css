@@ -130,9 +130,10 @@
     transform: translateX(-15px);
 }
 .offer-card {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border: 1px solid rgba(255, 153, 0, 0.35);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1.5px solid rgba(255, 153, 0, 0.38);
+    margin-bottom: 22px;
 }
 
 .offer-card::before {
@@ -226,12 +227,14 @@
     margin-top:32px;
 }
 
-.comparison-card{
-    background:#fffdfa;
-    border-radius:24px;
-    padding:24px 28px;
-    box-shadow:0 10px 24px rgba(0,0,0,.05);
-    min-height:auto;
+.comparison-card {
+    background: #fffdfa;
+    border-radius: 24px;
+    padding: 24px 22px;
+    border: 1.5px solid rgba(255, 153, 0, 0.38);
+    box-shadow: 0 10px 24px rgba(0,0,0,.05);
+    min-height: auto;
+    display: block;
 }
 
 .comparison-card-inner{
