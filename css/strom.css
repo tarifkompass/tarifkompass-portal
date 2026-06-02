@@ -552,7 +552,7 @@
     width: 178px !important;
     max-width: 178px !important;
     height: auto !important;
-    transform: translateX(-4px) translateY(4px) !important;
+    transform: translateX(-15px) translateY(15px) !important;
 }
 .offer-provider img {
   max-width: 100%;
