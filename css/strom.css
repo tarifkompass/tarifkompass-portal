@@ -547,15 +547,15 @@
     margin-top: 22px !important;
     margin-bottom: 16px !important;
 }
-
+.offer-provider img {
+  max-width: 100%;
+  height: auto;
+}
 .offer-card .provider-primavolt img {
     width: 178px !important;
     max-width: 178px !important;
     height: auto !important;
     transform: translateX(-25px) translateY(25px) !important;
 }
-.offer-provider img {
-  max-width: 100%;
-  height: auto;
-}
+
  }
