@@ -542,19 +542,18 @@
     margin-right: 0 !important;
     justify-self: center;
   }
-  .offer-card .offer-provider.provider-primavolt {
-  margin-top: 26px !important;
-  margin-bottom: 4px !important;
+  .offer-card .provider-primavolt {
+    justify-content: center !important;
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
 }
 
-.offer-card .offer-provider.provider-primavolt img {
-  width: 215px !important;
-  max-width: none !important;
-  height: auto !important;
-  display: block !important;
-  transform: translateX(-20px) translateY(18px) !important;
+.offer-card .provider-primavolt img {
+    width: 185px !important;
+    max-width: 185px !important;
+    height: auto !important;
+    transform: translateX(-6px) translateY(6px) !important;
 }
-
 .offer-provider img {
   max-width: 100%;
   height: auto;
