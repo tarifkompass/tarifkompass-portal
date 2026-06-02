@@ -551,13 +551,11 @@
     width: 165px !important;
     max-width: 165px !important;
     height: auto !important;
-    border: 2px solid red !important;
 
     position: relative !important;
-    left: -30px !important;
-    top: 20px !important;
+    left: 0px !important;
+    top: 15px !important;
 
     transform: none !important;
 }
-
  }
