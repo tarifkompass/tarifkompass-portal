@@ -554,11 +554,11 @@
   }
 
   .offer-card .provider-primavolt img {
-    width: 165px !important;
-    max-width: 165px !important;
+    width: 140px !important;
+    max-width: 140px !important;
     height: auto !important;
     position: relative !important;
-    left: 0px !important;
+    left: 15px !important;
     top: 15px !important;
     transform: none !important;
   }
