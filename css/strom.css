@@ -127,7 +127,7 @@
     max-width: none;
     height: auto;
     display: block;
-    transform: translateX(-8px) translateY(12px);
+    transform: translateX(-6px) translateY(10px);
 }
 @media (min-width: 769px) {
     .provider-primavolt img {
