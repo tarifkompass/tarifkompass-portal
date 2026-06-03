@@ -123,12 +123,17 @@
 }
 
 .provider-primavolt img {
-    width: 145px;
+    width: 215px;
     max-width: none;
     height: auto;
     display: block;
     transform: translateX(-15px);
 }
+@media (min-width: 769px) {
+    .provider-primavolt img {
+        width: 165px;
+        transform: translateX(-15px);
+    }
 }
 .offer-card {
     padding-top: 4px;
