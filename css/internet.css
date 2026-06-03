@@ -754,11 +754,11 @@ a {
 }
 
 .telegram-info h2 {
-  font-size: 18px;
-  line-height: 1.05;
-  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 800;
   color: var(--text-main);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .telegram-info p {
