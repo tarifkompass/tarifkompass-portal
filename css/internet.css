@@ -678,12 +678,12 @@ a {
 
 .preisvergleich-logo {
   max-width: 310px;
- transform: scaleY(1.12);
+ transform: scaleY(1.20);
   transform-origin: left center; 
  }
 
 .preisvergleich-banner {
-  max-width: 110px;
+  max-width: 140px;
 }
 
 /* MINI GUIDE */
