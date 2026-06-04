@@ -667,6 +667,22 @@ a {
   color: #7a8fb8;
   text-transform: uppercase;
 }
+.preisvergleich-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.98),
+      rgba(232,252,246,.98)
+    );
+}
+
+.preisvergleich-logo {
+  max-width: 190px;
+}
+
+.preisvergleich-banner {
+  max-width: 170px;
+}
 
 /* MINI GUIDE */
 
