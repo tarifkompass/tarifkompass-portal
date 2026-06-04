@@ -630,7 +630,7 @@ a {
 
 .comparison-link-centered {
   align-self: center;
-  margin-top: 18px;
+  margin-top: auto;
   min-width: 380px;
 }
 
