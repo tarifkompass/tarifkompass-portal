@@ -423,7 +423,15 @@ body {
   color: #7a8fb8;
   text-transform: uppercase;
 }
+.preisvergleich-logo {
+  max-width: 310px;
+  transform: scaleY(1.2);
+  transform-origin: left center;
+}
 
+.preisvergleich-banner {
+  max-width: 140px;
+}
 /* MINI GUIDE */
 
 .guide-card h3 {
@@ -563,7 +571,19 @@ body {
     max-width: 110px;
     width: 28%;
   }
+.preisvergleich-card .comparison-top-row {
+  justify-content: center;
+}
 
+.preisvergleich-logo {
+  max-width: 260px;
+  width: auto;
+  transform: none;
+}
+
+.preisvergleich-banner {
+  display: none;
+}
   .comparison-benefits {
     gap: 10px;
   }
