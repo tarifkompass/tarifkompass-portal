@@ -683,7 +683,28 @@ a {
 .preisvergleich-banner {
   max-width: 130px;
 }
+.preisvergleich-logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
+.preisvergleich-ratings {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.preisvergleich-ratings img:first-child {
+  width: 150px;
+  height: auto;
+}
+
+.preisvergleich-ratings img:last-child {
+  width: 110px;
+  height: auto;
+}
 /* MINI GUIDE */
 
 .mini-guide {
