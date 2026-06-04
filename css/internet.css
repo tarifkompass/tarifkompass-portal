@@ -677,7 +677,7 @@ a {
 }
 
 .preisvergleich-logo {
-  max-width: 290px;
+  max-width: 300px;
 }
 
 .preisvergleich-banner {
@@ -688,15 +688,17 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .preisvergleich-ratings {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 4px;
+  transform: scale(.78);
+  transform-origin: left top;
 }
+
 .preisvergleich-ratings img {
-  height: 48px;
+  height: 38px;
   width: auto;
   display: block;
 }
