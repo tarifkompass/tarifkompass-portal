@@ -324,7 +324,28 @@ body {
   color: #7a8fb8;
   text-transform: uppercase;
 }
+.preisvergleich-card {
+    background:
+        linear-gradient(
+        135deg,
+        rgba(255,255,255,.98),
+        rgba(232,252,246,.98)
+    );
+}
 
+.preisvergleich-logo {
+    max-width: 350px;
+    transform: scaleY(1.35);
+    transform-origin: left center;
+}
+
+.preisvergleich-banner {
+    max-width: 140px;
+}
+
+.preisvergleich-card .comparison-link-centered {
+    margin-top: auto;
+}
 /* MINI GUIDE */
 
 .guide-card h3 {
@@ -426,7 +447,19 @@ body {
     max-width: 118px;
     width: 28%;
   }
+.preisvergleich-card .comparison-top-row {
+    justify-content: center;
+}
 
+.preisvergleich-logo {
+    max-width: 260px;
+    width: auto;
+    transform: none;
+}
+
+.preisvergleich-banner {
+    display: none;
+}
   .comparison-benefits {
     gap: 10px;
     margin-top: 0;
