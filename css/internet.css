@@ -678,6 +678,8 @@ a {
 
 .preisvergleich-logo {
   max-width: 300px;
+  width: 65%;
+  height: auto;
 }
 
 .preisvergleich-banner {
@@ -687,20 +689,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.preisvergleich-ratings {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 4px;
-  transform: scale(.78);
-  transform-origin: left top;
-}
-
-.preisvergleich-ratings img {
-  height: 38px;
-  width: auto;
-  display: block;
 }
 
 /* MINI GUIDE */
