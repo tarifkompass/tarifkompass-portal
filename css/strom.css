@@ -376,7 +376,24 @@
     color:#7a8fb8;
     text-transform:uppercase;
 }
+ .preisvergleich-card {
+    background:
+        linear-gradient(
+        135deg,
+        rgba(255,255,255,.98),
+        rgba(232,252,246,.98)
+    );
+}
 
+.preisvergleich-logo {
+    max-width: 350px;
+    transform: scaleY(1.35);
+    transform-origin: left center;
+}
+
+.preisvergleich-banner {
+    max-width: 140px;
+}
 @media (max-width:900px){
 
     .comparison-grid{
@@ -415,25 +432,7 @@
   position: relative;
   overflow: hidden;
 }
-  .preisvergleich-card {
-    background:
-        linear-gradient(
-        135deg,
-        rgba(255,255,255,.98),
-        rgba(232,252,246,.98)
-    );
-}
-
-.preisvergleich-logo {
-    max-width: 360px;
-    transform: scaleY(1.35);
-    transform-origin: left center;
-}
-
-.preisvergleich-banner {
-    max-width: 140px;
-}
-
+ 
 /* MINI GUIDE */
 
 .guide-card h3 {
