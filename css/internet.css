@@ -1205,16 +1205,18 @@ a {
     max-width: 130px;
     width: 34%;
   }
+.preisvergleich-card .comparison-top-row {
+    justify-content: center;
+}
+
 .preisvergleich-logo {
-    max-width: 230px;
-    width: 62%;
-    transform: scaleY(1.08);
-    transform-origin: left center;
+    max-width: 260px;
+    width: auto;
+    transform: none;
 }
 
 .preisvergleich-banner {
-    max-width: 105px;
-    width: 28%;
+    display: none;
 }
   .comparison-benefits {
     gap: 10px;
