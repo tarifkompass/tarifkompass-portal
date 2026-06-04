@@ -677,7 +677,7 @@ a {
 }
 
 .preisvergleich-logo {
-  max-width: 270px;
+  max-width: 290px;
 }
 
 .preisvergleich-banner {
@@ -697,12 +697,12 @@ a {
 }
 
 .preisvergleich-ratings img:first-child {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 
 .preisvergleich-ratings img:last-child {
-  width: 110px;
+  width: 120px;
   height: auto;
 }
 /* MINI GUIDE */
