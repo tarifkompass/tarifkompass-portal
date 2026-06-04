@@ -289,9 +289,13 @@ body {
 }
 
 .comparison-card-inner {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison-description {
+    flex-grow: 1;
 }
 
 .comparison-top-row {
