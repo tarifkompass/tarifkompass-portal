@@ -425,8 +425,8 @@
 }
 
 .preisvergleich-logo {
-    max-width: 310px;
-    transform: scaleY(1.20);
+    max-width: 340px;
+    transform: scaleY(1.25);
     transform-origin: left center;
 }
 
