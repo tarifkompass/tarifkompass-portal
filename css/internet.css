@@ -1463,9 +1463,10 @@ a {
 }
 
 .offer-congstar-internet .provider-congstar img {
-    width: 80px !important;
+    width: 76px !important;
     height: auto !important;
     margin-left: 0 !important;
+  margin-top: 12px !important;
 }
 .offer-congstar-internet .provider-congstar {
     display: flex !important;
