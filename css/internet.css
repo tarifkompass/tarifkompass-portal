@@ -401,16 +401,28 @@ a {
   font-weight: 900;
 }
 
-.provider-telekom {
-  color: #e20074;
+.provider-congstar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
 }
 
-.provider-vodafone {
-  color: #e60000;
+.provider-congstar img {
+    width: 74px;
+    height: auto;
+    display: block;
+    margin-left: -12px;
 }
 
-.provider-o2 {
-  color: #0046ad;
+.offer-congstar-internet .offer-price {
+    color: #111111;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.offer-congstar-internet .offer-title {
+    color: var(--accent-dark);
 }
 
 .offer-title {
