@@ -1445,4 +1445,40 @@ a {
     margin-top: 10px;
     font-size: 14px;
   }
+  .offer-congstar-internet .offer-provider {
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 22px !important;
+    border-bottom: 1px solid rgba(11,45,120,0.10) !important;
+}
+
+.offer-congstar-internet .provider-congstar {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+}
+
+.offer-congstar-internet .provider-congstar img {
+    width: 118px !important;
+    margin-left: 0 !important;
+}
+
+.offer-congstar-internet .offer-title {
+    text-align: center !important;
+    font-size: 1.65rem !important;
+    line-height: 1.12 !important;
+    margin-top: 4px !important;
+    margin-bottom: 18px !important;
+}
+
+.offer-congstar-internet .offer-action {
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.offer-congstar-internet .offer-price {
+    font-size: 1.75rem !important;
+    text-align: center !important;
+    margin-bottom: 16px !important;
+}
 }
