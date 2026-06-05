@@ -499,6 +499,9 @@ a {
 .offer-congstar-internet .offer-btn {
     height: 36px;
 }
+.offer-congstar-internet {
+    border: 1.5px solid rgba(34, 179, 74, 0.38);
+}
 .offer-title {
   font-size: 20px;
   line-height: 1.18;
