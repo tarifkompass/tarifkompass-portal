@@ -435,7 +435,28 @@ a {
     margin-top: -6px;
     margin-bottom: 8px;
 }
+.offer-congstar-internet {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    min-height: 96px;
+}
 
+.offer-congstar-internet .offer-provider {
+    min-height: 60px;
+}
+
+.offer-congstar-internet .offer-action {
+    padding-left: 16px;
+}
+
+.offer-congstar-internet .offer-price {
+    margin-bottom: 6px;
+}
+
+.offer-congstar-internet .offer-tags span {
+    font-size: 0.95rem;
+    line-height: 1.05;
+}
 .offer-title {
   font-size: 20px;
   line-height: 1.18;
