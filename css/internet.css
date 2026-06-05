@@ -1445,13 +1445,17 @@ a {
     margin-top: 10px;
     font-size: 14px;
   }
-  .offer-congstar-internet .offer-provider {
+ .offer-congstar-internet .offer-provider {
     justify-content: center !important;
     align-items: center !important;
-    padding-bottom: 22px !important;
+    padding-bottom: 8px !important;
+    min-height: 82px !important;
     border-bottom: 1px solid rgba(11,45,120,0.10) !important;
 }
-
+ .offer-congstar-internet .offer-provider img {
+    display: block !important;
+    margin-top: -10px !important;
+} 
 .offer-congstar-internet .provider-congstar {
     width: 100% !important;
     min-width: 0 !important;
