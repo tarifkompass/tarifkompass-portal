@@ -1459,10 +1459,16 @@ a {
 }
 
 .offer-congstar-internet .provider-congstar img {
-    width: 118px !important;
+    width: 82px !important;
+    height: auto !important;
     margin-left: 0 !important;
 }
-
+.offer-congstar-internet .provider-congstar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 90px !important;
+}
 .offer-congstar-internet .offer-title {
     text-align: center !important;
     font-size: 1.65rem !important;
