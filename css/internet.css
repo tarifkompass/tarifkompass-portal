@@ -436,9 +436,8 @@ a {
     margin-bottom: 8px;
 }
 .offer-congstar-internet {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-    min-height: 96px;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
 }
 
 .offer-congstar-internet .offer-provider {
