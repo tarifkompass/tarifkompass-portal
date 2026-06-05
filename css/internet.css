@@ -1454,7 +1454,7 @@ a {
 }
  .offer-congstar-internet .offer-provider img {
     display: block !important;
-    margin-top: 5px !important;
+    margin-top: -10px !important;
 } 
 .offer-congstar-internet .provider-congstar {
     width: 100% !important;
