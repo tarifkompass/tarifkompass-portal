@@ -458,6 +458,30 @@ a {
     margin-left: -18px;
 }
 
+.provider-freenet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+}
+
+.provider-freenet img {
+    width: 145px;
+    height: auto;
+    display: block;
+    margin-left: -28px;
+}
+
+.offer-freenet-internet .offer-title {
+    color: var(--accent-dark);
+}
+
+.offer-freenet-bonus {
+    color: #45b800;
+    font-weight: 800;
+    font-style: italic;
+}
+
 .offer-title {
   font-size: 20px;
   line-height: 1.18;
@@ -1455,6 +1479,22 @@ a {
     margin-left: 0 !important;
       margin-top: -8px !important;
 }
+
+  .internet-offer-card .provider-freenet {
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+.internet-offer-card .provider-freenet img {
+    width: 145px !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    margin-top: -2px !important;
+}
+  
 .internet-offer-card .offer-content {
     width: 100% !important;
     overflow: hidden !important;
