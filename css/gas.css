@@ -156,7 +156,37 @@ body {
 .provider-gas {
   color: #2aa8ff;
 }
+.provider-primavolt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+    overflow: visible;
+}
 
+.provider-primavolt img {
+    width: 150px;
+    max-width: none;
+    height: auto;
+    display: block;
+    transform: translateX(-8px);
+}
+
+.gas-offer-card {
+    border: 1.5px solid rgba(42, 168, 255, 0.38);
+}
+
+.offer-primavolt-gas .offer-title {
+    color: var(--accent-dark);
+}
+
+.offer-primavolt-gas-bonus {
+    color: #111111;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
 .provider-verivox {
   color: #f28c00;
 }
