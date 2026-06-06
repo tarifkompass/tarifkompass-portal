@@ -480,6 +480,8 @@ a {
     color: #45b800;
     font-weight: 800;
     font-style: italic;
+  text-align: center;
+    width: 100%;
 }
 
 .offer-title {
