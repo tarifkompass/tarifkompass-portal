@@ -538,5 +538,41 @@ body {
     padding: 8px 10px;
     font-size: 12px;
   }
+/* MOBILE PRIMAVOLT GAS */
 
+.offer-card .provider-primavolt {
+    justify-content: center !important;
+    margin-top: 12px !important;
+    margin-bottom: 10px !important;
+}
+
+.offer-card .provider-primavolt img {
+    width: 140px !important;
+    max-width: 140px !important;
+    height: auto !important;
+    position: relative !important;
+    left: 15px !important;
+    top: 8px !important;
+    transform: none !important;
+}
+
+.offer-primavolt-gas .offer-title {
+    text-align: center !important;
+    font-style: italic !important;
+    color: #2aa8ff !important;
+    font-size: 1.35rem !important;
+    margin-bottom: 14px !important;
+}
+
+.offer-primavolt-gas .offer-price {
+    font-size: 1.55rem !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin-bottom: 14px !important;
+}
+
+.offer-primavolt-gas {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
 }
