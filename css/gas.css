@@ -178,6 +178,12 @@ body {
 
 .offer-primavolt-gas .offer-title {
     color: var(--accent-dark);
+  color: #2ea8ff;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 1.35rem;
 }
 
 .offer-primavolt-gas-bonus {
