@@ -542,8 +542,8 @@ body {
 
 .offer-card .provider-primavolt {
     justify-content: center !important;
-    margin-top: 12px !important;
-    margin-bottom: 10px !important;
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
 }
 
 .offer-card .provider-primavolt img {
@@ -551,8 +551,8 @@ body {
     max-width: 140px !important;
     height: auto !important;
     position: relative !important;
-    left: 15px !important;
-    top: 8px !important;
+    left: 0 !important;
+    top: -4px !important;
     transform: none !important;
 }
 
