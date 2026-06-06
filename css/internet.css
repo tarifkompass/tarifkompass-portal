@@ -1446,14 +1446,14 @@ a {
     min-width: 0 !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: flex-start !important;
 }
 
 .internet-offer-card .provider-congstar img {
     width: 82px !important;
     height: auto !important;
     margin-left: 0 !important;
-    margin-top: 4px !important;
+      margin-top: -8px !important;
 }
 .internet-offer-card .offer-content {
     width: 100% !important;
