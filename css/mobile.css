@@ -187,7 +187,47 @@ body {
     display: block;
     transform: translateX(-10px);
   }
+/* STARMOBILE OFFER */
 
+.offer-card-starmobile {
+    border: 1.5px solid rgba(0, 68, 130, 0.34);
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.98), rgba(237,246,255,0.96));
+}
+
+.provider-starmobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+}
+
+.provider-starmobile img {
+    width: 142px;
+    height: auto;
+    display: block;
+    transform: translateX(-6px);
+}
+
+.offer-card-starmobile .offer-title {
+    color: #082f5f;
+}
+
+.offer-card-starmobile .offer-tags span::before {
+    background: #0b5fa5;
+}
+
+.offer-card-starmobile .offer-price {
+    color: #082f5f;
+}
+
+.offer-card-starmobile .offer-btn {
+    background: linear-gradient(135deg, #0b5fa5, #063b73);
+}
+
+.offer-card-starmobile .offer-btn:hover {
+    background: linear-gradient(135deg, #063b73, #021f42);
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -547,6 +587,10 @@ body {
   .provider-fraenk img {
     width: 82px !important;
   }
+  .provider-starmobile img {
+    width: 118px !important;
+    transform: none !important;
+}
   .comparison-grid {
     grid-template-columns: 1fr;
     padding: 0 20px;
