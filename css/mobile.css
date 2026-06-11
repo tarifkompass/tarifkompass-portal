@@ -219,13 +219,8 @@ body {
 }
 
 .offer-card-starmobile .offer-price {
-    color: #2d9a53;
     font-size: 0.82rem;
     line-height: 1.05;
-}
-
-.offer-card-starmobile .offer-btn {
-    background: linear-gradient(135deg, #0b5fa5, #063b73);
 }
 
 .offer-card-starmobile .offer-btn:hover {
