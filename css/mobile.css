@@ -211,6 +211,30 @@ body {
 .offer-card-starmobile .offer-price {
     font-size: 1.20rem;
 }
+/* LYCA MOBILE OFFER */
+
+.offer-card-lyca {
+    border: 1.5px solid rgba(0, 102, 255, 0.38);
+    background: #ffffff;
+}
+
+.provider-lyca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+}
+
+.provider-lyca img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.offer-card-lyca .offer-price {
+    font-size: 1.20rem;
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -574,6 +598,10 @@ body {
     width: 100px !important;
     margin: 0 auto !important;
     transform: none !important;
+}
+  .provider-lyca img {
+    width: 100px !important;
+    margin: 0 auto !important;
 }
   .comparison-grid {
     grid-template-columns: 1fr;
