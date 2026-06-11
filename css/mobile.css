@@ -203,10 +203,11 @@ body {
 }
 
 .provider-starmobile img {
-    width: 142px;
+    width: 118px;
     height: auto;
     display: block;
-    transform: translateX(-6px);
+    margin: 0 auto;
+    transform: none;
 }
 
 .offer-card-starmobile .offer-title {
@@ -218,7 +219,9 @@ body {
 }
 
 .offer-card-starmobile .offer-price {
-    color: #082f5f;
+    color: #2d9a53;
+    font-size: 0.82rem;
+    line-height: 1.05;
 }
 
 .offer-card-starmobile .offer-btn {
@@ -588,7 +591,8 @@ body {
     width: 82px !important;
   }
   .provider-starmobile img {
-    width: 118px !important;
+    width: 100px !important;
+    margin: 0 auto !important;
     transform: none !important;
 }
   .comparison-grid {
