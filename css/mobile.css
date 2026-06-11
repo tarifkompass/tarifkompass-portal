@@ -208,6 +208,9 @@ body {
     margin: 0 auto;
     transform: none;
 }
+.offer-card-starmobile .offer-price {
+    font-size: 1.05rem;
+}
 .offer-card {
     padding-top: 4px;
     padding-bottom: 4px;
