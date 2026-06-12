@@ -184,7 +184,7 @@ body {
     max-width: none;
     height: auto;
     display: block;
-    transform: translateX(-8px);
+    transform: translateX(-12px);
 }
 .offer-lichtblick-gas .offer-title {
     text-align: center;
@@ -199,6 +199,8 @@ body {
     font-style: italic;
     text-align: center;
     width: 100%;
+  position: relative;
+    top: 2px;
 }
 .gas-offer-card {
     border: 1.5px solid rgba(42, 168, 255, 0.38);
