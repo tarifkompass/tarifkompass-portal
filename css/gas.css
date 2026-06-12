@@ -186,6 +186,19 @@ body {
     display: block;
     transform: translateX(-8px);
 }
+.offer-lichtblick-gas .offer-title {
+    text-align: center;
+    font-style: italic;
+    color: #2aa8ff;
+    font-size: 1.35rem;
+}
+
+.offer-lichtblick-gas .offer-price {
+    font-size: 1.55rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 14px;
+}
 .gas-offer-card {
     border: 1.5px solid rgba(42, 168, 255, 0.38);
     padding-top: 4px;
