@@ -171,7 +171,21 @@ body {
     display: block;
     transform: translateX(-8px);
 }
+.provider-lichtblick-gas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+    overflow: visible;
+}
 
+.provider-lichtblick-gas img {
+    width: 190px;
+    max-width: none;
+    height: auto;
+    display: block;
+    transform: translateX(-8px);
+}
 .gas-offer-card {
     border: 1.5px solid rgba(42, 168, 255, 0.38);
     padding-top: 4px;
@@ -574,5 +588,22 @@ body {
 .offer-primavolt-gas {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
+}
+  /* MOBILE LICHTBLICK GAS */
+
+.offer-card .provider-lichtblick-gas {
+    justify-content: center !important;
+    margin-top: 22px !important;
+    margin-bottom: 16px !important;
+}
+
+.offer-card .provider-lichtblick-gas img {
+    width: 115px !important;
+    max-width: 115px !important;
+    height: auto !important;
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
 }
 }
