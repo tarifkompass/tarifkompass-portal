@@ -637,18 +637,20 @@ Wechselvorteile direkt berücksichtigen.
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-  document.querySelectorAll('a[href*="tidd.ly"]').forEach(function(link) {
+    document.querySelectorAll(
+        'a[href*="tidd.ly"], a[href*="awin1.com"], a[href*="awinaffiliates.com"], a[href*="zanox.com"]'
+    ).forEach(function(link) {
 
-    link.addEventListener("click", function() {
+        link.addEventListener("click", function() {
 
-      gtag('event', 'affiliate_click', {
-        affiliate: this.textContent.trim(),
-        destination: this.href
-      });
+            gtag('event', 'affiliate_click', {
+                affiliate: this.textContent.trim(),
+                destination: this.href
+            });
+
+        });
 
     });
-
-  });
 
 });
 </script>
